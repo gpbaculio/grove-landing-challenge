@@ -6339,6 +6339,7 @@ body {
 hr {
   border-color: #D7D8DD; }
 
+/* media query */
 /* Colors */
 .text-purple {
   color: var(--purple); }
@@ -6436,6 +6437,9 @@ hr {
       color: #E8562A; }
   .btn-sign-up-nav:focus {
     box-shadow: none !important; }
+  @media screen and (max-width: 768px) {
+    .btn-sign-up-nav {
+      margin-top: 15px !important; } }
 
 .boost-btn-sign-up {
   height: 64px;

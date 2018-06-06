@@ -18,6 +18,12 @@ body {
 hr {
   border-color: #D7D8DD;
 }
+/* media query */
+@mixin mediaQuery($arg) {
+  @media screen and (max-width: $arg) {
+    @content;
+  }
+}
 
 /* Colors */
 .text-purple {
@@ -67,11 +73,6 @@ hr {
   margin-right: 5px!important;
   img {
     margin-bottom: 5px!important;
-  }
-}
-@mixin mediaQuery($arg) {
-  @media screen and (max-width: $arg) {
-    @content;
   }
 }
 .nav-link {
@@ -126,6 +127,9 @@ hr {
   }
   &:focus {
     box-shadow: none!important;
+  }
+  @include mediaQuery(768px) {
+    margin-top: 15px!important;
   }
 }
 .boost-btn-sign-up {
