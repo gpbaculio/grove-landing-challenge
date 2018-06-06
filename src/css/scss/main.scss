@@ -88,6 +88,11 @@ hr {
   border-radius: 4px;
   background-color: #E8562A;
   box-shadow: 0 2px 7px 0 rgba(182,91,0,0.37);
+  &:hover {
+    background-color: #fff;
+    color: #E8562A;
+    border-color: #E8562A;
+  }
 }
 .boost-sign-up {
   margin-top: -4px;
@@ -96,7 +101,13 @@ hr {
   border-radius: 4px;
   background-color: #E8562A;
   box-shadow: 0 2px 7px 0 rgba(182,91,0,0.37);
+  &:hover {
+    background-color: #fff;
+    color: #E8562A;
+    border-color: #E8562A;
+  }
 }
+
 .btn-demo {
 	height: 64px;
 	width: 238px;
@@ -104,7 +115,12 @@ hr {
   color: #E8562A;
   background-color: white!important;
 	border-radius: 4px;
-	box-shadow: 0 2px 7px 0 rgba(182,91,0,0.37);
+  box-shadow: 0 2px 7px 0 rgba(182,91,0,0.37);
+  &:hover {
+    background-color: #E8562A!important;
+    color: #fff;
+    box-shadow: 0 2px 7px 0 rgba(182,91,0,0.37);
+  }
 }
 .boost-left, .boost-right {
   margin-top: 150px;
