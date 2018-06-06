@@ -234,6 +234,7 @@ hr {
     font-size: 48px;
     font-weight: bold;
     line-height: 62px;
+    margin-bottom: 12px;
     @include mediaQuery(992px) {
       font-size: 45px;
       line-height: 59px;
@@ -410,8 +411,8 @@ hr {
         margin: 40px auto 0 auto;
       }
       .macbook-notifs {
-        width: 470px;
-        height: 288px;
+        width: 472px;
+        height: 302px;
         position: relative;
         right:-70px;
         @include mediaQuery(992px) {
@@ -550,14 +551,28 @@ hr {
 .notifications-left {
   position: absolute;
   left: 0;
+  z-index: -1;
+  width: 341px;
+  height: 372px;
   @include mediaQuery(992px) {
+    width: 201px;
+    height: 232px;
+  }
+  @include mediaQuery(768px) {
     display: none;
   }
 }
 .notifications-right {
+  width: 307px;
+  height: 382px;
   position: absolute;
   right: 0;
+  z-index: -1;
   @include mediaQuery(992px) {
+    width: 267px;
+    height: 242px;
+  }
+  @include mediaQuery(768px) {
     display: none;
   }
 }
