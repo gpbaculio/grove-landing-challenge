@@ -15,7 +15,7 @@ class Landing extends Component {
               Shopify sellers: instantly boost conversions with a single-click install
             </div>
             <div className="d-flex boost-btn-container">
-              <Button className="btn-sign-up">
+              <Button className="boost-btn-sign-up">
                 SIGN UP FOR FREE
               </Button>
               <Button className="btn-demo">

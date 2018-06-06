@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { Col, Container, Row, Button } from 'reactstrap';
+import ArrowForward from 'react-icons/lib/io/android-arrow-forward';
 
 export default class componentName extends Component {
   render() {
@@ -19,8 +20,8 @@ export default class componentName extends Component {
                 </div>
               </div>
               <div className="conversions-right d-flex justify-content-center m-auto">
-                <Button className="btn-sign-up">
-                  SIGN UP FOR FREE
+                <Button className="conversions-btn-sign-up">
+                  <span className="d-flex align-items-center justify-content-center">SIGN UP FOR FREE <ArrowForward size={20} /></span>
                 </Button>
               </div>
             </div>

@@ -33,20 +33,20 @@ class NavbarHeader extends Component {
   render() {
     return (
       <div>
-        <Navbar color="light" light expand="md" className="px-0">
+        <Navbar color="light" light expand="md" className="px-0 d-flex align-items-center">
           <NavbarBrand href="/"><img width="180" height="39" src={require(`../img/logo-growtiger@1x.png`)} alt="logo" /></NavbarBrand>
           <NavbarToggler onClick={this.toggle} />
           <Collapse isOpen={this.state.isOpen} navbar>
-            <Nav className="ml-auto" navbar>
+            <Nav className="ml-auto d-flex align-items-center" navbar>
               <NavItem>
-                <NavLink href="/pricing" className="px-5 nav-link text-center">Pricing</NavLink>
+                <NavLink href="/pricing" className="nav-link pricing text-center">Pricing</NavLink>
               </NavItem>
               <NavItem>
-                <NavLink className="px-5 nav-link text-center" to="/product">Product</NavLink>
+                <NavLink className="nav-link text-center" to="/product">Product</NavLink>
               </NavItem>
               <NavItem className="text-center">
-                <Button className="btn-sign-up">
-                  SIGN UP FOR FREE
+                <Button className="btn-sign-up-nav">
+                  <span className="btn-sign-up-nav-text">Sign Up For Free</span>
                 </Button>
               </NavItem>
             </Nav>

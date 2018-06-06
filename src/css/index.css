@@ -6389,17 +6389,98 @@ hr {
   color: #807377;
   font-size: 16px;
   line-height: 52px;
-  padding-left: 1.5rem;
   font-family: 'Nunito Sans', sans-serif;
-  padding-right: 1.5rem; }
+  padding-right: 48px !important;
+  padding-left: 0 !important; }
+  @media screen and (max-width: 768px) {
+    .nav-link {
+      padding: 0 !important; } }
+
+.pricing {
+  color: #807377;
+  font-size: 16px;
+  line-height: 52px;
+  font-family: 'Nunito Sans', sans-serif;
+  padding-right: 69px !important;
+  padding-left: 0 !important; }
+  @media screen and (max-width: 768px) {
+    .pricing {
+      padding: 0 !important; } }
+
+.btn-secondary {
+  border-color: none !important; }
+
+.btn-secondary:not(:disabled):not(.disabled):active, .btn-secondary:not(:disabled):not(.disabled).active,
+.show > .btn-secondary.dropdown-toggle {
+  border-color: none !important; }
+
+.btn-sign-up-nav {
+  height: 48px;
+  width: 174px;
+  border-radius: 4px;
+  background-color: #E8562A;
+  padding: 0;
+  border-color: #E8562A !important;
+  box-shadow: 0 2px 7px 0 rgba(182, 91, 0, 0.37);
+  color: #FFFFFF;
+  font-family: "Nunito Sans";
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 14px; }
+  .btn-sign-up-nav:hover {
+    box-shadow: none !important;
+    background-color: #fff;
+    color: #E8562A;
+    border-color: #E8562A; }
+    .btn-sign-up-nav:hover .btn-sign-up-nav-text {
+      color: #E8562A; }
+  .btn-sign-up-nav:focus {
+    box-shadow: none !important; }
+
+.boost-btn-sign-up {
+  height: 64px;
+  width: 238px;
+  border-radius: 4px;
+  background-color: #E8562A !important;
+  border-color: #E8562A !important;
+  font-weight: bold;
+  box-shadow: 0 2px 7px 0 rgba(182, 91, 0, 0.37); }
+  .boost-btn-sign-up:hover {
+    color: #E8562A;
+    background-color: #fff !important; }
+    .boost-btn-sign-up:hover .btn-sign-up-nav-text {
+      color: #E8562A; }
+
+.btn-sign-up-nav-text {
+  height: 14px;
+  width: 125px;
+  color: #FFFFFF;
+  font-family: "Nunito Sans";
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 14px; }
 
 .btn-sign-up {
   height: 64px;
   width: 238px;
   border-radius: 4px;
   background-color: #E8562A;
+  font-weight: bold;
   box-shadow: 0 2px 7px 0 rgba(182, 91, 0, 0.37); }
   .btn-sign-up:hover {
+    background-color: #fff;
+    color: #E8562A;
+    border-color: #E8562A; }
+
+.conversions-btn-sign-up {
+  height: 64px;
+  width: 256px;
+  border-radius: 4px;
+  background-color: #E8562A;
+  border-color: #E8562A;
+  box-shadow: 0 2px 7px 0 rgba(182, 91, 0, 0.37);
+  font-weight: bold; }
+  .conversions-btn-sign-up:hover {
     background-color: #fff;
     color: #E8562A;
     border-color: #E8562A; }
@@ -6423,11 +6504,11 @@ hr {
   color: #E8562A;
   background-color: white !important;
   border-radius: 4px;
-  box-shadow: 0 2px 7px 0 rgba(182, 91, 0, 0.37); }
+  font-weight: bold; }
   .btn-demo:hover {
     background-color: #E8562A !important;
     color: #fff;
-    box-shadow: 0 2px 7px 0 rgba(182, 91, 0, 0.37); }
+    border: 1px solid #E8562A; }
 
 .boost-left, .boost-right {
   margin-top: 150px; }
@@ -6937,17 +7018,20 @@ hr {
       font-family: "Nunito Sans";
       font-size: 18px;
       line-height: 27px;
-      margin-bottom: 16px; }
+      margin-top: 35px;
+      margin-bottom: 32px; }
       @media screen and (max-width: 992px) {
         .launch-container .launch-body .launch-left .lf-body {
           font-size: 16px;
           line-height: 25px;
-          margin-bottom: 14px; } }
+          margin-top: 32px;
+          margin-bottom: 29px; } }
       @media screen and (max-width: 768px) {
         .launch-container .launch-body .launch-left .lf-body {
           font-size: 14px;
           line-height: 23px;
-          margin-bottom: 12px; } }
+          margin-top: 29px;
+          margin-bottom: 26px; } }
     .launch-container .launch-body .launch-left .lf-footer {
       color: #E8562A;
       font-family: "Nunito Sans";
@@ -7077,7 +7161,7 @@ hr {
         line-height: 39px;
         text-align: center; } }
   .conversions-container .conversions-left .conversions-body {
-    margin-top: 17px;
+    margin-top: 20px !important;
     width: 431px;
     color: rgba(44, 21, 29, 0.6);
     font-family: "Nunito Sans";
