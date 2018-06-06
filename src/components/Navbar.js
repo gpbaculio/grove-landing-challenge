@@ -33,7 +33,7 @@ class NavbarHeader extends Component {
   render() {
     return (
       <div>
-        <Navbar color="light" light expand="md" className="px-0 d-flex align-items-center">
+        <Navbar color="light" light expand="md" className="px-0 mt-4 d-flex align-items-center">
           <NavbarBrand href="/"><img width="180" height="39" src={require(`../img/logo-growtiger@1x.png`)} alt="logo" /></NavbarBrand>
           <NavbarToggler onClick={this.toggle} />
           <Collapse isOpen={this.state.isOpen} navbar>
