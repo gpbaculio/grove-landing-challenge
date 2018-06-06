@@ -7023,15 +7023,20 @@ hr {
       font-size: 40px;
       font-weight: bold;
       line-height: 54px;
-      margin-bottom: 32px; }
+      margin-bottom: 32px;
+      margin-top: 18px; }
       @media screen and (max-width: 992px) {
         .launch-container .launch-body .launch-left .lf-header {
           font-size: 35px;
-          line-height: 49px; } }
+          line-height: 49px;
+          margin-bottom: 22px;
+          margin-top: 14px; } }
       @media screen and (max-width: 768px) {
         .launch-container .launch-body .launch-left .lf-header {
           font-size: 30px;
-          line-height: 44px; } }
+          line-height: 44px;
+          margin-bottom: 18px;
+          margin-top: 12px; } }
     .launch-container .launch-body .launch-left .lf-body {
       color: rgba(44, 21, 29, 0.63);
       font-family: "Nunito Sans";

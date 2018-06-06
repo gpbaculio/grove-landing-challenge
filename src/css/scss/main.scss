@@ -746,13 +746,18 @@ hr {
         font-weight: bold;
         line-height: 54px;
         margin-bottom: 32px;
+        margin-top: 18px;
         @include mediaQuery(992px) {
           font-size: 35px;
           line-height: 49px;
+          margin-bottom: 22px;
+          margin-top: 14px;
         }
         @include mediaQuery(768px) {
           font-size: 30px;
           line-height: 44px;
+          margin-bottom: 18px;
+          margin-top: 12px;
         }
       }
       .lf-body {
