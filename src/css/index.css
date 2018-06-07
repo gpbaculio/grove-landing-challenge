@@ -6842,13 +6842,7 @@ hr {
       background-repeat: no-repeat; } }
   @media screen and (max-width: 768px) {
     .conversions-dots-teal {
-      background-repeat: no-repeat;
-      top: 1080px;
-      background-size: contain;
-      width: 30%;
-      width: 30%;
-      max-width: 100%;
-      max-height: 100%; } }
+      display: none; } }
   @media screen and (max-width: 576px) {
     .conversions-dots-teal {
       display: none; } }
@@ -6872,13 +6866,7 @@ hr {
       background-repeat: no-repeat; } }
   @media screen and (max-width: 768px) {
     .conversions-dots-purple {
-      background-repeat: no-repeat;
-      top: 1080px;
-      background-size: contain;
-      width: 30%;
-      width: 30%;
-      max-width: 100%;
-      max-height: 100%; } }
+      display: none; } }
   @media screen and (max-width: 576px) {
     .conversions-dots-purple {
       display: none; } }
