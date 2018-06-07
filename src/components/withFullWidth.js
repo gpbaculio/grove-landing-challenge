@@ -16,7 +16,7 @@ function withFullWidth(WrappedComponent) {
           <style jsx="true">{`
             .fullWidth-wrapper {
               width: 100%;
-              max-width: 1170px;
+              max-width: 1111px;
             }
           `}
           </style>

@@ -4,11 +4,11 @@ import { Col, Row, Container } from 'reactstrap';
 class Shopify extends Component {
   render() {
     return (
-      <Container fluid>
+      <Container>
         <Row>
+          <div className="shopify-notifications-left" />
+          <div className="shopify-notifications-right" />
           <Col className="px-0">
-            <img alt="" className="notifications-left" src={require(`../../../img/NotificationsLeft@1x.png`)} />
-            <img alt="" className="notifications-right" src={require(`../../../img/NotificationsRight@1x.png`)} />
             <div className="d-flex flex-column m-auto justify-content-center shopify-container">
               <img alt="" className="shopify-love d-block m-auto" src={require(`../../../img/shopify-love@1x.png`)} />
               <div className="shopify-header m-auto">

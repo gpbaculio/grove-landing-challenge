@@ -519,10 +519,10 @@ pre {
       max-width: 720px; } }
   @media (min-width: 992px) {
     .container {
-      max-width: 960px; } }
+      max-width: 1140px; } }
   @media (min-width: 1200px) {
     .container {
-      max-width: 1140px; } }
+      max-width: 1250px; } }
 
 .container-fluid {
   width: 100%;
@@ -6386,10 +6386,14 @@ hr {
   .navbar-brand img {
     margin-bottom: 5px !important; }
 
+@media (min-width: 992px) {
+  .container {
+    max-width: 1140px; } }
+
 .nav-link {
   color: #807377;
   font-size: 16px;
-  line-height: 52px;
+  line-height: 14px;
   font-family: 'Nunito Sans', sans-serif;
   padding-right: 48px !important;
   padding-left: 0 !important; }
@@ -6560,6 +6564,8 @@ hr {
       margin: auto; } }
 
 .boost-left div:nth-of-type(2) {
+  height: 72px;
+  width: 495px;
   color: rgba(44, 21, 29, 0.6);
   font-family: "Nunito Sans";
   font-size: 24px;
@@ -6567,26 +6573,32 @@ hr {
   margin-bottom: 30px; }
   @media screen and (max-width: 992px) {
     .boost-left div:nth-of-type(2) {
+      margin-top: 15px !important;
+      width: 100%;
       font-size: 21px;
       line-height: 33px; } }
   @media screen and (max-width: 768px) {
     .boost-left div:nth-of-type(2) {
+      margin-top: 15px;
+      width: 100%;
       font-size: 18px;
       line-height: 30px;
       text-align: center;
-      margin: auto auto 30px auto; } }
+      margin: 15px auto 30px auto; } }
   @media screen and (max-width: 576px) {
     .boost-left div:nth-of-type(2) {
+      margin-top: 15px;
       font-size: 14px;
       line-height: 26px;
       text-align: center;
-      margin: auto auto 20px auto; } }
+      margin: 15px auto 20px auto; } }
   @media screen and (max-width: 300px) {
     .boost-left div:nth-of-type(2) {
+      margin-top: 15px;
       font-size: 12px;
       line-height: 24px;
       text-align: center;
-      margin: auto auto 15px auto; } }
+      margin: 15px auto 15px auto; } }
 
 .boost-left .boost-btn-container button:first-of-type {
   margin-right: 24px; }
@@ -6619,7 +6631,7 @@ hr {
 
 .dots-teal-review {
   position: absolute;
-  margin-top: 180px;
+  top: 183px;
   left: 0;
   z-index: -1;
   height: 368px;
@@ -6632,16 +6644,16 @@ hr {
     .dots-teal-review {
       width: 168px;
       height: 168px;
-      top: -75px; } }
+      display: none; } }
   @media screen and (max-width: 576px) {
     .dots-teal-review {
       width: 128px;
       height: 128px;
-      top: -65px; } }
+      display: none; } }
 
 .dots-purple-review {
   position: absolute;
-  margin-top: 163px;
+  top: 162px;
   right: 0;
   z-index: -1;
   height: 368px;
@@ -6654,16 +6666,17 @@ hr {
     .dots-purple-review {
       width: 168px;
       height: 168px;
-      top: -75px; } }
+      display: none; } }
   @media screen and (max-width: 576px) {
     .dots-purple-review {
       width: 128px;
       height: 128px;
-      top: -65px; } }
+      display: none; } }
 
 .review-container {
   margin-top: 150px !important;
-  padding: 0 48px 0 48px !important;
+  max-width: 1111px;
+  padding: 0 30px 0 30px !important;
   font-family: 'Nunito Sans', sans-serif; }
   @media screen and (max-width: 768px) {
     .review-container {
@@ -6688,15 +6701,16 @@ hr {
       .review-container .review-header {
         font-size: 15px;
         line-height: 22px; } }
-  @media screen and (max-width: 992px) {
+  @media screen and (max-width: 768px) {
     .review-container .review-body {
       flex-direction: column;
-      justify-content: center; } }
+      justify-content: center;
+      margin: auto; } }
   .review-container .review-body .macbook-container {
-    margin-top: 90px; }
+    margin-top: 95px; }
     @media screen and (max-width: 992px) {
       .review-container .review-body .macbook-container {
-        margin: 60px auto 0 auto; } }
+        margin: 60px 20px 0 0; } }
     @media screen and (max-width: 768px) {
       .review-container .review-body .macbook-container {
         margin: 50px auto 0 auto; } }
@@ -6707,38 +6721,45 @@ hr {
       width: 472px;
       height: 302px;
       position: relative;
-      right: -70px; }
+      right: 35px; }
       @media screen and (max-width: 992px) {
         .review-container .review-body .macbook-container .macbook-notifs {
-          width: 100%;
-          height: 15%;
-          right: 0; } }
+          width: 372px;
+          height: 202px; } }
       @media screen and (max-width: 768px) {
         .review-container .review-body .macbook-container .macbook-notifs {
-          width: 100%;
+          width: 80%;
           height: 15%;
-          right: 0; } }
+          right: 0;
+          margin: auto;
+          display: block; } }
       @media screen and (max-width: 576px) {
         .review-container .review-body .macbook-container .macbook-notifs {
           width: 100%;
           height: 15%;
-          right: 0; } }
+          margin-left: 0; } }
 
 .hannah-container {
+  width: 724px;
+  margin-left: -118px;
   margin-top: 54px;
   border-radius: 4px;
   background-color: #FFFFFF;
   box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.11);
   padding: 58px 87px 65px 97px;
-  font-family: 'Nunito Sans', sans-serif; }
+  font-family: 'Nunito Sans', sans-serif;
+  height: auto; }
   @media screen and (max-width: 992px) {
     .hannah-container {
-      margin-top: 44px;
-      padding: 38px 67px 45px 77px; } }
+      margin-top: 34px;
+      padding: 28px 57px 35px 67px; } }
   @media screen and (max-width: 768px) {
     .hannah-container {
       margin-top: 34px;
-      padding: 18px 47px 25px 57px; } }
+      padding: auto;
+      text-align: center;
+      margin: auto;
+      width: 100%; } }
   @media screen and (max-width: 576px) {
     .hannah-container {
       margin-top: 24px;
@@ -6750,16 +6771,205 @@ hr {
     line-height: 41px; }
     @media screen and (max-width: 992px) {
       .hannah-container .hannah-statement {
-        font-size: 27px;
-        line-height: 36px; } }
+        font-size: 24px;
+        line-height: 37px;
+        width: auto;
+        height: auto; } }
     @media screen and (max-width: 768px) {
       .hannah-container .hannah-statement {
         font-size: 22px;
-        line-height: 31px; } }
+        line-height: 31px;
+        margin: auto;
+        width: auto;
+        height: auto; } }
     @media screen and (max-width: 576px) {
       .hannah-container .hannah-statement {
         font-size: 18px;
-        line-height: 27px; } }
+        line-height: 27px;
+        width: auto;
+        height: auto; } }
+
+.review-dots-purple {
+  background-image: url("./scss/img/dots-purple@1x.png");
+  position: absolute;
+  left: 0;
+  top: 800px;
+  z-index: -1;
+  height: 368px;
+  width: 30%;
+  max-width: 100%;
+  max-height: 100%;
+  background-size: contain;
+  background-repeat: no-repeat; }
+  @media screen and (max-width: 992px) {
+    .review-dots-purple {
+      top: 750px;
+      width: 30%;
+      width: 30%;
+      max-width: 100%;
+      max-height: 100%;
+      background-size: contain;
+      background-repeat: no-repeat; } }
+  @media screen and (max-width: 768px) {
+    .review-dots-purple {
+      background-repeat: no-repeat;
+      top: 1080px;
+      background-size: contain;
+      width: 30%;
+      width: 30%;
+      max-width: 100%;
+      max-height: 100%; } }
+  @media screen and (max-width: 576px) {
+    .review-dots-purple {
+      display: none; } }
+
+.conversions-dots-teal {
+  background-image: url("./scss/img/dots-teal@1x.png");
+  position: absolute;
+  left: 0;
+  top: 2600px;
+  z-index: -1;
+  height: 368px;
+  width: 368px;
+  background-size: contain;
+  background-repeat: no-repeat; }
+  @media screen and (max-width: 992px) {
+    .conversions-dots-teal {
+      top: 2380px;
+      height: 308px;
+      width: 308px;
+      background-size: contain;
+      background-repeat: no-repeat; } }
+  @media screen and (max-width: 768px) {
+    .conversions-dots-teal {
+      background-repeat: no-repeat;
+      top: 1080px;
+      background-size: contain;
+      width: 30%;
+      width: 30%;
+      max-width: 100%;
+      max-height: 100%; } }
+  @media screen and (max-width: 576px) {
+    .conversions-dots-teal {
+      display: none; } }
+
+.conversions-dots-purple {
+  background-image: url("./scss/img/dots-purple@1x.png");
+  position: absolute;
+  right: 0;
+  top: 2730px;
+  z-index: -1;
+  height: 368px;
+  width: 368px;
+  background-size: contain;
+  background-repeat: no-repeat; }
+  @media screen and (max-width: 992px) {
+    .conversions-dots-purple {
+      top: 2640px;
+      height: 308px;
+      width: 308px;
+      background-size: contain;
+      background-repeat: no-repeat; } }
+  @media screen and (max-width: 768px) {
+    .conversions-dots-purple {
+      background-repeat: no-repeat;
+      top: 1080px;
+      background-size: contain;
+      width: 30%;
+      width: 30%;
+      max-width: 100%;
+      max-height: 100%; } }
+  @media screen and (max-width: 576px) {
+    .conversions-dots-purple {
+      display: none; } }
+
+.review-dots-teal {
+  background-image: url("./scss/img/dots-teal@1x.png");
+  position: absolute;
+  right: 0;
+  top: 780px;
+  z-index: -1;
+  height: 368px;
+  width: 30%;
+  max-width: 100%;
+  max-height: 100%;
+  background-size: contain;
+  background-repeat: no-repeat; }
+  @media screen and (max-width: 992px) {
+    .review-dots-teal {
+      top: 735px;
+      width: 30%;
+      width: 30%;
+      max-width: 100%;
+      max-height: 100%;
+      background-size: contain;
+      background-repeat: no-repeat; } }
+  @media screen and (max-width: 768px) {
+    .review-dots-teal {
+      background-repeat: no-repeat;
+      top: 1075px;
+      background-size: contain;
+      width: 30%;
+      width: 30%;
+      max-width: 100%;
+      max-height: 100%; } }
+  @media screen and (max-width: 576px) {
+    .review-dots-teal {
+      display: none; } }
+
+.shopify-notifications-left {
+  background-image: url("./scss/img/NotificationsLeft@1x.png");
+  position: absolute;
+  left: 0;
+  top: 1550px;
+  z-index: -1;
+  height: 384px;
+  width: 347px;
+  opacity: 0.8;
+  max-width: 100%;
+  max-height: 100%;
+  background-size: contain;
+  background-repeat: no-repeat; }
+  @media screen and (max-width: 992px) {
+    .shopify-notifications-left {
+      top: 1450px;
+      width: 23%;
+      max-width: 100%;
+      max-height: 100%;
+      background-size: cover;
+      background-repeat: no-repeat; } }
+  @media screen and (max-width: 768px) {
+    .shopify-notifications-left {
+      display: none; } }
+  @media screen and (max-width: 576px) {
+    .shopify-notifications-left {
+      display: none; } }
+
+.shopify-notifications-right {
+  background-image: url("./scss/img/NotificationsRight@1x.png");
+  position: absolute;
+  right: 0;
+  top: 1550px;
+  z-index: -1;
+  height: 356px;
+  width: 25%;
+  opacity: 0.8;
+  background-size: contain;
+  background-repeat: no-repeat; }
+  @media screen and (max-width: 992px) {
+    .shopify-notifications-right {
+      top: 1450px;
+      width: 23%;
+      max-width: 100%;
+      max-height: 100%;
+      background-size: cover;
+      background-repeat: no-repeat; } }
+  @media screen and (max-width: 768px) {
+    .shopify-notifications-right {
+      display: none; } }
+  @media screen and (max-width: 576px) {
+    .shopify-notifications-right {
+      display: none; } }
 
 .hannah-data {
   margin-top: 24px; }
@@ -7000,8 +7210,8 @@ hr {
     order: 0; }
     @media screen and (max-width: 992px) {
       .launch-container .launch-body .launch-left {
-        width: 550px;
-        margin-top: 203px; } }
+        width: 500px;
+        margin-top: 193px; } }
     @media screen and (max-width: 768px) {
       .launch-container .launch-body .launch-left {
         order: 1;
@@ -7027,10 +7237,11 @@ hr {
       margin-top: 18px; }
       @media screen and (max-width: 992px) {
         .launch-container .launch-body .launch-left .lf-header {
-          font-size: 35px;
-          line-height: 49px;
+          font-size: 24px;
+          line-height: 38px;
           margin-bottom: 22px;
-          margin-top: 14px; } }
+          margin-top: 14px;
+          width: 100%; } }
       @media screen and (max-width: 768px) {
         .launch-container .launch-body .launch-left .lf-header {
           font-size: 30px;
@@ -7038,18 +7249,20 @@ hr {
           margin-bottom: 18px;
           margin-top: 12px; } }
     .launch-container .launch-body .launch-left .lf-body {
+      width: 511px;
       color: rgba(44, 21, 29, 0.63);
       font-family: "Nunito Sans";
       font-size: 18px;
       line-height: 27px;
-      margin-top: 35px;
-      margin-bottom: 32px; }
+      margin-top: 24px;
+      margin-bottom: 24px; }
       @media screen and (max-width: 992px) {
         .launch-container .launch-body .launch-left .lf-body {
           font-size: 16px;
           line-height: 25px;
-          margin-top: 32px;
-          margin-bottom: 29px; } }
+          margin-top: 20px;
+          margin-bottom: 20px;
+          width: 100%; } }
       @media screen and (max-width: 768px) {
         .launch-container .launch-body .launch-left .lf-body {
           font-size: 14px;
@@ -7064,8 +7277,9 @@ hr {
       line-height: 27px; }
       @media screen and (max-width: 992px) {
         .launch-container .launch-body .launch-left .lf-footer {
-          font-size: 18px;
-          line-height: 25px; } }
+          font-size: 15px;
+          line-height: 25px;
+          width: 100%; } }
       @media screen and (max-width: 768px) {
         .launch-container .launch-body .launch-left .lf-footer {
           font-size: 16px;
@@ -7088,8 +7302,8 @@ hr {
       @media screen and (max-width: 992px) {
         .launch-container .launch-body .launch-right .how-img {
           top: 10px;
-          width: 340px;
-          height: 510px;
+          width: 300px;
+          height: 460px;
           margin-bottom: 10px; } }
       @media screen and (max-width: 768px) {
         .launch-container .launch-body .launch-right .how-img {
@@ -7153,7 +7367,7 @@ hr {
   border-radius: 4px;
   background-color: #FFFFFF;
   box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.11);
-  padding: 64px 67px; }
+  padding: 64px 67px 75px 67px; }
   @media screen and (max-width: 992px) {
     .conversions-container {
       flex-direction: column;
@@ -7166,7 +7380,7 @@ hr {
       margin: 20px auto 0 auto !important;
       justify-content: center !important; } }
   .conversions-container .conversions-left .conversions-header {
-    width: 600px;
+    width: 562px;
     color: rgba(44, 21, 29, 0.95);
     font-family: "Nunito Sans";
     font-size: 40px;
@@ -7198,14 +7412,13 @@ hr {
     color: rgba(44, 21, 29, 0.6);
     font-family: "Nunito Sans";
     font-size: 20px;
-    line-height: 30px;
-    margin: auto; }
+    line-height: 30px; }
     @media screen and (max-width: 992px) {
       .conversions-container .conversions-left .conversions-body {
         text-align: center;
-        margin-bottom: 15px;
+        margin-bottom: 25px;
         margin-top: 15px;
-        width: 411px;
+        width: 100%;
         font-size: 18px;
         line-height: 28px; } }
     @media screen and (max-width: 768px) {
@@ -7226,10 +7439,13 @@ hr {
 
 .footer-container {
   margin-top: 150px;
-  margin-bottom: 124px; }
+  margin-bottom: 124px;
+  margin-left: 30px;
+  margin-right: 30px; }
   @media screen and (max-width: 576px) {
     .footer-container {
-      padding: 10px; } }
+      margin-left: 15px;
+      margin-right: 15px; } }
   .footer-container .footer-upper {
     margin-bottom: 18.8px; }
     .footer-container .footer-upper .fu-left .footer-logo {

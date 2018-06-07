@@ -5,11 +5,11 @@ import ArrowForward from 'react-icons/lib/io/android-arrow-forward';
 export default class componentName extends Component {
   render() {
     return (
-      <Container fluid>
+      <Container>
         <Row>
+          <div className="conversions-dots-purple" />
+          <div className="conversions-dots-teal" />
           <Col className="m-auto conversions">
-            <img alt="" className="dots-teal" src={require(`../../../img/dots-teal@1x.png`)} />
-            <img alt="" className="dots-purple" src={require(`../../../img/dots-purple@1x.png`)} />
             <div className="d-flex m-auto conversions-container">
               <div className="conversions-left d-flex flex-column">
                 <div className="conversions-header">
