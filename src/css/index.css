@@ -345,7 +345,7 @@ template {
   --dark: #343a40;
   --breakpoint-xs: 0;
   --breakpoint-sm: 576px;
-  --breakpoint-md: 768px;
+  --breakpoint-md: 927px;
   --breakpoint-lg: 992px;
   --breakpoint-xl: 1200px;
   --font-family-sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
@@ -514,9 +514,9 @@ pre {
   @media (min-width: 576px) {
     .container {
       max-width: 540px; } }
-  @media (min-width: 768px) {
+  @media (min-width: 927px) {
     .container {
-      max-width: 720px; } }
+      max-width: 927px; } }
   @media (min-width: 992px) {
     .container {
       max-width: 1140px; } }
@@ -793,7 +793,7 @@ pre {
   .offset-sm-11 {
     margin-left: 91.66667%; } }
 
-@media (min-width: 768px) {
+@media (min-width: 927px) {
   .col-md {
     flex-basis: 0;
     flex-grow: 1;
@@ -1269,7 +1269,7 @@ pre {
     .table-responsive-sm > .table-bordered {
       border: 0; } }
 
-@media (max-width: 767.98px) {
+@media (max-width: 926.98px) {
   .table-responsive-md {
     display: block;
     width: 100%;
@@ -2919,13 +2919,13 @@ input[type="button"].btn-block {
     .navbar-expand-sm .navbar-toggler {
       display: none; } }
 
-@media (max-width: 767.98px) {
+@media (max-width: 926.98px) {
   .navbar-expand-md > .container,
   .navbar-expand-md > .container-fluid {
     padding-right: 0;
     padding-left: 0; } }
 
-@media (min-width: 768px) {
+@media (min-width: 927px) {
   .navbar-expand-md {
     flex-flow: row nowrap;
     justify-content: flex-start; }
@@ -4553,7 +4553,7 @@ button.bg-dark:focus {
   .d-sm-inline-flex {
     display: inline-flex !important; } }
 
-@media (min-width: 768px) {
+@media (min-width: 927px) {
   .d-md-none {
     display: none !important; }
   .d-md-inline {
@@ -4839,7 +4839,7 @@ button.bg-dark:focus {
   .align-self-sm-stretch {
     align-self: stretch !important; } }
 
-@media (min-width: 768px) {
+@media (min-width: 927px) {
   .flex-md-row {
     flex-direction: row !important; }
   .flex-md-column {
@@ -5066,7 +5066,7 @@ button.bg-dark:focus {
   .float-sm-none {
     float: none !important; } }
 
-@media (min-width: 768px) {
+@media (min-width: 927px) {
   .float-md-left {
     float: left !important; }
   .float-md-right {
@@ -5616,7 +5616,7 @@ button.bg-dark:focus {
   .mx-sm-auto {
     margin-left: auto !important; } }
 
-@media (min-width: 768px) {
+@media (min-width: 927px) {
   .m-md-0 {
     margin: 0 !important; }
   .mt-md-0,
@@ -6199,7 +6199,7 @@ button.bg-dark:focus {
   .text-sm-center {
     text-align: center !important; } }
 
-@media (min-width: 768px) {
+@media (min-width: 927px) {
   .text-md-left {
     text-align: left !important; }
   .text-md-right {
@@ -7461,3 +7461,121 @@ hr {
       .footer-container .footer-bottom .fb-right {
         font-size: 14px;
         line-height: 25px; } }
+
+.pricing-container {
+  margin-top: 201.6px;
+  margin-bottom: 150px; }
+
+.pricing-left .pricing-1 {
+  height: 124.8px;
+  width: 738px;
+  color: rgba(44, 21, 29, 0.95);
+  font-family: "Nunito Sans";
+  font-size: 48px;
+  font-weight: bold;
+  line-height: 62px; }
+  @media screen and (max-width: 1140px) {
+    .pricing-left .pricing-1 {
+      height: 187.2px;
+      width: 580px;
+      color: rgba(44, 21, 29, 0.95);
+      font-family: "Nunito Sans";
+      font-size: 48px;
+      font-weight: bold;
+      line-height: 62px; } }
+
+.pricing-left .pricing-2 {
+  height: 72px;
+  width: 396px;
+  color: rgba(44, 21, 29, 0.6);
+  font-family: "Nunito Sans";
+  font-size: 24px;
+  line-height: 36px;
+  margin-top: 26px;
+  margin-bottom: 42px; }
+  @media screen and (max-width: 768px) {
+    .pricing-left .pricing-2 {
+      height: 72px;
+      color: rgba(44, 21, 29, 0.6);
+      font-family: "Nunito Sans";
+      font-size: 24px;
+      line-height: 36px; } }
+
+.pricing-right {
+  width: 100%; }
+  .pricing-right .pricing-right-img {
+    width: 341px;
+    height: 342px;
+    display: block;
+    margin: 50px auto; }
+
+.why-container {
+  margin-bottom: 100px; }
+  .why-container .why-header {
+    height: 54px;
+    width: 315px;
+    color: rgba(44, 21, 29, 0.95);
+    font-family: "Nunito Sans";
+    font-size: 40px;
+    font-weight: bold;
+    line-height: 54px;
+    margin: 0 auto 16px auto;
+    text-align: center; }
+  .why-container .why-body {
+    height: 135px;
+    width: 489px;
+    color: rgba(44, 21, 29, 0.63);
+    font-family: "Nunito Sans";
+    font-size: 18px;
+    line-height: 27px;
+    text-align: center;
+    margin: 0 auto; }
+
+.laptop-1 {
+  background-image: url("./scss/img/laptop-1@1x.png");
+  position: absolute;
+  left: 0;
+  height: 430.06px;
+  width: 657.34px;
+  background-size: cover;
+  background-repeat: no-repeat; }
+  @media screen and (max-width: 1140px) {
+    .laptop-1 {
+      left: -20%; } }
+
+.laptop-star {
+  background-image: url("./scss/img/icon-star@1x.png");
+  height: 48px;
+  width: 48px;
+  background-size: cover;
+  background-repeat: no-repeat; }
+
+.highlight-container {
+  width: 489px;
+  margin-top: 35px; }
+  .highlight-container .highlight-header {
+    height: 54px;
+    width: 324px;
+    color: rgba(44, 21, 29, 0.95);
+    font-family: "Nunito Sans";
+    font-size: 40px;
+    font-weight: bold;
+    line-height: 54px;
+    margin-top: 19px;
+    margin-bottom: 16px; }
+  .highlight-container .highlight-body {
+    height: 135px;
+    width: 480px;
+    color: rgba(44, 21, 29, 0.63);
+    font-family: "Nunito Sans";
+    font-size: 18px;
+    line-height: 27px; }
+  .highlight-container .highlight-footer {
+    margin-top: 33px;
+    height: 27px;
+    width: 320px;
+    color: #E8562A;
+    font-family: "Nunito Sans";
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 27px; }
