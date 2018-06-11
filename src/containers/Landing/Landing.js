@@ -34,4 +34,4 @@ class Landing extends Component {
   }
 }
 
-export default withFullWidth(Landing);
+export default Landing;

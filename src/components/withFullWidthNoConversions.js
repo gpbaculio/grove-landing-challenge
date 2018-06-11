@@ -1,7 +1,6 @@
 import React from 'react';
 import { Container } from 'reactstrap';
 import Navbar from './Navbar';
-import Conversions from '../containers/Components/Conversions';
 import Footer from '../containers/Components/Footer';
 
 function withFullWidth(WrappedComponent) {
@@ -13,7 +12,6 @@ function withFullWidth(WrappedComponent) {
             <Navbar {...this.props} />
             <div className="fullWidth-wrapper m-auto">
               <WrappedComponent {...this.props} />
-              <Conversions />
               <Footer />
             </div>
           </Container>

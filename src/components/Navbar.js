@@ -42,7 +42,7 @@ class NavbarHeader extends Component {
                 <NavLink href="/pricing" className="nav-link pricing text-center">Pricing</NavLink>
               </NavItem>
               <NavItem>
-                <NavLink className="nav-link text-center" to="/product">Product</NavLink>
+                <NavLink className="nav-link text-center" href="/product">Product</NavLink>
               </NavItem>
               <NavItem className="text-center">
                 <Button className="btn-sign-up-nav">

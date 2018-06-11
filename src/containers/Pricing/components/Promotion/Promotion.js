@@ -1,7 +1,6 @@
 import React, { Component } from 'react'
 import { Col, Row, Button } from 'reactstrap';
-import withFullWidth from '../../../../components/withFullWidth';
-import ArrowForward from 'react-icons/lib/io/android-arrow-forward';
+import withFullWidthNoConversions from '../../../../components/withFullWidthNoConversions';
 
 class Pricing extends Component {
   render() {
@@ -9,49 +8,172 @@ class Pricing extends Component {
         <React.Fragment>
             <Row>
                 <Col>
-                    <div className="d-flex pricing-container">
-                        <div className="d-flex flex-column pricing-left">
-                            <div className="pricing-1">
-                                Leave the promotion to us, focus on sourcing the best products
+                    <div className="d-flex price-upper flex-column justify-content-center m-auto">
+                        <div className="pricing-header-container">
+                            <div className="pricing-header m-auto">
+                                Pricing
                             </div>
-                            <div className="pricing-2">
-                                Selling successfully online is hard. GrowTiger makes it a little easier. 
+                            <div className="pricing-body m-auto">
+                                Start For Free and Only Pay After You See Results
                             </div>
-                            <Button className="pricing-3 boost-btn-sign-up">
-                                SIGN UP FOR FREE
-                            </Button>
-                        </div>
-                        <div className="pricing-right d-flex justify-content-end">
-                            <img alt="" className="pricing-right-img" src={require(`../../../../img/Product@1x.png`)} />
                         </div>
                     </div>
                 </Col>
             </Row>
             <Row>
+                <div className="purple-bg" />
                 <Col>
-                    <div className="d-flex flex-column justify-content-center why-container">
-                        <div className="why-header">
-                            Why GrowTiger?
-                        </div>
-                        <div className="why-body">
-                            GrowTiger makes your customer feel that they are in an actual store. They get notifications about recent purchases and people who are browsing products. This triggers emotions of urgency and confidence in the store. Results in improved conversions for you!
-                        </div>
-                    </div>
-                </Col>
-            </Row>
-            <Row>
-                <div className="laptop-1" />
-                <Col md="6 d-flex ml-auto">
-                    <div className="d-flex ml-auto flex-column highlight-container">
-                        <div className="laptop-star" />
-                        <div className="highlight-header">
-                            Highlight Activity
-                        </div>
-                        <div className="highlight-body">
-                            You work hard to get people to your website and convert them into customers. Without our Highlighted Activity notification all that work goes to waste. By using GrowTiger users will be able to see all the customers that have bought from your store.
-                        </div>
-                        <div className="highlight-footer">
-                            Get the notification for your store <ArrowForward size={20} />
+                    <div className="d-flex flex-column price-container">
+                        <div className="price-body-container d-flex flex-column justify-content-between">
+                            <div className="d-flex  justify-content-between">
+                                <div className="d-flex flex-column price-item">
+                                    <div className="price-1 d-flex justify-content-center flex-column mr-auto">
+                                        <div className="price-1-header m-auto">
+                                            New Business
+                                        </div>
+                                        <div className="price-1-price d-flex align-items-end m-auto">
+                                            <div className="price"> $0 </div> /mo
+                                        </div>
+                                        <div className="price-1-button mr-auto ml-auto">
+                                            <Button className="get-started">
+                                                GET STARTED
+                                            </Button>
+                                        </div>
+                                    </div>
+                                    <div className="bg-white price-lists">
+                                        <div className="price-1-text-contents d-flex">
+                                            <strong>
+                                                5,000
+                                            </strong>
+                                            &nbsp; Unique Visitors / mo
+                                        </div>
+                                        <div className="price-1-text-contents">
+                                            Unlimited Domains
+                                        </div>
+                                        <div className="price-1-text-contents">
+                                            Unlimited Notifications
+                                        </div>
+                                        <div className="price-1-text-contents">
+                                            Custom Rules and Timing
+                                        </div>
+                                        <div className="price-1-text-contents">
+                                            Highlight Activity
+                                        </div>
+                                        <div className="price-1-text-contents">
+                                            Live Visitor Count
+                                        </div>
+                                        <div className="price-1-text-contents">
+                                                Sales Streaks
+                                        </div>
+                                        <div className="price-1-text-contents">
+                                            <strong>
+                                                GrowTiger Branding
+                                            </strong>
+                                        </div>
+                                        <div className="price-1-text-contents">
+                                            <strong>Email Support</strong>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div className="d-flex flex-column price-item">
+                                    <div className="price-1 d-flex justify-content-center flex-column mr-auto">
+                                        <div className="price-1-header starter m-auto">
+                                            Starter Plan
+                                        </div>
+                                        <div className="price-1-price d-flex align-items-end m-auto">
+                                            <div className="price"> $19 </div> /mo
+                                        </div>
+                                        <div className="price-1-button mr-auto ml-auto">
+                                            <Button className="get-started">
+                                                GET STARTED
+                                            </Button>
+                                        </div>
+                                    </div>
+                                    <div className="bg-white price-lists">
+                                        <div className="price-1-text-contents d-flex">
+                                            <strong>
+                                                10,000
+                                            </strong>
+                                            &nbsp; Unique Visitors / mo
+                                        </div>
+                                        <div className="price-1-text-contents">
+                                            Unlimited Domains
+                                        </div>
+                                        <div className="price-1-text-contents">
+                                            Unlimited Notifications
+                                        </div>
+                                        <div className="price-1-text-contents">
+                                            Custom Rules and Timing
+                                        </div>
+                                        <div className="price-1-text-contents">
+                                            Highlight Activity
+                                        </div>
+                                        <div className="price-1-text-contents">
+                                            Live Visitor Count
+                                        </div>
+                                        <div className="price-1-text-contents">
+                                                Sales Streaks
+                                        </div>
+                                        <div className="price-1-text-contents">
+                                            <div className="price-bold">
+                                                GrowTiger Branding
+                                            </div>
+                                        </div>
+                                        <div className="price-1-text-contents">
+                                            Email Support
+                                        </div>
+                                    </div>
+                                </div>
+                                <div className="d-flex flex-column price-item">
+                                    <div className="price-1 d-flex justify-content-center flex-column mr-auto">
+                                        <div className="price-1-header pro-seller m-auto">
+                                            Pro Seller
+                                        </div>
+                                        <div className="price-1-price d-flex align-items-end m-auto">
+                                            <div className="price"> $49 </div> /mo
+                                        </div>
+                                        <div className="price-1-button mr-auto ml-auto">
+                                            <Button className="get-started">
+                                                GET STARTED
+                                            </Button>
+                                        </div>
+                                    </div>
+                                    <div className="bg-white price-lists">
+                                        <div className="price-1-text-contents d-flex">
+                                            <strong>
+                                                50,000
+                                            </strong>
+                                            &nbsp; Unique Visitors / mo
+                                        </div>
+                                        <div className="price-1-text-contents">
+                                            Unlimited Domains
+                                        </div>
+                                        <div className="price-1-text-contents">
+                                            Unlimited Notifications
+                                        </div>
+                                        <div className="price-1-text-contents">
+                                            Custom Rules and Timing
+                                        </div>
+                                        <div className="price-1-text-contents">
+                                            Highlight Activity
+                                        </div>
+                                        <div className="price-1-text-contents">
+                                            Live Visitor Count
+                                        </div>
+                                        <div className="price-1-text-contents">
+                                                Sales Streaks
+                                        </div>
+                                        <div className="price-1-text-contents">
+                                            <div className="price-bold">
+                                                GrowTiger Branding
+                                            </div>
+                                        </div>
+                                        <div className="price-1-text-contents">
+                                            Email Support
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </Col>
@@ -61,4 +183,4 @@ class Pricing extends Component {
   }
 }
 
-export default withFullWidth(Pricing);
+export default withFullWidthNoConversions(Pricing);

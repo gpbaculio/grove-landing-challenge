@@ -7552,7 +7552,8 @@ hr {
 
 .highlight-container {
   width: 489px;
-  margin-top: 35px; }
+  margin-top: 35px;
+  margin-bottom: 123.48px; }
   .highlight-container .highlight-header {
     height: 54px;
     width: 324px;
@@ -7579,3 +7580,194 @@ hr {
     font-size: 20px;
     font-weight: bold;
     line-height: 27px; }
+
+.laptop-2 {
+  background-image: url("./scss/img/laptop-2@1x.png");
+  position: absolute;
+  right: 0;
+  height: 430.06px;
+  width: 657.34px;
+  background-size: cover;
+  background-repeat: no-repeat; }
+  @media screen and (max-width: 1140px) {
+    .laptop-2 {
+      right: -20%; } }
+
+.icon-flame {
+  background-image: url("./scss/img/icon-star@1x.png");
+  height: 48px;
+  width: 48px;
+  background-size: cover;
+  background-repeat: no-repeat; }
+
+.sales-container {
+  width: 489px;
+  margin-top: 35px;
+  margin-bottom: 228px;
+  margin-right: 80px; }
+  .sales-container .sales-header {
+    height: 54px;
+    width: 324px;
+    color: rgba(44, 21, 29, 0.95);
+    font-family: "Nunito Sans";
+    font-size: 40px;
+    font-weight: bold;
+    line-height: 54px;
+    margin-top: 19px;
+    margin-bottom: 16px; }
+  .sales-container .sales-body {
+    height: 135px;
+    width: 480px;
+    color: rgba(44, 21, 29, 0.63);
+    font-family: "Nunito Sans";
+    font-size: 18px;
+    line-height: 27px; }
+  .sales-container .sales-footer {
+    margin-top: 33px;
+    height: 27px;
+    width: 320px;
+    color: #E8562A;
+    font-family: "Nunito Sans";
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 27px; }
+
+.laptop-3 {
+  background-image: url("./scss/img/laptop-3@1x.png");
+  position: absolute;
+  left: 0;
+  height: 430.06px;
+  width: 657.34px;
+  background-size: cover;
+  background-repeat: no-repeat; }
+  @media screen and (max-width: 1140px) {
+    .laptop-3 {
+      left: -20%; } }
+
+.visitors-container {
+  width: 489px;
+  margin-top: 35px;
+  margin-bottom: 228px;
+  margin-left: 80px; }
+  .visitors-container .visitors-header {
+    height: 54px;
+    width: 348px;
+    color: rgba(44, 21, 29, 0.95);
+    font-family: "Nunito Sans";
+    font-size: 40px;
+    font-weight: bold;
+    line-height: 54px;
+    margin-top: 19px;
+    margin-bottom: 16px; }
+  .visitors-container .visitors-body {
+    height: 135px;
+    width: 480px;
+    color: rgba(44, 21, 29, 0.63);
+    font-family: "Nunito Sans";
+    font-size: 18px;
+    line-height: 27px; }
+  .visitors-container .visitors-footer {
+    margin-top: 33px;
+    height: 54px;
+    width: 451px;
+    color: #E8562A;
+    font-family: "Nunito Sans";
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 27px; }
+
+.price-container {
+  margin-bottom: 67px; }
+
+.pricing-header-container .pricing-header {
+  height: 63px;
+  width: 155px;
+  color: rgba(44, 21, 29, 0.95);
+  font-family: "Nunito Sans";
+  font-size: 48px;
+  font-weight: bold;
+  line-height: 62px;
+  text-align: center; }
+
+.pricing-header-container .pricing-body {
+  height: 36px;
+  width: 548px;
+  color: rgba(44, 21, 29, 0.6);
+  font-family: "Nunito Sans";
+  font-size: 24px;
+  line-height: 36px;
+  text-align: center; }
+
+.price-body-container {
+  background-color: #7B79C9;
+  padding-top: 80px;
+  padding-bottom: 70px; }
+
+.purple-bg {
+  background-color: #7B79C9;
+  width: 100%;
+  height: 790px;
+  position: absolute;
+  left: 0; }
+
+.price-item {
+  width: 350px; }
+
+.price-1 {
+  width: 100%;
+  padding: 32px 40px;
+  background-color: #FFFFFF;
+  margin-top: 16px;
+  border-bottom: solid rgba(0, 0, 0, 0.07) 1px; }
+
+.price-1-button {
+  margin-top: 24px;
+  margin-bottom: 30px; }
+
+.price-1-header {
+  margin-bottom: 16px !important;
+  height: 27px;
+  width: 130px;
+  color: rgba(44, 21, 29, 0.8);
+  font-family: "Nunito Sans";
+  font-size: 20px;
+  font-weight: bold;
+  line-height: 27px;
+  text-align: center; }
+
+.starter {
+  color: #58ACB0 !important; }
+
+.pro-seller {
+  color: #7B79C9 !important; }
+
+.price {
+  color: rgba(44, 21, 29, 0.9);
+  font-family: "Nunito Sans";
+  font-size: 48px;
+  font-weight: bold;
+  line-height: 48px; }
+
+.price-lists {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  padding-left: 50px; }
+
+.price-1-text-contents {
+  color: rgba(44, 21, 29, 0.8);
+  font-family: "Nunito Sans";
+  font-size: 16px;
+  line-height: 34px; }
+
+.price-upper {
+  margin-top: 125px !important;
+  margin-bottom: 65px !important; }
+
+.get-started {
+  height: 48px;
+  width: 267px;
+  border: 1px solid #E8562A;
+  color: #E8562A;
+  background-color: #fff;
+  border-radius: 4px;
+  box-shadow: 0 2px 7px 0 rgba(182, 91, 0, 0.37); }
