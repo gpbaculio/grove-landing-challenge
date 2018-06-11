@@ -9,6 +9,7 @@ import {
   NavLink,
   Navbar,
 } from 'reactstrap';
+import { Link } from 'react-router-dom';
 
 class NavbarHeader extends Component {
   constructor() {
@@ -39,10 +40,10 @@ class NavbarHeader extends Component {
           <Collapse isOpen={this.state.isOpen} navbar>
             <Nav className="ml-auto d-flex align-items-center" navbar>
               <NavItem>
-                <NavLink href="/pricing" className="nav-link pricing text-center">Pricing</NavLink>
+                <NavLink className="nav-link pricing text-center"><Link to="/pricing">Pricing</Link></NavLink>
               </NavItem>
               <NavItem>
-                <NavLink className="nav-link text-center" href="/product">Product</NavLink>
+                <NavLink className="nav-link text-center"><Link to="/product">Product</Link></NavLink>
               </NavItem>
               <NavItem className="text-center">
                 <Button className="btn-sign-up-nav">

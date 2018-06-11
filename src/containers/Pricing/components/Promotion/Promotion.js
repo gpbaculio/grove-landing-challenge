@@ -115,12 +115,12 @@ class Pricing extends Component {
                                                 Sales Streaks
                                         </div>
                                         <div className="price-1-text-contents">
-                                            <div className="price-bold">
+                                            <strong>
                                                 GrowTiger Branding
-                                            </div>
+                                            </strong>
                                         </div>
                                         <div className="price-1-text-contents">
-                                            Email Support
+                                            <strong>Email Support</strong>
                                         </div>
                                     </div>
                                 </div>
@@ -164,12 +164,12 @@ class Pricing extends Component {
                                                 Sales Streaks
                                         </div>
                                         <div className="price-1-text-contents">
-                                            <div className="price-bold">
+                                            <strong>
                                                 GrowTiger Branding
-                                            </div>
+                                            </strong>
                                         </div>
                                         <div className="price-1-text-contents">
-                                            Email Support
+                                            <strong>Email Support</strong>
                                         </div>
                                     </div>
                                 </div>
