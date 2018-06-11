@@ -1266,9 +1266,13 @@ hr {
     }
     @include mediaQuery(576px) {
       margin-top: 60px;
+      width: 100%;
+      font-size: 28px;
+      font-weight: bold;
+      line-height: 42px;
     }
     @include mediaQuery(300px) {
-      margin-top: 60px;
+      margin-top: 40px;
     }
   }
   .pricing-2 {
@@ -1289,6 +1293,11 @@ hr {
       margin-right: auto;
       margin-left: auto;
       text-align: center;
+    }
+    @include mediaQuery(576px) {
+      font-size: 20px;
+      line-height: 32px;
+      width: 100%;
     }
   }
 }
@@ -1341,6 +1350,11 @@ hr {
     line-height: 27px;
     text-align: center;
     margin: 0 auto;
+    @include mediaQuery(576px) {
+      width: 100%;
+      font-size: 17px;
+      line-height: 26px;
+    }
   }
 }
 .laptop-1 {
@@ -1381,17 +1395,26 @@ hr {
   @include mediaQuery(768px) {     
     display: block;
   }
+  @include mediaQuery(576px) {     
+    width: 100%;
+  }
 }
 .highlight-parent {
   @include mediaQuery(768px) {     
     flex-direction: column;
     justify-content: center;
   }
+  @include mediaQuery(576px) {     
+    width: 100%;
+  }
 }
 .highlight-container {
   width: 489px;
   margin-top: 35px;
   margin-bottom: 123.48px;
+  @include mediaQuery(576px) {
+    width: 100%;
+  }
   .highlight-header {
     height: 54px;
     width: 324px;
@@ -1419,6 +1442,11 @@ hr {
       margin-right: auto;
       margin-left: auto;
       text-align: center;
+    }
+    @include mediaQuery(576px) {     
+      width: 100%;
+      font-size: 17px;
+      line-height: 26px;
     }
   }
   .highlight-footer {
@@ -1473,6 +1501,9 @@ hr {
   margin-top: 35px;
   margin-bottom: 228px;
   margin-right: 80px;
+  @include mediaQuery(576px) {     
+    width: 100%;
+  }
   .sales-header {
     height: 54px;
     width: 324px;
@@ -1501,6 +1532,10 @@ hr {
       margin-right: auto;
       margin-left: auto;
     }
+    @include mediaQuery(576px) {     
+      width: 100%;
+      margin-bottom: 30px;
+    }
   }
   .sales-footer {
     margin-top: 33px;
@@ -1519,6 +1554,9 @@ hr {
       font-size: 20px;
       font-weight: bold;
       line-height: 27px;
+    }
+    @include mediaQuery(576px) {     
+      width: 100%;
     }
   }
 }
@@ -1546,6 +1584,9 @@ hr {
   margin-top: 35px;
   margin-bottom: 228px;
   margin-left: 80px;
+  @include mediaQuery(576px) {     
+    width: 100%;
+  }
   .visitors-header {
     height: 54px;
     width: 348px;
@@ -1574,6 +1615,11 @@ hr {
       margin-right: auto;
       margin-left: auto;
     }
+    @include mediaQuery(576px) {     
+      width: 100%;
+      font-size: 17px;
+      line-height: 26px;
+    }
   }
   .visitors-footer {
     margin-top: 33px;
@@ -1588,6 +1634,11 @@ hr {
       text-align: center;
       margin-right: auto;
       margin-left: auto;
+    }
+    @include mediaQuery(576px) {     
+      width: 100%;
+      font-size: 19px;
+      line-height: 26px;
     }
   }
 }

@@ -7510,10 +7510,14 @@ hr {
       text-align: center; } }
   @media screen and (max-width: 576px) {
     .pricing-left .pricing-1 {
-      margin-top: 60px; } }
+      margin-top: 60px;
+      width: 100%;
+      font-size: 28px;
+      font-weight: bold;
+      line-height: 42px; } }
   @media screen and (max-width: 300px) {
     .pricing-left .pricing-1 {
-      margin-top: 60px; } }
+      margin-top: 40px; } }
 
 .pricing-left .pricing-2 {
   height: 72px;
@@ -7534,6 +7538,11 @@ hr {
       margin-right: auto;
       margin-left: auto;
       text-align: center; } }
+  @media screen and (max-width: 576px) {
+    .pricing-left .pricing-2 {
+      font-size: 20px;
+      line-height: 32px;
+      width: 100%; } }
 
 .pricing-right {
   width: 100%; }
@@ -7582,6 +7591,11 @@ hr {
     line-height: 27px;
     text-align: center;
     margin: 0 auto; }
+    @media screen and (max-width: 576px) {
+      .why-container .why-body {
+        width: 100%;
+        font-size: 17px;
+        line-height: 26px; } }
 
 .laptop-1 {
   background-image: url("./scss/img/laptop-1@1x.png");
@@ -7621,16 +7635,26 @@ hr {
   @media screen and (max-width: 768px) {
     .highlight-img {
       display: block; } }
+  @media screen and (max-width: 576px) {
+    .highlight-img {
+      width: 100%; } }
 
 @media screen and (max-width: 768px) {
   .highlight-parent {
     flex-direction: column;
     justify-content: center; } }
 
+@media screen and (max-width: 576px) {
+  .highlight-parent {
+    width: 100%; } }
+
 .highlight-container {
   width: 489px;
   margin-top: 35px;
   margin-bottom: 123.48px; }
+  @media screen and (max-width: 576px) {
+    .highlight-container {
+      width: 100%; } }
   .highlight-container .highlight-header {
     height: 54px;
     width: 324px;
@@ -7658,6 +7682,11 @@ hr {
         margin-right: auto;
         margin-left: auto;
         text-align: center; } }
+    @media screen and (max-width: 576px) {
+      .highlight-container .highlight-body {
+        width: 100%;
+        font-size: 17px;
+        line-height: 26px; } }
   .highlight-container .highlight-footer {
     margin-top: 33px;
     height: 27px;
@@ -7708,6 +7737,9 @@ hr {
   margin-top: 35px;
   margin-bottom: 228px;
   margin-right: 80px; }
+  @media screen and (max-width: 576px) {
+    .sales-container {
+      width: 100%; } }
   .sales-container .sales-header {
     height: 54px;
     width: 324px;
@@ -7735,6 +7767,10 @@ hr {
         text-align: center;
         margin-right: auto;
         margin-left: auto; } }
+    @media screen and (max-width: 576px) {
+      .sales-container .sales-body {
+        width: 100%;
+        margin-bottom: 30px; } }
   .sales-container .sales-footer {
     margin-top: 33px;
     height: 27px;
@@ -7753,6 +7789,9 @@ hr {
         font-size: 20px;
         font-weight: bold;
         line-height: 27px; } }
+    @media screen and (max-width: 576px) {
+      .sales-container .sales-footer {
+        width: 100%; } }
 
 .laptop-3 {
   background-image: url("./scss/img/laptop-3@1x.png");
@@ -7777,6 +7816,9 @@ hr {
   margin-top: 35px;
   margin-bottom: 228px;
   margin-left: 80px; }
+  @media screen and (max-width: 576px) {
+    .visitors-container {
+      width: 100%; } }
   .visitors-container .visitors-header {
     height: 54px;
     width: 348px;
@@ -7804,6 +7846,11 @@ hr {
         text-align: center;
         margin-right: auto;
         margin-left: auto; } }
+    @media screen and (max-width: 576px) {
+      .visitors-container .visitors-body {
+        width: 100%;
+        font-size: 17px;
+        line-height: 26px; } }
   .visitors-container .visitors-footer {
     margin-top: 33px;
     height: 54px;
@@ -7818,6 +7865,11 @@ hr {
         text-align: center;
         margin-right: auto;
         margin-left: auto; } }
+    @media screen and (max-width: 576px) {
+      .visitors-container .visitors-footer {
+        width: 100%;
+        font-size: 19px;
+        line-height: 26px; } }
 
 .price-container {
   margin-bottom: 67px; }
