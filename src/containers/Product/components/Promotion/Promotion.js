@@ -42,16 +42,19 @@ class Pricing extends Component {
             <Row>
                 <div className="laptop-1" />
                 <Col md="6 d-flex ml-auto">
-                    <div className="d-flex ml-auto flex-column highlight-container">
-                        <div className="laptop-star" />
-                        <div className="highlight-header">
-                            Highlight Activity
-                        </div>
-                        <div className="highlight-body">
-                            You work hard to get people to your website and convert them into customers. Without our Highlighted Activity notification all that work goes to waste. By using GrowTiger users will be able to see all the customers that have bought from your store.
-                        </div>
-                        <div className="highlight-footer">
-                            Get the notification for your store <ArrowForward size={20} />
+                    <div className="d-flex highlight-parent">
+                        <img alt="" className="highlight-img" src={require(`../../../../img/laptop1small@1x.png`)} />
+                        <div className="d-flex ml-auto flex-column highlight-container">
+                            <div className="laptop-star" />
+                            <div className="highlight-header">
+                                Highlight Activity
+                            </div>
+                            <div className="highlight-body">
+                                You work hard to get people to your website and convert them into customers. Without our Highlighted Activity notification all that work goes to waste. By using GrowTiger users will be able to see all the customers that have bought from your store.
+                            </div>
+                            <div className="highlight-footer">
+                                Get the notification for your store <ArrowForward size={20} />
+                            </div>
                         </div>
                     </div>
                 </Col>
@@ -59,16 +62,19 @@ class Pricing extends Component {
             <Row>
                 <div className="laptop-2" />
                 <Col md="6 d-flex mr-auto">
-                    <div className="d-flex ml-auto flex-column sales-container">
-                        <div className="icon-flame" />
-                        <div className="sales-header">
-                            Sales Streaks
-                        </div>
-                        <div className="sales-body">
-                            Every store has a couple of products that are continuously hot sellers. The problem is: how does a new person to your website know about them? The Sales Streak notification takes a look at your past sales and automatically starts highlighting your best products.
-                        </div>
-                        <div className="sales-footer">
-                            Get the notification for your store and stop missing out on sales <ArrowForward size={20} />
+                    <div className="d-flex highlight-parent">
+                        <img alt="" className="highlight-img" src={require(`../../../../img/laptop-2-small@1x.png`)} />
+                        <div className="d-flex ml-auto flex-column sales-container">
+                            <div className="icon-flame" />
+                            <div className="sales-header">
+                                Sales Streaks
+                            </div>
+                            <div className="sales-body">
+                                Every store has a couple of products that are continuously hot sellers. The problem is: how does a new person to your website know about them? The Sales Streak notification takes a look at your past sales and automatically starts highlighting your best products.
+                            </div>
+                            <div className="sales-footer text-left">
+                                Get the notification for your store and stop missing out on sales <ArrowForward size={20} />
+                            </div>
                         </div>
                     </div>
                 </Col>
@@ -76,16 +82,19 @@ class Pricing extends Component {
             <Row>
                 <div className="laptop-3" />
                 <Col md="6 d-flex ml-auto">
-                    <div className="d-flex ml-auto flex-column visitors-container">
-                        <div className="icon-flame" />
-                        <div className="visitors-header">
-                            Live Visitor Counts
-                        </div>
-                        <div className="visitors-body">
-                            Store traffic is one of the strongest social validation signs. New prospects tend to stay longer on the site and browse more products. Without the Live Visitor Notification unfortunately no one knows about how your store is doing.
-                        </div>
-                        <div className="visitors-footer">
-                            Get the notification for your store and increase your credibility <ArrowForward size={20} />
+                    <div className="d-flex highlight-parent">
+                        <img alt="" className="highlight-img" src={require(`../../../../img/laptop-3-small@1x.png`)} />
+                        <div className="d-flex ml-auto flex-column visitors-container">
+                            <div className="icon-flame" />
+                            <div className="visitors-header">
+                                Live Visitor Counts
+                            </div>
+                            <div className="visitors-body">
+                                Store traffic is one of the strongest social validation signs. New prospects tend to stay longer on the site and browse more products. Without the Live Visitor Notification unfortunately no one knows about how your store is doing.
+                            </div>
+                            <div className="visitors-footer text-left">
+                                Get the notification for your store and increase your credibility <ArrowForward size={20} />
+                            </div>
                         </div>
                     </div>
                 </Col>

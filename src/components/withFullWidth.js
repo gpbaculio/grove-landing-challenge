@@ -13,7 +13,6 @@ function withFullWidth(WrappedComponent) {
             <Navbar {...this.props} />
             <div className="fullWidth-wrapper m-auto">
               <WrappedComponent {...this.props} />
-              <Conversions />
               <Footer />
             </div>
           </Container>
