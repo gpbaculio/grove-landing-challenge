@@ -40,10 +40,10 @@ class NavbarHeader extends Component {
           <Collapse isOpen={this.state.isOpen} navbar>
             <Nav className="ml-auto d-flex align-items-center" navbar>
               <NavItem>
-                <NavLink className="nav-link pricing text-center"><Link to="/pricing">Pricing</Link></NavLink>
+                <NavLink className="nav-link pricing text-center"><Link className="nav-link pricing text-center" to="/pricing">Pricing</Link></NavLink>
               </NavItem>
               <NavItem>
-                <NavLink className="nav-link text-center"><Link to="/product">Product</Link></NavLink>
+                <NavLink className="nav-link text-center"><Link className="nav-link text-center" to="/product">Product</Link></NavLink>
               </NavItem>
               <NavItem className="text-center">
                 <Button className="btn-sign-up-nav">
