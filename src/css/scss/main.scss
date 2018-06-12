@@ -195,6 +195,9 @@ hr {
     color: #E8562A;
     border-color: #E8562A;
   }
+  @media (max-width: 576px) { 
+    width: 100%;
+  }
 }
 .boost-sign-up {
   margin-top: -4px;
