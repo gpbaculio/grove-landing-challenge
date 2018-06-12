@@ -1582,7 +1582,6 @@ hr {
 .visitors-container {
   width: 489px;
   margin-top: 35px;
-  margin-bottom: 228px;
   margin-left: 80px;
   @include mediaQuery(576px) {     
     width: 100%;
@@ -1665,6 +1664,15 @@ hr {
     font-size: 24px;
     line-height: 36px;
     text-align: center;
+    @include mediaQuery(576px) {
+      height: 36px;
+      width: 100%;
+      color: rgba(44,21,29,0.6);
+      font-family: "Nunito Sans";
+      font-size: 24px;
+      line-height: 36px;
+      text-align: center;
+    }
   }
 }
 .price-body-container {
@@ -1675,18 +1683,61 @@ hr {
 .purple-bg {
   background-color: #7B79C9;
   width: 100%;
-  height: 790px;
-  position: absolute;
+  height: 100%;
   left: 0;
 }
 .price-item {
   width: 350px;
+  @include mediaQuery(1100px) {     
+    width: 320px;
+  }
+  @include mediaQuery(992px) {    
+    width: 350px;
+  }
+  @include mediaQuery(768px) {    
+    width: 320px;
+  }
+}
+.price-item-1 {
+  margin-top: 80px;
+  margin-bottom: 70px;
+  @include mediaQuery(992px) {     
+    margin: 80px auto 32px auto;
+  }
+  @include mediaQuery(768px) {    
+    margin-top: 80px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
+.price-item-2 {
+  margin-top: 80px;
+  margin-bottom: 70px;
+  @include mediaQuery(992px) {     
+    margin: 0 16px 80px auto;
+  }
+  @include mediaQuery(768px) {    
+    margin-top: 80px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
+.price-item-3 {
+  margin-top: 80px;
+  margin-bottom: 70px;
+  @include mediaQuery(992px) {     
+    margin: 0 auto 80px 16px;
+  }
+  @include mediaQuery(768px) {    
+    margin-bottom: 80px;
+    margin-right: auto;
+    margin-left: auto;
+  }
 }
 .price-1 {
   width: 100%;
   padding: 32px 40px;
   background-color: #FFFFFF;
-  margin-top: 16px;
   border-bottom: solid rgba(0,0,0,0.07) 1px;
 }
 .price-1-button {
@@ -1740,4 +1791,102 @@ hr {
   background-color: #fff;
   border-radius: 4px;
   box-shadow: 0 2px 7px 0 rgba(182,91,0,0.37);
+  @include mediaQuery(1100px) {     
+    width: 237px;
+  }
+  @include mediaQuery(992px) {     
+    width: 267px;
+  }
+  @include mediaQuery(768px) {     
+    width: 237px;
+  }
+}
+.price-item-parent {
+  @include mediaQuery(992px) {     
+    flex-direction: column;
+  }
+}
+.product-dots-purple {
+  background-image: url('./scss/img/dots-purple@1x.png');
+  position: absolute;
+  right: 0;
+  margin-top: 9.5%;
+  height: 368px;
+  width: 368px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  // Extra large devices (large desktops, 1200px and below)
+  @media (max-width: 1200px) {   
+  }
+  // Large devices (desktops, 992px and below)
+  @media (max-width: 992px) { 
+    height: 33%;
+    width: 34%;
+    margin-top: 30%;
+  }
+  // Medium devices (tablets, 768px and below)
+  @media (max-width: 768px) {
+    height: 36%;
+    width: 37%;
+    margin-top: 7%;
+  }
+  // Small devices (landscape phones, 576px and below)
+  @media (max-width: 576px) { 
+    height: 39%;
+    width: 40%;
+    margin-top: 16%;
+  }
+}
+.product-dots-teal {
+  background-image: url('./scss/img/dots-teal@1x.png');
+  position: absolute;
+  left: 0;
+  height: 368px;
+  width: 368px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  // Extra large devices (large desktops, 1200px and below)
+  @media (max-width: 1200px) {   
+  }
+  // Large devices (desktops, 992px and below)
+  @media (max-width: 992px) { 
+    height: 33%;
+    width: 34%;
+  }
+  // Medium devices (tablets, 768px and below)
+  @media (max-width: 768px) {
+    height: 36%;
+    width: 37%;
+    margin-top: -14.5%;
+  }
+  // Small devices (landscape phones, 576px and below)
+  @media (max-width: 576px) { 
+    height: 39%;
+    width: 40%;
+    margin-top: -16.5%;
+  }
+}
+.products-conversions {
+  margin-top: 70px;
+  @include mediaQuery(576px) {    
+    margin-top: 120px;
+  }
+  @include mediaQuery(786px) {    
+    margin-top: 150px;
+  }
+}
+.conversions-1 {
+  display: none;
+  @include mediaQuery(786px) {     
+    display: block;
+    width: 100%;
+  }
+}
+.conversions-2 {
+  @include mediaQuery(786px) {     
+    display: none;
+  }
+}
+.product-conversions {
+  margin: 15px 0;
 }

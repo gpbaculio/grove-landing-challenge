@@ -7814,7 +7814,6 @@ hr {
 .visitors-container {
   width: 489px;
   margin-top: 35px;
-  margin-bottom: 228px;
   margin-left: 80px; }
   @media screen and (max-width: 576px) {
     .visitors-container {
@@ -7892,6 +7891,15 @@ hr {
   font-size: 24px;
   line-height: 36px;
   text-align: center; }
+  @media screen and (max-width: 576px) {
+    .pricing-header-container .pricing-body {
+      height: 36px;
+      width: 100%;
+      color: rgba(44, 21, 29, 0.6);
+      font-family: "Nunito Sans";
+      font-size: 24px;
+      line-height: 36px;
+      text-align: center; } }
 
 .price-body-container {
   background-color: #7B79C9;
@@ -7901,18 +7909,61 @@ hr {
 .purple-bg {
   background-color: #7B79C9;
   width: 100%;
-  height: 790px;
-  position: absolute;
+  height: 100%;
   left: 0; }
 
 .price-item {
   width: 350px; }
+  @media screen and (max-width: 1100px) {
+    .price-item {
+      width: 320px; } }
+  @media screen and (max-width: 992px) {
+    .price-item {
+      width: 350px; } }
+  @media screen and (max-width: 768px) {
+    .price-item {
+      width: 320px; } }
+
+.price-item-1 {
+  margin-top: 80px;
+  margin-bottom: 70px; }
+  @media screen and (max-width: 992px) {
+    .price-item-1 {
+      margin: 80px auto 32px auto; } }
+  @media screen and (max-width: 768px) {
+    .price-item-1 {
+      margin-top: 80px;
+      margin-right: auto;
+      margin-left: auto; } }
+
+.price-item-2 {
+  margin-top: 80px;
+  margin-bottom: 70px; }
+  @media screen and (max-width: 992px) {
+    .price-item-2 {
+      margin: 0 16px 80px auto; } }
+  @media screen and (max-width: 768px) {
+    .price-item-2 {
+      margin-top: 80px;
+      margin-right: auto;
+      margin-left: auto; } }
+
+.price-item-3 {
+  margin-top: 80px;
+  margin-bottom: 70px; }
+  @media screen and (max-width: 992px) {
+    .price-item-3 {
+      margin: 0 auto 80px 16px; } }
+  @media screen and (max-width: 768px) {
+    .price-item-3 {
+      margin-bottom: 80px;
+      margin-right: auto;
+      margin-left: auto; } }
 
 .price-1 {
   width: 100%;
   padding: 32px 40px;
   background-color: #FFFFFF;
-  margin-top: 16px;
   border-bottom: solid rgba(0, 0, 0, 0.07) 1px; }
 
 .price-1-button {
@@ -7966,3 +8017,87 @@ hr {
   background-color: #fff;
   border-radius: 4px;
   box-shadow: 0 2px 7px 0 rgba(182, 91, 0, 0.37); }
+  @media screen and (max-width: 1100px) {
+    .get-started {
+      width: 237px; } }
+  @media screen and (max-width: 992px) {
+    .get-started {
+      width: 267px; } }
+  @media screen and (max-width: 768px) {
+    .get-started {
+      width: 237px; } }
+
+@media screen and (max-width: 992px) {
+  .price-item-parent {
+    flex-direction: column; } }
+
+.product-dots-purple {
+  background-image: url("./scss/img/dots-purple@1x.png");
+  position: absolute;
+  right: 0;
+  margin-top: 9.5%;
+  height: 368px;
+  width: 368px;
+  background-size: cover;
+  background-repeat: no-repeat; }
+  @media (max-width: 992px) {
+    .product-dots-purple {
+      height: 33%;
+      width: 34%;
+      margin-top: 30%; } }
+  @media (max-width: 768px) {
+    .product-dots-purple {
+      height: 36%;
+      width: 37%;
+      margin-top: 7%; } }
+  @media (max-width: 576px) {
+    .product-dots-purple {
+      height: 39%;
+      width: 40%;
+      margin-top: 16%; } }
+
+.product-dots-teal {
+  background-image: url("./scss/img/dots-teal@1x.png");
+  position: absolute;
+  left: 0;
+  height: 368px;
+  width: 368px;
+  background-size: cover;
+  background-repeat: no-repeat; }
+  @media (max-width: 992px) {
+    .product-dots-teal {
+      height: 33%;
+      width: 34%; } }
+  @media (max-width: 768px) {
+    .product-dots-teal {
+      height: 36%;
+      width: 37%;
+      margin-top: -14.5%; } }
+  @media (max-width: 576px) {
+    .product-dots-teal {
+      height: 39%;
+      width: 40%;
+      margin-top: -16.5%; } }
+
+.products-conversions {
+  margin-top: 70px; }
+  @media screen and (max-width: 576px) {
+    .products-conversions {
+      margin-top: 120px; } }
+  @media screen and (max-width: 786px) {
+    .products-conversions {
+      margin-top: 150px; } }
+
+.conversions-1 {
+  display: none; }
+  @media screen and (max-width: 786px) {
+    .conversions-1 {
+      display: block;
+      width: 100%; } }
+
+@media screen and (max-width: 786px) {
+  .conversions-2 {
+    display: none; } }
+
+.product-conversions {
+  margin: 15px 0; }
