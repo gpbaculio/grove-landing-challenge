@@ -3,8 +3,6 @@ import { Col, Row, Container } from 'reactstrap';
 import FaFacebookSquare from 'react-icons/lib/fa/facebook-square';
 import FaTwitter from 'react-icons/lib/fa/twitter';
 
-import withFullWidthNoHeader from '../../../components/withFullWidthNoHeader';
-
 class Footer extends Component {
   render() {
     return (
@@ -14,7 +12,7 @@ class Footer extends Component {
             <div className="footer-container d-flex flex-column">
               <div className="footer-upper d-flex align-items-end">
                 <div className="fu-left">
-                  <img className="footer-logo" src={require(`../../../img/logo-growtiger@1x.png`)} alt="logo" />
+                  <img className="footer-logo" src={require(`../img/logo-growtiger@1x.png`)} alt="logo" />
                 </div>
                 <div className="d-flex ml-auto fu-right">
                   <div className="fu-right-fb">

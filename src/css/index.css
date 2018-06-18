@@ -513,16 +513,16 @@ pre {
   margin-left: auto; }
   @media (min-width: 576px) {
     .container {
-      max-width: 540px; } }
+      max-width: 638px; } }
   @media (min-width: 768px) {
     .container {
-      max-width: 927px; } }
+      max-width: 942px; } }
   @media (min-width: 992px) {
     .container {
-      max-width: 1140px; } }
+      max-width: 1170px; } }
   @media (min-width: 1200px) {
     .container {
-      max-width: 1250px; } }
+      max-width: 1170px; } }
 
 .container-fluid {
   width: 100%;
@@ -6334,12 +6334,16 @@ a.text-dark:hover, a.text-dark:focus {
   display: block; }
 
 body {
-  color: inherit; }
+  color: inherit;
+  background-color: none; }
 
 hr {
   border-color: #D7D8DD; }
 
-/* media query */
+img {
+  height: auto;
+  max-width: 100%; }
+
 /* Colors */
 .text-purple {
   color: var(--purple); }
@@ -6371,1068 +6375,622 @@ hr {
 .text-cyan {
   color: var(--cyan); }
 
-.toolbar {
-  background-color: #f9fafc; }
-
-.font-weight-500 {
-  font-weight: 500; }
-
+/* media query */
 /* Navbar */
-.navbar-toggler {
-  padding: 3px !important; }
+.navbar-nav li:nth-of-type(2) {
+  margin-right: 48px;
+  margin-left: 69px; }
+  @media screen and (max-width: 992px) {
+    .navbar-nav li:nth-of-type(2) {
+      margin-right: auto;
+      margin-left: auto; } }
 
-.navbar-brand {
-  margin-right: 5px !important; }
-  .navbar-brand img {
-    margin-bottom: 5px !important; }
+@media screen and (max-width: 576px) {
+  .nav-logo-img {
+    width: 160px; } }
 
-@media (min-width: 992px) {
-  .container {
-    max-width: 1140px; } }
-
-.nav-link {
-  color: #807377;
-  font-size: 16px;
-  line-height: 14px;
-  font-family: 'Nunito Sans', sans-serif;
-  padding-right: 48px !important;
-  padding-left: 0 !important; }
-  @media screen and (max-width: 768px) {
-    .nav-link {
-      padding: 0 !important; } }
-
-.pricing {
-  color: #807377;
-  font-size: 16px;
-  line-height: 52px;
-  font-family: 'Nunito Sans', sans-serif;
-  padding-right: 69px !important;
-  padding-left: 0 !important; }
-  @media screen and (max-width: 768px) {
-    .pricing {
-      padding: 0 !important; } }
-
-.btn-secondary {
-  border-color: none !important; }
-
-.btn-secondary:not(:disabled):not(.disabled):active, .btn-secondary:not(:disabled):not(.disabled).active,
-.show > .btn-secondary.dropdown-toggle {
-  border-color: none !important; }
-
-.btn-sign-up-nav {
-  height: 48px;
-  width: 174px;
+.signup-nav {
+  padding: 17px 26.5px;
   border-radius: 4px;
   background-color: #E8562A;
-  padding: 0;
-  border-color: #E8562A !important;
   box-shadow: 0 2px 7px 0 rgba(182, 91, 0, 0.37);
   color: #FFFFFF;
   font-family: "Nunito Sans";
   font-size: 16px;
   font-weight: bold;
   line-height: 14px; }
-  .btn-sign-up-nav:hover {
-    box-shadow: none !important;
-    background-color: #fff;
-    color: #E8562A;
-    border-color: #E8562A; }
-    .btn-sign-up-nav:hover .btn-sign-up-nav-text {
-      color: #E8562A; }
-  .btn-sign-up-nav:focus {
-    box-shadow: none !important; }
-  @media screen and (max-width: 768px) {
-    .btn-sign-up-nav {
-      margin-top: 15px !important; } }
 
-.boost-btn-sign-up {
-  height: 64px;
-  width: 238px;
-  border-radius: 4px;
-  background-color: #E8562A !important;
-  border-color: #E8562A !important;
-  font-weight: bold;
-  box-shadow: 0 2px 7px 0 rgba(182, 91, 0, 0.37); }
-  .boost-btn-sign-up:hover {
-    color: #E8562A;
-    background-color: #fff !important; }
-    .boost-btn-sign-up:hover .btn-sign-up-nav-text {
-      color: #E8562A; }
-  @media screen and (max-width: 768px) {
-    .boost-btn-sign-up {
-      width: 100% !important; } }
-
-.btn-sign-up-nav-text {
-  height: 14px;
-  width: 125px;
-  color: #FFFFFF;
-  font-family: "Nunito Sans";
-  font-size: 16px;
-  font-weight: bold;
-  line-height: 14px; }
-
-.btn-sign-up {
-  height: 64px;
-  width: 238px;
-  border-radius: 4px;
-  background-color: #E8562A;
-  font-weight: bold;
-  box-shadow: 0 2px 7px 0 rgba(182, 91, 0, 0.37); }
-  .btn-sign-up:hover {
-    background-color: #fff;
-    color: #E8562A;
-    border-color: #E8562A; }
-
-.conversions-btn-sign-up {
-  height: 64px;
-  width: 256px;
-  border-radius: 4px;
-  background-color: #E8562A;
-  border-color: #E8562A;
-  box-shadow: 0 2px 7px 0 rgba(182, 91, 0, 0.37);
-  font-weight: bold; }
-  .conversions-btn-sign-up:hover {
-    background-color: #fff;
-    color: #E8562A;
-    border-color: #E8562A; }
-  @media (max-width: 576px) {
-    .conversions-btn-sign-up {
-      width: 100%; } }
-
-.boost-sign-up {
-  margin-top: -4px;
-  height: 64px;
-  width: 238px;
-  border-radius: 4px;
-  background-color: #E8562A;
-  box-shadow: 0 2px 7px 0 rgba(182, 91, 0, 0.37); }
-  .boost-sign-up:hover {
-    background-color: #fff;
-    color: #E8562A;
-    border-color: #E8562A; }
-
-.btn-demo {
-  height: 64px;
-  width: 238px;
-  border: 1px solid #E8562A;
-  color: #E8562A;
-  background-color: white !important;
-  border-radius: 4px;
-  font-weight: bold; }
-  .btn-demo:hover {
-    background-color: #E8562A !important;
-    color: #fff;
-    border: 1px solid #E8562A; }
-
-.boost-left, .boost-right {
+.boost-left {
   margin-top: 150px; }
-  @media screen and (max-width: 992px) {
-    .boost-left, .boost-right {
-      margin-top: 100px; } }
   @media screen and (max-width: 768px) {
-    .boost-left, .boost-right {
-      margin-top: 80px; } }
-  @media screen and (max-width: 576px) {
-    .boost-left, .boost-right {
-      margin-top: 60px; } }
-  @media screen and (max-width: 300px) {
-    .boost-left, .boost-right {
-      margin-top: 60px; } }
-
-.boost-left div:first-of-type {
-  color: rgba(44, 21, 29, 0.95);
-  font-family: "Nunito Sans";
-  font-size: 48px;
-  font-weight: bold;
-  line-height: 62px;
-  margin-bottom: 12px; }
-  @media screen and (max-width: 992px) {
-    .boost-left div:first-of-type {
-      font-size: 45px;
-      line-height: 59px; } }
-  @media screen and (max-width: 768px) {
-    .boost-left div:first-of-type {
-      font-size: 42px;
-      line-height: 56px;
-      text-align: center;
-      margin: auto; } }
-  @media screen and (max-width: 576px) {
-    .boost-left div:first-of-type {
-      font-size: 39px;
-      line-height: 53px;
-      text-align: center;
-      margin: auto; } }
-  @media screen and (max-width: 300px) {
-    .boost-left div:first-of-type {
-      font-size: 36px;
-      line-height: 50px;
-      text-align: center;
-      margin: auto; } }
-
-.boost-left div:nth-of-type(2) {
-  height: 72px;
-  width: 495px;
-  color: rgba(44, 21, 29, 0.6);
-  font-family: "Nunito Sans";
-  font-size: 24px;
-  line-height: 36px;
-  margin-bottom: 30px; }
-  @media screen and (max-width: 992px) {
-    .boost-left div:nth-of-type(2) {
-      margin-top: 15px !important;
-      width: 100%;
-      font-size: 21px;
-      line-height: 33px; } }
-  @media screen and (max-width: 768px) {
-    .boost-left div:nth-of-type(2) {
-      margin-top: 15px;
-      width: 100%;
-      font-size: 18px;
-      line-height: 30px;
-      text-align: center;
-      margin: 15px auto 30px auto; } }
-  @media screen and (max-width: 576px) {
-    .boost-left div:nth-of-type(2) {
-      margin-top: 15px;
-      font-size: 14px;
-      line-height: 26px;
-      text-align: center;
-      margin: 15px auto 20px auto; } }
-  @media screen and (max-width: 300px) {
-    .boost-left div:nth-of-type(2) {
-      margin-top: 15px;
-      font-size: 12px;
-      line-height: 24px;
-      text-align: center;
-      margin: 15px auto 15px auto; } }
-
-.boost-left .boost-btn-container button:first-of-type {
-  margin-right: 24px; }
-
-@media screen and (max-width: 768px) {
-  .boost-left .boost-btn-container {
-    flex-direction: column;
-    margin: auto; }
-    .boost-left .boost-btn-container button:first-of-type {
-      margin-bottom: 12px;
-      margin-right: 0; } }
-
-.boost-right img {
-  display: block;
-  margin: auto;
-  width: 350px;
-  height: 350px; }
-  @media screen and (max-width: 992px) {
-    .boost-right img {
-      width: 330px;
-      height: 330px; } }
-  @media screen and (max-width: 768px) {
-    .boost-right img {
-      width: 310px;
-      height: 310px; } }
-  @media screen and (max-width: 576px) {
-    .boost-right img {
-      width: 250px;
-      height: 250px; } }
-
-.dots-teal-review {
-  position: absolute;
-  top: 183px;
-  left: 0;
-  z-index: -1;
-  height: 368px;
-  width: 368px; }
-  @media screen and (max-width: 992px) {
-    .dots-teal-review {
-      width: 268px;
-      height: 268px; } }
-  @media screen and (max-width: 768px) {
-    .dots-teal-review {
-      width: 168px;
-      height: 168px;
-      display: none; } }
-  @media screen and (max-width: 576px) {
-    .dots-teal-review {
-      width: 128px;
-      height: 128px;
-      display: none; } }
-
-.dots-purple-review {
-  position: absolute;
-  top: 162px;
-  right: 0;
-  z-index: -1;
-  height: 368px;
-  width: 368px; }
-  @media screen and (max-width: 992px) {
-    .dots-purple-review {
-      width: 268px;
-      height: 268px; } }
-  @media screen and (max-width: 768px) {
-    .dots-purple-review {
-      width: 168px;
-      height: 168px;
-      display: none; } }
-  @media screen and (max-width: 576px) {
-    .dots-purple-review {
-      width: 128px;
-      height: 128px;
-      display: none; } }
-
-.review-container {
-  margin-top: 150px !important;
-  max-width: 1111px;
-  padding: 0 30px 0 30px !important;
-  font-family: 'Nunito Sans', sans-serif; }
-  @media screen and (max-width: 768px) {
-    .review-container {
-      margin-top: 75px !important; } }
-  .review-container .review-header {
-    margin: auto;
-    color: rgba(44, 21, 29, 0.9);
+    .boost-left {
+      margin-top: 64px; } }
+  .boost-left .bl-header {
+    width: 667px;
+    height: auto;
+    color: rgba(44, 21, 29, 0.95);
+    font-family: "Nunito Sans";
+    font-size: 48px;
+    font-weight: bold;
+    line-height: 62px;
+    margin-bottom: 10px; }
+    @media screen and (max-width: 992px) {
+      .boost-left .bl-header {
+        width: 636px; } }
+    @media screen and (max-width: 768px) {
+      .boost-left .bl-header {
+        margin-top: 64px;
+        height: auto;
+        width: 100%;
+        font-family: Poppins;
+        font-size: 36px;
+        font-weight: 600;
+        line-height: 46px;
+        text-align: center;
+        margin-bottom: 56.43px; } }
+    @media screen and (max-width: 576px) {
+      .boost-left .bl-header {
+        margin-top: 24px;
+        height: auto;
+        width: 100%;
+        font-family: Poppins;
+        font-size: 32px;
+        font-weight: 600;
+        line-height: 42px;
+        text-align: center;
+        margin-bottom: 42px; } }
+  .boost-left .bl-body {
+    height: auto;
+    width: 495px;
+    color: rgba(44, 21, 29, 0.6);
     font-family: "Nunito Sans";
     font-size: 24px;
-    font-weight: bold;
-    line-height: 32px;
-    text-align: center; }
-    @media screen and (max-width: 992px) {
-      .review-container .review-header {
-        font-size: 21px;
-        line-height: 28px; } }
+    line-height: 36px;
+    margin-bottom: 38px; }
     @media screen and (max-width: 768px) {
-      .review-container .review-header {
-        font-size: 18px;
-        line-height: 25px; } }
+      .boost-left .bl-body {
+        color: rgba(44, 21, 29, 0.6);
+        padding-left: 56px;
+        padding-right: 56px;
+        text-align: center;
+        width: 100%;
+        margin-bottom: 42px; } }
     @media screen and (max-width: 576px) {
-      .review-container .review-header {
-        font-size: 15px;
-        line-height: 22px; } }
+      .boost-left .bl-body {
+        padding-left: 16px;
+        padding-right: 16px;
+        text-align: center;
+        width: 100%;
+        margin-bottom: 32px;
+        font-size: 20px;
+        line-height: 32px; } }
+
+@media screen and (max-width: 768px) {
+  .bl-btn-container {
+    flex-direction: column; } }
+
+.bl-btn-signup {
+  border-radius: 4px;
+  background-color: #E8562A;
+  box-shadow: 0 2px 7px 0 rgba(182, 91, 0, 0.37);
+  color: #FFFFFF;
+  font-family: "Nunito Sans";
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 14px;
+  padding: 25px 36px;
+  margin-right: 24px; }
   @media screen and (max-width: 768px) {
-    .review-container .review-body {
-      flex-direction: column;
-      justify-content: center;
-      margin: auto; } }
-  .review-container .review-body .macbook-container {
-    margin-top: 95px; }
-    @media screen and (max-width: 992px) {
-      .review-container .review-body .macbook-container {
-        margin: 60px 20px 0 0; } }
-    @media screen and (max-width: 768px) {
-      .review-container .review-body .macbook-container {
-        margin: 50px auto 0 auto; } }
-    @media screen and (max-width: 576px) {
-      .review-container .review-body .macbook-container {
-        margin: 40px auto 0 auto; } }
-    .review-container .review-body .macbook-container .macbook-notifs {
-      width: 472px;
-      height: 302px;
+    .bl-btn-signup {
+      margin-right: 0;
+      margin-bottom: 26px; } }
+  @media screen and (max-width: 576px) {
+    .bl-btn-signup {
+      margin-right: 0;
+      margin-bottom: 16px; } }
+
+.bl-btn-demo {
+  border: 1px solid #E8562A;
+  border-radius: 4px;
+  box-shadow: 0 2px 7px 0 rgba(182, 91, 0, 0.37);
+  color: #E8562A;
+  font-family: "Nunito Sans";
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 14px;
+  background-color: #fff;
+  padding: 25px 48px 25px 37px; }
+
+.br-img {
+  margin-top: 52px;
+  background-image: url("./scss/img/hero-homepage@1x.png");
+  height: 461px;
+  width: 419px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin-left: auto;
+  z-index: -99; }
+  @media screen and (max-width: 992px) {
+    .br-img {
+      height: 307px;
+      width: 279px;
+      margin-top: 100px;
+      display: block;
+      margin-left: auto; } }
+  @media screen and (max-width: 768px) {
+    .br-img {
+      height: 428px;
+      width: 389px;
+      display: block;
+      margin-left: auto;
+      margin-right: auto; } }
+  @media screen and (max-width: 576px) {
+    .br-img {
+      height: 268px;
+      width: 239px;
+      display: block;
+      margin-left: auto;
+      margin-right: auto; } }
+
+@media screen and (max-width: 992px) {
+  .review-parent {
+    height: auto;
+    width: 100%; } }
+
+@media screen and (max-width: 768px) {
+  .review-parent {
+    flex-direction: column; } }
+
+.hannah-review-dots-purple {
+  margin-top: 180px;
+  background-image: url("./scss/img/dots-purple@1x.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  position: absolute;
+  height: 368px;
+  width: 368px; }
+  @media screen and (max-width: 992px) {
+    .hannah-review-dots-purple {
+      height: 368px;
+      width: 268px; } }
+  @media screen and (max-width: 768px) {
+    .hannah-review-dots-purple {
+      background-size: contain; } }
+  @media screen and (max-width: 576px) {
+    .hannah-review-dots-purple {
+      background-size: cover;
+      width: 20%; } }
+
+.hannah-review-dots-teal {
+  margin-top: 160px;
+  background-image: url("./scss/img/dots-teal@1x.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  right: 0;
+  position: absolute;
+  height: 368px;
+  width: 368px; }
+  @media screen and (max-width: 992px) {
+    .hannah-review-dots-teal {
+      height: 368px;
+      width: 268px; } }
+  @media screen and (max-width: 768px) {
+    .hannah-review-dots-teal {
+      background-size: contain; } }
+  @media screen and (max-width: 576px) {
+    .hannah-review-dots-teal {
+      background-size: cover;
+      width: 20%; } }
+
+.hannah-row {
+  margin-top: 150px; }
+
+.hannah-header {
+  color: rgba(44, 21, 29, 0.9);
+  font-family: "Nunito Sans";
+  font-size: 24px;
+  font-weight: bold;
+  line-height: 32px;
+  text-align: center; }
+
+.hannah-macbook {
+  margin-top: 144px;
+  background-image: url("./scss/img/macbook@1x.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: absolute;
+  height: 302px;
+  width: 472px;
+  z-index: 99; }
+  @media screen and (max-width: 992px) {
+    .hannah-macbook {
+      display: none; } }
+  @media screen and (max-width: 768px) {
+    .hannah-macbook {
+      margin-top: 32px;
+      display: block;
       position: relative;
-      right: 35px; }
-      @media screen and (max-width: 992px) {
-        .review-container .review-body .macbook-container .macbook-notifs {
-          width: 372px;
-          height: 202px; } }
-      @media screen and (max-width: 768px) {
-        .review-container .review-body .macbook-container .macbook-notifs {
-          width: 80%;
-          height: 15%;
-          right: 0;
-          margin: auto;
-          display: block; } }
-      @media screen and (max-width: 576px) {
-        .review-container .review-body .macbook-container .macbook-notifs {
-          width: 100%;
-          height: 15%;
-          margin-left: 0; } }
+      margin-left: auto;
+      margin-right: auto; } }
+  @media screen and (max-width: 576px) {
+    .hannah-macbook {
+      max-width: 100%; } }
 
 .hannah-container {
-  width: 724px;
-  margin-left: -118px;
+  margin-left: -70px;
   margin-top: 54px;
   border-radius: 4px;
   background-color: #FFFFFF;
   box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.11);
-  padding: 58px 87px 65px 97px;
-  font-family: 'Nunito Sans', sans-serif;
-  height: auto; }
+  width: 724px;
+  height: auto;
+  padding: 58px 87px 48px 97px; }
   @media screen and (max-width: 992px) {
     .hannah-container {
-      margin-top: 34px;
-      padding: 28px 57px 35px 67px; } }
+      margin-top: 48px;
+      margin-left: auto;
+      margin-right: auto; } }
   @media screen and (max-width: 768px) {
     .hannah-container {
-      margin-top: 34px;
-      padding: auto;
-      text-align: center;
-      margin: auto;
+      margin-top: 23px;
+      padding: 33px;
       width: 100%; } }
-  @media screen and (max-width: 576px) {
-    .hannah-container {
-      margin-top: 24px;
-      padding: 15px 44px 22px 54px; } }
   .hannah-container .hannah-statement {
+    height: auto;
     color: rgba(44, 21, 29, 0.9);
     font-family: "Nunito Sans";
     font-size: 32px;
     line-height: 41px; }
-    @media screen and (max-width: 992px) {
+    @media screen and (max-width: 768px) {
       .hannah-container .hannah-statement {
+        height: auto;
+        width: 100%;
+        color: rgba(44, 21, 29, 0.9);
+        font-family: "Nunito Sans";
         font-size: 24px;
-        line-height: 37px;
-        width: auto;
-        height: auto; } }
-    @media screen and (max-width: 768px) {
-      .hannah-container .hannah-statement {
-        font-size: 22px;
-        line-height: 31px;
-        margin: auto;
-        width: auto;
-        height: auto; } }
-    @media screen and (max-width: 576px) {
-      .hannah-container .hannah-statement {
-        font-size: 18px;
-        line-height: 27px;
-        width: auto;
-        height: auto; } }
+        line-height: 36px; } }
 
-.review-dots-purple {
-  background-image: url("./scss/img/dots-purple@1x.png");
-  position: absolute;
-  left: 0;
-  top: 800px;
-  z-index: -1;
-  height: 368px;
-  width: 30%;
-  max-width: 100%;
-  max-height: 100%;
+.hannah-avatar {
+  background-image: url("./scss/img/avatar.jpg");
   background-size: contain;
-  background-repeat: no-repeat; }
-  @media screen and (max-width: 992px) {
-    .review-dots-purple {
-      top: 750px;
-      width: 30%;
-      width: 30%;
-      max-width: 100%;
-      max-height: 100%;
-      background-size: contain;
-      background-repeat: no-repeat; } }
-  @media screen and (max-width: 768px) {
-    .review-dots-purple {
-      background-repeat: no-repeat;
-      top: 1080px;
-      background-size: contain;
-      width: 30%;
-      width: 30%;
-      max-width: 100%;
-      max-height: 100%; } }
-  @media screen and (max-width: 576px) {
-    .review-dots-purple {
-      display: none; } }
+  background-repeat: no-repeat;
+  border-radius: 50%;
+  height: 64px;
+  width: 64px;
+  margin-top: 18px;
+  margin-right: 10px; }
 
-.conversions-dots-teal {
-  background-image: url("./scss/img/dots-teal@1x.png");
-  position: absolute;
-  left: 0;
-  top: 2600px;
-  z-index: -1;
-  height: 368px;
-  width: 368px;
-  background-size: contain;
-  background-repeat: no-repeat; }
-  @media screen and (max-width: 992px) {
-    .conversions-dots-teal {
-      top: 2380px;
-      height: 308px;
-      width: 308px;
-      background-size: contain;
-      background-repeat: no-repeat; } }
-  @media screen and (max-width: 768px) {
-    .conversions-dots-teal {
-      display: none; } }
-  @media screen and (max-width: 576px) {
-    .conversions-dots-teal {
-      display: none; } }
+.hannah-name {
+  margin-top: 27px;
+  margin-bottom: 4px;
+  color: #E8562A;
+  font-family: "Nunito Sans";
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 22px;
+  text-align: left; }
 
-.conversions-dots-purple {
-  background-image: url("./scss/img/dots-purple@1x.png");
-  position: absolute;
-  right: 0;
-  top: 2730px;
-  z-index: -1;
-  height: 368px;
-  width: 368px;
-  background-size: contain;
-  background-repeat: no-repeat; }
-  @media screen and (max-width: 992px) {
-    .conversions-dots-purple {
-      top: 2640px;
-      height: 308px;
-      width: 308px;
-      background-size: contain;
-      background-repeat: no-repeat; } }
+.macbook-notifs-container {
+  z-index: 2;
+  margin-top: 90px; }
   @media screen and (max-width: 768px) {
-    .conversions-dots-purple {
-      display: none; } }
-  @media screen and (max-width: 576px) {
-    .conversions-dots-purple {
-      display: none; } }
+    .macbook-notifs-container {
+      margin-top: 36px; } }
 
-.review-dots-teal {
-  background-image: url("./scss/img/dots-teal@1x.png");
-  position: absolute;
-  right: 0;
-  top: 780px;
-  z-index: -1;
-  height: 368px;
-  width: 30%;
-  max-width: 100%;
-  max-height: 100%;
-  background-size: contain;
-  background-repeat: no-repeat; }
-  @media screen and (max-width: 992px) {
-    .review-dots-teal {
-      top: 735px;
-      width: 30%;
-      width: 30%;
-      max-width: 100%;
-      max-height: 100%;
-      background-size: contain;
-      background-repeat: no-repeat; } }
-  @media screen and (max-width: 768px) {
-    .review-dots-teal {
-      background-repeat: no-repeat;
-      top: 1075px;
-      background-size: contain;
-      width: 30%;
-      width: 30%;
-      max-width: 100%;
-      max-height: 100%; } }
-  @media screen and (max-width: 576px) {
-    .review-dots-teal {
-      display: none; } }
+@media screen and (max-width: 992px) {
+  .macbook-notifs {
+    display: none; } }
 
-.shopify-notifications-left {
+@media screen and (max-width: 768px) {
+  .macbook-notifs {
+    display: block;
+    margin-left: auto;
+    margin-right: auto; } }
+
+.shopify-bg-left {
+  margin-top: 281px;
   background-image: url("./scss/img/NotificationsLeft@1x.png");
-  position: absolute;
+  background-size: cover;
+  background-repeat: no-repeat;
   left: 0;
-  top: 1550px;
-  z-index: -1;
-  height: 384px;
-  width: 347px;
-  opacity: 0.8;
-  max-width: 100%;
-  max-height: 100%;
-  background-size: contain;
-  background-repeat: no-repeat; }
+  position: absolute;
+  height: 372px;
+  width: 341px; }
   @media screen and (max-width: 992px) {
-    .shopify-notifications-left {
-      top: 1450px;
-      width: 23%;
-      max-width: 100%;
-      max-height: 100%;
-      background-size: cover;
-      background-repeat: no-repeat; } }
+    .shopify-bg-left {
+      height: 372px;
+      width: 125px;
+      background-position-x: -200px; } }
   @media screen and (max-width: 768px) {
-    .shopify-notifications-left {
-      display: none; } }
-  @media screen and (max-width: 576px) {
-    .shopify-notifications-left {
+    .shopify-bg-left {
       display: none; } }
 
-.shopify-notifications-right {
+.shopify-bg-right {
+  margin-top: 291px;
   background-image: url("./scss/img/NotificationsRight@1x.png");
-  position: absolute;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 0 0;
   right: 0;
-  top: 1550px;
-  z-index: -1;
-  height: 356px;
-  width: 25%;
-  opacity: 0.8;
-  background-size: contain;
-  background-repeat: no-repeat; }
-  @media screen and (max-width: 992px) {
-    .shopify-notifications-right {
-      top: 1450px;
-      width: 23%;
-      max-width: 100%;
-      max-height: 100%;
-      background-size: cover;
-      background-repeat: no-repeat; } }
-  @media screen and (max-width: 768px) {
-    .shopify-notifications-right {
-      display: none; } }
-  @media screen and (max-width: 576px) {
-    .shopify-notifications-right {
-      display: none; } }
-
-.hannah-data {
-  margin-top: 24px; }
-  @media screen and (max-width: 768px) {
-    .hannah-data {
-      margin: 19px auto 0 auto; } }
-  @media screen and (max-width: 576px) {
-    .hannah-data {
-      margin: 16px auto 0 auto;
-      display: flex !important;
-      flex-direction: column !important;
-      justify-content: center; } }
-  .hannah-data .hannah-avatar {
-    height: 64px;
-    width: 64px;
-    border-radius: 50%; }
-    @media screen and (max-width: 992px) {
-      .hannah-data .hannah-avatar {
-        height: 59px;
-        width: 59px; } }
-    @media screen and (max-width: 768px) {
-      .hannah-data .hannah-avatar {
-        height: 54px;
-        width: 54px; } }
-    @media screen and (max-width: 576px) {
-      .hannah-data .hannah-avatar {
-        height: 50px;
-        width: 50px; } }
-
-.hannah-info {
-  margin-left: 24px; }
-  @media screen and (max-width: 992px) {
-    .hannah-info {
-      margin-left: 19px; } }
-  @media screen and (max-width: 768px) {
-    .hannah-info {
-      margin-left: 14px; } }
-  @media screen and (max-width: 576px) {
-    .hannah-info {
-      margin-left: 0; } }
-  .hannah-info .hannah-name {
-    color: #E8562A;
-    font-family: "Nunito Sans";
-    font-size: 16px;
-    font-weight: bold;
-    line-height: 22px;
-    text-align: left; }
-    @media screen and (max-width: 992px) {
-      .hannah-info .hannah-name {
-        font-size: 14px;
-        line-height: 20px; } }
-    @media screen and (max-width: 768px) {
-      .hannah-info .hannah-name {
-        font-size: 12px;
-        line-height: 18px; } }
-    @media screen and (max-width: 576px) {
-      .hannah-info .hannah-name {
-        text-align: center; } }
-  .hannah-info .hannah-site {
-    color: rgba(44, 21, 29, 0.63);
-    font-family: "Nunito Sans";
-    font-size: 16px;
-    line-height: 22px;
-    text-align: center; }
-    @media screen and (max-width: 992px) {
-      .hannah-info .hannah-site {
-        font-size: 14px;
-        line-height: 20px; } }
-    @media screen and (max-width: 768px) {
-      .hannah-info .hannah-site {
-        font-size: 12px;
-        line-height: 18px; } }
-
-.notifications-left {
   position: absolute;
-  left: 0;
-  z-index: -1;
-  width: 341px;
-  height: 372px; }
-  @media screen and (max-width: 992px) {
-    .notifications-left {
-      width: 201px;
-      height: 232px; } }
-  @media screen and (max-width: 768px) {
-    .notifications-left {
-      display: none; } }
-
-.notifications-right {
-  width: 307px;
   height: 382px;
-  position: absolute;
-  right: 0;
-  z-index: -1; }
+  width: 307px; }
   @media screen and (max-width: 992px) {
-    .notifications-right {
-      width: 267px;
-      height: 242px; } }
+    .shopify-bg-right {
+      height: 382px;
+      width: 143px; } }
   @media screen and (max-width: 768px) {
-    .notifications-right {
+    .shopify-bg-right {
       display: none; } }
 
-.notifications-left, .notifications-right {
-  margin-top: 291px; }
-
-.shopify-container {
-  margin-top: 136px !important;
-  width: 600px;
-  padding: 0 30px; }
-  @media screen and (max-width: 992px) {
-    .shopify-container {
-      margin-top: 116px !important;
-      width: 550px;
-      padding: 0 25px; } }
-  @media screen and (max-width: 768px) {
-    .shopify-container {
-      margin-top: 96px !important;
-      width: 500px;
-      padding: 0 20px; } }
-  @media screen and (max-width: 576px) {
-    .shopify-container {
-      margin-top: 96px !important;
-      width: 100%;
-      padding: 0 30px; } }
-  .shopify-container .shopify-love {
+.shopify-parent {
+  margin-top: 124px; }
+  .shopify-parent .shopify-love-logo {
     height: 77px;
-    width: 101px; }
-    @media screen and (max-width: 992px) {
-      .shopify-container .shopify-love {
-        height: 67px;
-        width: 91px; } }
-    @media screen and (max-width: 768px) {
-      .shopify-container .shopify-love {
-        height: 57px;
-        width: 81px; } }
-    @media screen and (max-width: 576px) {
-      .shopify-container .shopify-love {
-        height: 47px;
-        width: 71px; } }
-    @media screen and (max-width: 300px) {
-      .shopify-container .shopify-love {
-        height: 37px;
-        width: 61px; } }
-  .shopify-container .shopify-header {
+    width: 101px;
+    margin-left: auto;
+    margin-right: auto; }
+  .shopify-parent .shopify-header {
+    height: 108px;
+    width: 611px;
     color: rgba(44, 21, 29, 0.95);
     font-family: "Nunito Sans";
     font-size: 40px;
     font-weight: bold;
     line-height: 54px;
     text-align: center;
-    margin-top: 25px !important;
-    margin-bottom: 32px !important; }
-    @media screen and (max-width: 992px) {
-      .shopify-container .shopify-header {
-        font-size: 35px;
-        line-height: 49px;
-        margin-top: 20px !important;
-        margin-bottom: 27px !important; } }
+    margin-top: 25px;
+    margin-bottom: 32px;
+    margin-left: auto;
+    margin-right: auto; }
     @media screen and (max-width: 768px) {
-      .shopify-container .shopify-header {
-        font-size: 30px;
-        line-height: 44px;
-        margin-top: 15px !important;
-        margin-bottom: 22px !important; } }
-    @media screen and (max-width: 576px) {
-      .shopify-container .shopify-header {
-        font-size: 25px;
-        line-height: 39px;
-        margin-top: 12px !important;
-        margin-bottom: 19px !important; } }
-    @media screen and (max-width: 300px) {
-      .shopify-container .shopify-header {
-        font-size: 20px;
-        line-height: 34px;
-        margin-top: 10px !important;
-        margin-bottom: 16px !important; } }
-  .shopify-container .shopify-body-1, .shopify-container .shopify-body-2 {
+      .shopify-parent .shopify-header {
+        width: 100%;
+        height: auto; } }
+  .shopify-parent .shopify-body-1 {
+    height: 110px;
+    width: 540px;
     color: rgba(44, 21, 29, 0.63);
     font-family: "Nunito Sans";
     font-size: 18px;
     line-height: 27px;
-    text-align: center; }
-    @media screen and (max-width: 992px) {
-      .shopify-container .shopify-body-1, .shopify-container .shopify-body-2 {
-        font-size: 16px;
-        line-height: 25px; } }
-    @media screen and (max-width: 768px) {
-      .shopify-container .shopify-body-1, .shopify-container .shopify-body-2 {
-        font-size: 14px;
-        line-height: 23px; } }
-  .shopify-container .shopify-body-1 {
-    margin-bottom: 25px !important; }
-    @media screen and (max-width: 992px) {
-      .shopify-container .shopify-body-1 {
-        margin-bottom: 23px !important; } }
-    @media screen and (max-width: 768px) {
-      .shopify-container .shopify-body-1 {
-        margin-bottom: 21px !important; } }
-
-.launch-container {
-  margin-top: 42px;
-  padding: 30px; }
-  @media screen and (max-width: 992px) {
-    .launch-container {
-      margin-top: 37px !important;
-      padding: 25px; } }
-  @media screen and (max-width: 768px) {
-    .launch-container {
-      margin-top: 32px !important;
-      padding: 20px; } }
-  @media screen and (max-width: 576px) {
-    .launch-container {
-      margin-top: 27px !important;
-      padding: 15px; } }
-  .launch-container .launch-header {
-    margin: auto;
     text-align: center;
+    margin-bottom: 24px;
+    margin-left: auto;
+    margin-right: auto; }
+    @media screen and (max-width: 768px) {
+      .shopify-parent .shopify-body-1 {
+        padding-left: 16px;
+        padding-right: 16px;
+        width: 100%;
+        height: auto; } }
+  .shopify-parent .shopify-body-2 {
+    margin-left: auto;
+    margin-right: auto;
+    height: 136px;
+    width: 540px;
+    color: rgba(44, 21, 29, 0.63);
+    font-family: "Nunito Sans";
+    font-size: 18px;
+    line-height: 27px;
+    text-align: center;
+    margin-bottom: 42px; }
+    @media screen and (max-width: 768px) {
+      .shopify-parent .shopify-body-2 {
+        padding-left: 16px;
+        padding-right: 16px;
+        width: 100%;
+        height: auto; } }
+  .shopify-parent .shopify-footer {
+    height: 27px;
+    color: #E8562A;
+    font-family: "Nunito Sans";
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 27px;
+    margin-left: auto;
+    margin-right: auto; }
+    @media screen and (max-width: 768px) {
+      .shopify-parent .shopify-footer {
+        text-align: center; } }
+
+@media screen and (max-width: 768px) {
+  .how-parent {
+    flex-direction: column;
+    margin-bottom: 96px; } }
+
+.how-left {
+  margin-top: 223px; }
+  @media screen and (max-width: 768px) {
+    .how-left {
+      order: 1;
+      margin-top: 50px; } }
+  .how-left .hl-header {
+    height: 54px;
+    color: rgba(44, 21, 29, 0.95);
+    font-family: "Nunito Sans";
+    font-size: 40px;
+    font-weight: bold;
+    line-height: 54px;
+    margin-bottom: 32px; }
+    @media screen and (max-width: 992px) {
+      .how-left .hl-header {
+        height: 54px;
+        width: 594px; } }
+    @media screen and (max-width: 768px) {
+      .how-left .hl-header {
+        width: 100%;
+        height: auto;
+        text-align: center; } }
+  .how-left .hl-body {
+    height: 79px;
+    width: 511px;
+    color: rgba(44, 21, 29, 0.63);
+    font-family: "Nunito Sans";
+    font-size: 18px;
+    line-height: 27px;
+    margin-bottom: 6px; }
+    @media screen and (max-width: 768px) {
+      .how-left .hl-body {
+        padding-left: 42px;
+        padding-right: 42px;
+        width: 100%;
+        height: auto;
+        text-align: center;
+        margin-bottom: 33px; } }
+  .how-left .hl-footer {
     color: #E8562A;
     font-family: "Nunito Sans";
     font-size: 20px;
     font-weight: bold;
     line-height: 27px; }
-    @media screen and (max-width: 992px) {
-      .launch-container .launch-header {
-        font-size: 18px;
-        line-height: 25px;
-        margin: auto; } }
     @media screen and (max-width: 768px) {
-      .launch-container .launch-header {
-        font-size: 16px;
-        margin: auto;
-        line-height: 23px; } }
-  @media screen and (max-width: 768px) {
-    .launch-container .launch-body {
-      flex-direction: column; } }
-  .launch-container .launch-body .launch-left {
-    margin-top: 223px;
-    width: 600px;
-    order: 0; }
-    @media screen and (max-width: 992px) {
-      .launch-container .launch-body .launch-left {
-        width: 500px;
-        margin-top: 193px; } }
-    @media screen and (max-width: 768px) {
-      .launch-container .launch-body .launch-left {
-        order: 1;
-        width: 500px;
-        margin-top: 183px;
-        text-align: center;
-        margin: auto; } }
-    @media screen and (max-width: 576px) {
-      .launch-container .launch-body .launch-left {
-        order: 1;
+      .how-left .hl-footer {
+        padding-left: 53px;
+        padding-right: 53px;
         width: 100%;
-        margin-top: 163px;
-        padding: 15px;
-        text-align: center;
-        margin: auto; } }
-    .launch-container .launch-body .launch-left .lf-header {
-      color: rgba(44, 21, 29, 0.95);
-      font-family: "Nunito Sans";
-      font-size: 40px;
-      font-weight: bold;
-      line-height: 54px;
-      margin-bottom: 32px;
-      margin-top: 18px; }
-      @media screen and (max-width: 992px) {
-        .launch-container .launch-body .launch-left .lf-header {
-          font-size: 24px;
-          line-height: 38px;
-          margin-bottom: 22px;
-          margin-top: 14px;
-          width: 100%; } }
-      @media screen and (max-width: 768px) {
-        .launch-container .launch-body .launch-left .lf-header {
-          font-size: 30px;
-          line-height: 44px;
-          margin-bottom: 18px;
-          margin-top: 12px; } }
-    .launch-container .launch-body .launch-left .lf-body {
-      width: 511px;
-      color: rgba(44, 21, 29, 0.63);
-      font-family: "Nunito Sans";
-      font-size: 18px;
-      line-height: 27px;
-      margin-top: 24px;
-      margin-bottom: 24px; }
-      @media screen and (max-width: 992px) {
-        .launch-container .launch-body .launch-left .lf-body {
-          font-size: 16px;
-          line-height: 25px;
-          margin-top: 20px;
-          margin-bottom: 20px;
-          width: 100%; } }
-      @media screen and (max-width: 768px) {
-        .launch-container .launch-body .launch-left .lf-body {
-          font-size: 14px;
-          line-height: 23px;
-          margin-top: 29px;
-          margin-bottom: 26px; } }
-    .launch-container .launch-body .launch-left .lf-footer {
-      color: #E8562A;
-      font-family: "Nunito Sans";
-      font-size: 20px;
-      font-weight: bold;
-      line-height: 27px; }
-      @media screen and (max-width: 992px) {
-        .launch-container .launch-body .launch-left .lf-footer {
-          font-size: 15px;
-          line-height: 25px;
-          width: 100%; } }
-      @media screen and (max-width: 768px) {
-        .launch-container .launch-body .launch-left .lf-footer {
-          font-size: 16px;
-          line-height: 23px; } }
-  .launch-container .launch-body .launch-right {
-    order: 1;
-    margin-top: 50px !important; }
-    @media screen and (max-width: 992px) {
-      .launch-container .launch-body .launch-right {
-        margin-top: 40px !important; } }
-    @media screen and (max-width: 768px) {
-      .launch-container .launch-body .launch-right {
-        order: 0;
-        margin-top: 30px !important; } }
-    .launch-container .launch-body .launch-right .how-img {
-      position: relative;
-      top: 60px;
-      width: 350px;
-      height: 520px; }
-      @media screen and (max-width: 992px) {
-        .launch-container .launch-body .launch-right .how-img {
-          top: 10px;
-          width: 300px;
-          height: 460px;
-          margin-bottom: 10px; } }
-      @media screen and (max-width: 768px) {
-        .launch-container .launch-body .launch-right .how-img {
-          top: 8px;
-          width: 330px;
-          height: 500px;
-          margin-bottom: 8px; } }
-      @media screen and (max-width: 576px) {
-        .launch-container .launch-body .launch-right .how-img {
-          top: 5px;
-          width: 300px;
-          height: 430px;
-          margin-bottom: 5px; } }
+        height: auto;
+        text-align: center; } }
 
-.dots-teal {
-  position: absolute;
+.how-right {
+  margin-top: 48px; }
+  @media screen and (max-width: 768px) {
+    .how-right {
+      order: 0;
+      margin-top: 99px; } }
+  @media screen and (max-width: 992px) {
+    .how-right {
+      margin-top: 143px; } }
+  @media screen and (max-width: 768px) {
+    .how-right .how-img {
+      display: block;
+      margin-right: auto;
+      margin-left: auto; } }
+
+.conversions-bg-left {
+  background-image: url("./scss/img/dots-teal@1x.png");
+  background-size: cover;
+  background-repeat: no-repeat;
   left: 0;
-  top: -5px;
-  z-index: -1;
-  height: 368px;
-  width: 368px; }
-  @media screen and (max-width: 992px) {
-    .dots-teal {
-      width: 268px;
-      height: 268px; } }
-  @media screen and (max-width: 768px) {
-    .dots-teal {
-      width: 168px;
-      height: 168px; } }
-
-.dots-purple {
   position: absolute;
-  right: 0;
-  margin-top: 96px;
-  z-index: -1;
   height: 368px;
   width: 368px; }
   @media screen and (max-width: 992px) {
-    .dots-purple {
-      width: 268px;
-      height: 268px; } }
-  @media screen and (max-width: 768px) {
-    .dots-purple {
-      width: 168px;
-      height: 168px; } }
+    .conversions-bg-left {
+      height: 382px;
+      width: 143px; } }
 
-.conversions {
-  padding: 50px;
-  margin: 15px 0; }
+.conversions-bg-right {
+  background-image: url("./scss/img/dots-purple@1x.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  right: 0;
+  position: absolute;
+  height: 368px;
+  width: 368px;
+  margin-top: 110px; }
   @media screen and (max-width: 992px) {
-    .conversions {
-      padding: 40px;
-      margin: 13px 0; } }
-  @media screen and (max-width: 768px) {
-    .conversions {
-      padding: 30px;
-      margin: 11px 0; } }
+    .conversions-bg-right {
+      height: 382px;
+      width: 143px; } }
 
-.conversions-container {
-  margin-top: 30px !important;
+.conversions-parent {
+  padding: 64px 63px 62px 67px;
+  height: auto;
+  width: 100%;
   border-radius: 4px;
   background-color: #FFFFFF;
   box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.11);
-  padding: 64px 67px 75px 67px; }
-  @media screen and (max-width: 992px) {
-    .conversions-container {
-      flex-direction: column;
-      padding: 54px 57px !important;
-      margin-top: 25px !important; } }
+  margin-top: 80px;
+  margin-bottom: 99px; }
   @media screen and (max-width: 768px) {
-    .conversions-container {
+    .conversions-parent {
       flex-direction: column;
-      padding: 34px 37px !important;
-      margin: 20px auto 0 auto !important;
-      justify-content: center !important; } }
-  .conversions-container .conversions-left .conversions-header {
+      padding: 0; } }
+  .conversions-parent .conversions-header {
+    height: 108px;
     width: 562px;
     color: rgba(44, 21, 29, 0.95);
     font-family: "Nunito Sans";
     font-size: 40px;
     font-weight: bold;
     line-height: 54px;
-    justify-content: center !important;
-    margin: auto; }
+    margin-bottom: 17px; }
     @media screen and (max-width: 992px) {
-      .conversions-container .conversions-left .conversions-header {
-        width: 420px;
-        font-size: 35px;
-        line-height: 49px;
-        text-align: center; } }
+      .conversions-parent .conversions-header {
+        height: auto;
+        width: 100%; } }
     @media screen and (max-width: 768px) {
-      .conversions-container .conversions-left .conversions-header {
+      .conversions-parent .conversions-header {
         width: 100%;
+        height: auto;
+        text-align: center;
+        padding: 64px 38px 0 38px; } }
+    @media screen and (max-width: 576px) {
+      .conversions-parent .conversions-header {
         font-size: 30px;
-        line-height: 44px;
-        text-align: center; } }
-    @media screen and (max-width: 768px) {
-      .conversions-container .conversions-left .conversions-header {
-        width: 100%;
-        font-size: 25px;
-        line-height: 39px;
-        text-align: center; } }
-  .conversions-container .conversions-left .conversions-body {
-    margin-top: 20px !important;
+        line-height: 44px; } }
+  .conversions-parent .conversions-body {
+    height: 60px;
     width: 431px;
     color: rgba(44, 21, 29, 0.6);
     font-family: "Nunito Sans";
     font-size: 20px;
     line-height: 30px; }
     @media screen and (max-width: 992px) {
-      .conversions-container .conversions-left .conversions-body {
-        text-align: center;
-        margin-bottom: 25px;
-        margin-top: 15px;
-        width: 100%;
-        font-size: 18px;
-        line-height: 28px; } }
+      .conversions-parent .conversions-body {
+        height: auto;
+        width: 100%; } }
     @media screen and (max-width: 768px) {
-      .conversions-container .conversions-left .conversions-body {
-        margin-top: 13px;
-        width: 100%;
-        font-size: 16px;
-        line-height: 26px; } }
+      .conversions-parent .conversions-body {
+        width: 431.37px;
+        height: auto;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 32px; } }
     @media screen and (max-width: 576px) {
-      .conversions-container .conversions-left .conversions-body {
-        margin-top: 12px;
+      .conversions-parent .conversions-body {
         width: 100%;
-        font-size: 14px;
-        line-height: 24px; } }
-  @media screen and (max-width: 576px) {
-    .conversions-container .conversions-right {
-      width: 100%; } }
+        height: auto;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 32px;
+        padding-left: 38px;
+        padding-right: 38px; } }
+  @media screen and (max-width: 768px) {
+    .conversions-parent .conversions-right {
+      width: 100%;
+      padding-left: 17px;
+      padding-right: 17px; } }
+  .conversions-parent .cvns-btn-signup {
+    padding: 25px 42px;
+    height: auto;
+    border-radius: 4px;
+    background-color: #E8562A;
+    box-shadow: 0 2px 7px 0 rgba(182, 91, 0, 0.37);
+    color: #FFFFFF;
+    font-family: "Nunito Sans";
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 14px;
+    margin-left: auto; }
+    @media screen and (max-width: 768px) {
+      .conversions-parent .cvns-btn-signup {
+        width: 100%;
+        height: auto;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 39px; } }
+    @media screen and (max-width: 576px) {
+      .conversions-parent .cvns-btn-signup {
+        font-size: 14px; } }
 
 .footer-container {
-  margin-top: 150px;
   margin-bottom: 124px;
   margin-left: 30px;
   margin-right: 30px; }
@@ -7467,640 +7025,3 @@ hr {
       .footer-container .footer-bottom .fb-right {
         font-size: 14px;
         line-height: 25px; } }
-
-.pricing-container {
-  margin-top: 201.6px;
-  margin-bottom: 150px; }
-  @media screen and (max-width: 768px) {
-    .pricing-container {
-      flex-direction: column;
-      margin-top: 75px;
-      margin-bottom: 75px; } }
-
-@media screen and (max-width: 768px) {
-  .pricing-left {
-    order: 2; } }
-
-.pricing-left .pricing-1 {
-  height: 124.8px;
-  width: 738px;
-  color: rgba(44, 21, 29, 0.95);
-  font-family: "Nunito Sans";
-  font-size: 48px;
-  font-weight: bold;
-  line-height: 62px; }
-  @media screen and (max-width: 1140px) {
-    .pricing-left .pricing-1 {
-      height: 187.2px;
-      width: 580px;
-      color: rgba(44, 21, 29, 0.95);
-      font-family: "Nunito Sans";
-      font-size: 48px;
-      font-weight: bold;
-      line-height: 62px; } }
-  @media screen and (max-width: 992px) {
-    .pricing-left .pricing-1 {
-      height: 147.2px;
-      width: 430px;
-      color: rgba(44, 21, 29, 0.95);
-      font-family: "Nunito Sans";
-      font-size: 36px;
-      font-weight: bold;
-      line-height: 50px; } }
-  @media screen and (max-width: 768px) {
-    .pricing-left .pricing-1 {
-      margin: auto;
-      text-align: center; } }
-  @media screen and (max-width: 576px) {
-    .pricing-left .pricing-1 {
-      margin-top: 60px;
-      width: 100%;
-      font-size: 28px;
-      font-weight: bold;
-      line-height: 42px; } }
-  @media screen and (max-width: 300px) {
-    .pricing-left .pricing-1 {
-      margin-top: 40px; } }
-
-.pricing-left .pricing-2 {
-  height: 72px;
-  width: 396px;
-  color: rgba(44, 21, 29, 0.6);
-  font-family: "Nunito Sans";
-  font-size: 24px;
-  line-height: 36px;
-  margin-top: 26px;
-  margin-bottom: 42px; }
-  @media screen and (max-width: 768px) {
-    .pricing-left .pricing-2 {
-      height: 72px;
-      color: rgba(44, 21, 29, 0.6);
-      font-family: "Nunito Sans";
-      font-size: 24px;
-      line-height: 36px;
-      margin-right: auto;
-      margin-left: auto;
-      text-align: center; } }
-  @media screen and (max-width: 576px) {
-    .pricing-left .pricing-2 {
-      font-size: 20px;
-      line-height: 32px;
-      width: 100%; } }
-
-.pricing-right {
-  width: 100%; }
-  @media screen and (max-width: 768px) {
-    .pricing-right {
-      order: 1;
-      margin: auto; } }
-  .pricing-right .pricing-right-img {
-    width: 341px;
-    height: 342px;
-    display: block;
-    margin: 50px auto; }
-    @media screen and (max-width: 992px) {
-      .pricing-right .pricing-right-img {
-        width: 301px;
-        height: 302px;
-        margin: 40px auto; } }
-    @media screen and (max-width: 768px) {
-      .pricing-right .pricing-right-img {
-        margin: 40px auto; } }
-    @media screen and (max-width: 576px) {
-      .pricing-right .pricing-right-img {
-        margin-top: 60px; } }
-    @media screen and (max-width: 300px) {
-      .pricing-right .pricing-right-img {
-        margin-top: 60px; } }
-
-.why-container {
-  margin-bottom: 100px; }
-  .why-container .why-header {
-    height: 54px;
-    width: 315px;
-    color: rgba(44, 21, 29, 0.95);
-    font-family: "Nunito Sans";
-    font-size: 40px;
-    font-weight: bold;
-    line-height: 54px;
-    margin: 0 auto 16px auto;
-    text-align: center; }
-  .why-container .why-body {
-    height: 135px;
-    width: 489px;
-    color: rgba(44, 21, 29, 0.63);
-    font-family: "Nunito Sans";
-    font-size: 18px;
-    line-height: 27px;
-    text-align: center;
-    margin: 0 auto; }
-    @media screen and (max-width: 576px) {
-      .why-container .why-body {
-        width: 100%;
-        font-size: 17px;
-        line-height: 26px; } }
-
-.laptop-1 {
-  background-image: url("./scss/img/laptop-1@1x.png");
-  position: absolute;
-  left: 0;
-  height: 430.06px;
-  width: 657.34px;
-  background-size: cover;
-  background-repeat: no-repeat; }
-  @media screen and (max-width: 1140px) {
-    .laptop-1 {
-      left: -20%; } }
-  @media screen and (max-width: 992px) {
-    .laptop-1 {
-      left: -28%; } }
-  @media screen and (max-width: 768px) {
-    .laptop-1 {
-      display: none; } }
-
-.laptop-star {
-  background-image: url("./scss/img/icon-star@1x.png");
-  height: 48px;
-  width: 48px;
-  background-size: cover;
-  background-repeat: no-repeat; }
-  @media screen and (max-width: 768px) {
-    .laptop-star {
-      margin-right: auto;
-      margin-left: auto;
-      display: block; } }
-
-.highlight-img {
-  height: 301.71px;
-  width: 461.23px;
-  border-radius: 15.6px;
-  display: none; }
-  @media screen and (max-width: 768px) {
-    .highlight-img {
-      display: block; } }
-  @media screen and (max-width: 576px) {
-    .highlight-img {
-      width: 100%; } }
-
-@media screen and (max-width: 768px) {
-  .highlight-parent {
-    flex-direction: column;
-    justify-content: center; } }
-
-@media screen and (max-width: 576px) {
-  .highlight-parent {
-    width: 100%; } }
-
-.highlight-container {
-  width: 489px;
-  margin-top: 35px;
-  margin-bottom: 123.48px; }
-  @media screen and (max-width: 576px) {
-    .highlight-container {
-      width: 100%; } }
-  .highlight-container .highlight-header {
-    height: 54px;
-    width: 324px;
-    color: rgba(44, 21, 29, 0.95);
-    font-family: "Nunito Sans";
-    font-size: 40px;
-    font-weight: bold;
-    line-height: 54px;
-    margin-top: 19px;
-    margin-bottom: 16px; }
-    @media screen and (max-width: 768px) {
-      .highlight-container .highlight-header {
-        margin-right: auto;
-        margin-left: auto;
-        text-align: center; } }
-  .highlight-container .highlight-body {
-    height: 135px;
-    width: 480px;
-    color: rgba(44, 21, 29, 0.63);
-    font-family: "Nunito Sans";
-    font-size: 18px;
-    line-height: 27px; }
-    @media screen and (max-width: 768px) {
-      .highlight-container .highlight-body {
-        margin-right: auto;
-        margin-left: auto;
-        text-align: center; } }
-    @media screen and (max-width: 576px) {
-      .highlight-container .highlight-body {
-        width: 100%;
-        font-size: 17px;
-        line-height: 26px; } }
-  .highlight-container .highlight-footer {
-    margin-top: 33px;
-    height: 27px;
-    width: 320px;
-    color: #E8562A;
-    font-family: "Nunito Sans";
-    font-size: 20px;
-    font-weight: bold;
-    line-height: 27px; }
-    @media screen and (max-width: 768px) {
-      .highlight-container .highlight-footer {
-        margin-right: auto;
-        margin-left: auto;
-        text-align: center; } }
-
-.laptop-2 {
-  background-image: url("./scss/img/laptop-2@1x.png");
-  position: absolute;
-  right: 0;
-  height: 430.06px;
-  width: 657.34px;
-  background-size: cover;
-  background-repeat: no-repeat; }
-  @media screen and (max-width: 1140px) {
-    .laptop-2 {
-      right: -20%; } }
-  @media screen and (max-width: 992px) {
-    .laptop-2 {
-      right: -28%; } }
-  @media screen and (max-width: 768px) {
-    .laptop-2 {
-      display: none; } }
-
-.icon-flame {
-  background-image: url("./scss/img/icon-star@1x.png");
-  height: 48px;
-  width: 48px;
-  background-size: cover;
-  background-repeat: no-repeat; }
-  @media screen and (max-width: 768px) {
-    .icon-flame {
-      display: block;
-      margin-right: auto;
-      margin-left: auto; } }
-
-.sales-container {
-  width: 489px;
-  margin-top: 35px;
-  margin-bottom: 228px;
-  margin-right: 80px; }
-  @media screen and (max-width: 576px) {
-    .sales-container {
-      width: 100%; } }
-  .sales-container .sales-header {
-    height: 54px;
-    width: 324px;
-    color: rgba(44, 21, 29, 0.95);
-    font-family: "Nunito Sans";
-    font-size: 40px;
-    font-weight: bold;
-    line-height: 54px;
-    margin-top: 19px;
-    margin-bottom: 16px; }
-    @media screen and (max-width: 768px) {
-      .sales-container .sales-header {
-        text-align: center;
-        margin-right: auto;
-        margin-left: auto; } }
-  .sales-container .sales-body {
-    height: 135px;
-    width: 480px;
-    color: rgba(44, 21, 29, 0.63);
-    font-family: "Nunito Sans";
-    font-size: 18px;
-    line-height: 27px; }
-    @media screen and (max-width: 768px) {
-      .sales-container .sales-body {
-        text-align: center;
-        margin-right: auto;
-        margin-left: auto; } }
-    @media screen and (max-width: 576px) {
-      .sales-container .sales-body {
-        width: 100%;
-        margin-bottom: 30px; } }
-  .sales-container .sales-footer {
-    margin-top: 33px;
-    height: 27px;
-    width: 320px;
-    color: #E8562A;
-    font-family: "Nunito Sans";
-    font-size: 20px;
-    font-weight: bold;
-    line-height: 27px; }
-    @media screen and (max-width: 768px) {
-      .sales-container .sales-footer {
-        height: 54px;
-        width: 463px;
-        color: #E8562A;
-        font-family: "Nunito Sans";
-        font-size: 20px;
-        font-weight: bold;
-        line-height: 27px; } }
-    @media screen and (max-width: 576px) {
-      .sales-container .sales-footer {
-        width: 100%; } }
-
-.laptop-3 {
-  background-image: url("./scss/img/laptop-3@1x.png");
-  position: absolute;
-  left: 0;
-  height: 430.06px;
-  width: 657.34px;
-  background-size: cover;
-  background-repeat: no-repeat; }
-  @media screen and (max-width: 1140px) {
-    .laptop-3 {
-      left: -20%; } }
-  @media screen and (max-width: 992px) {
-    .laptop-3 {
-      left: -28%; } }
-  @media screen and (max-width: 768px) {
-    .laptop-3 {
-      display: none; } }
-
-.visitors-container {
-  width: 489px;
-  margin-top: 35px;
-  margin-left: 80px; }
-  @media screen and (max-width: 576px) {
-    .visitors-container {
-      width: 100%; } }
-  .visitors-container .visitors-header {
-    height: 54px;
-    width: 348px;
-    color: rgba(44, 21, 29, 0.95);
-    font-family: "Nunito Sans";
-    font-size: 40px;
-    font-weight: bold;
-    line-height: 54px;
-    margin-top: 19px;
-    margin-bottom: 16px; }
-    @media screen and (max-width: 768px) {
-      .visitors-container .visitors-header {
-        text-align: center;
-        margin-right: auto;
-        margin-left: auto; } }
-  .visitors-container .visitors-body {
-    height: 135px;
-    width: 480px;
-    color: rgba(44, 21, 29, 0.63);
-    font-family: "Nunito Sans";
-    font-size: 18px;
-    line-height: 27px; }
-    @media screen and (max-width: 768px) {
-      .visitors-container .visitors-body {
-        text-align: center;
-        margin-right: auto;
-        margin-left: auto; } }
-    @media screen and (max-width: 576px) {
-      .visitors-container .visitors-body {
-        width: 100%;
-        font-size: 17px;
-        line-height: 26px; } }
-  .visitors-container .visitors-footer {
-    margin-top: 33px;
-    height: 54px;
-    width: 451px;
-    color: #E8562A;
-    font-family: "Nunito Sans";
-    font-size: 20px;
-    font-weight: bold;
-    line-height: 27px; }
-    @media screen and (max-width: 768px) {
-      .visitors-container .visitors-footer {
-        text-align: center;
-        margin-right: auto;
-        margin-left: auto; } }
-    @media screen and (max-width: 576px) {
-      .visitors-container .visitors-footer {
-        width: 100%;
-        font-size: 19px;
-        line-height: 26px; } }
-
-.price-container {
-  margin-bottom: 67px; }
-
-.pricing-header-container .pricing-header {
-  height: 63px;
-  width: 155px;
-  color: rgba(44, 21, 29, 0.95);
-  font-family: "Nunito Sans";
-  font-size: 48px;
-  font-weight: bold;
-  line-height: 62px;
-  text-align: center; }
-
-.pricing-header-container .pricing-body {
-  height: 36px;
-  width: 548px;
-  color: rgba(44, 21, 29, 0.6);
-  font-family: "Nunito Sans";
-  font-size: 24px;
-  line-height: 36px;
-  text-align: center; }
-  @media screen and (max-width: 576px) {
-    .pricing-header-container .pricing-body {
-      height: 36px;
-      width: 100%;
-      color: rgba(44, 21, 29, 0.6);
-      font-family: "Nunito Sans";
-      font-size: 24px;
-      line-height: 36px;
-      text-align: center; } }
-
-.price-body-container {
-  background-color: #7B79C9;
-  padding-top: 80px;
-  padding-bottom: 70px; }
-
-.purple-bg {
-  background-color: #7B79C9;
-  width: 100%;
-  height: 100%;
-  left: 0; }
-
-.price-item {
-  width: 350px; }
-  @media screen and (max-width: 1100px) {
-    .price-item {
-      width: 320px; } }
-  @media screen and (max-width: 992px) {
-    .price-item {
-      width: 350px; } }
-  @media screen and (max-width: 768px) {
-    .price-item {
-      width: 320px; } }
-
-.price-item-1 {
-  margin-top: 80px;
-  margin-bottom: 70px; }
-  @media screen and (max-width: 992px) {
-    .price-item-1 {
-      margin: 80px auto 32px auto; } }
-  @media screen and (max-width: 768px) {
-    .price-item-1 {
-      margin-top: 80px;
-      margin-right: auto;
-      margin-left: auto; } }
-
-.price-item-2 {
-  margin-top: 80px;
-  margin-bottom: 70px; }
-  @media screen and (max-width: 992px) {
-    .price-item-2 {
-      margin: 0 16px 80px auto; } }
-  @media screen and (max-width: 768px) {
-    .price-item-2 {
-      margin-top: 80px;
-      margin-right: auto;
-      margin-left: auto; } }
-
-.price-item-3 {
-  margin-top: 80px;
-  margin-bottom: 70px; }
-  @media screen and (max-width: 992px) {
-    .price-item-3 {
-      margin: 0 auto 80px 16px; } }
-  @media screen and (max-width: 768px) {
-    .price-item-3 {
-      margin-bottom: 80px;
-      margin-right: auto;
-      margin-left: auto; } }
-
-.price-1 {
-  width: 100%;
-  padding: 32px 40px;
-  background-color: #FFFFFF;
-  border-bottom: solid rgba(0, 0, 0, 0.07) 1px; }
-
-.price-1-button {
-  margin-top: 24px;
-  margin-bottom: 30px; }
-
-.price-1-header {
-  margin-bottom: 16px !important;
-  height: 27px;
-  width: 130px;
-  color: rgba(44, 21, 29, 0.8);
-  font-family: "Nunito Sans";
-  font-size: 20px;
-  font-weight: bold;
-  line-height: 27px;
-  text-align: center; }
-
-.starter {
-  color: #58ACB0 !important; }
-
-.pro-seller {
-  color: #7B79C9 !important; }
-
-.price {
-  color: rgba(44, 21, 29, 0.9);
-  font-family: "Nunito Sans";
-  font-size: 48px;
-  font-weight: bold;
-  line-height: 48px; }
-
-.price-lists {
-  padding-top: 30px;
-  padding-bottom: 30px;
-  padding-left: 50px; }
-
-.price-1-text-contents {
-  color: rgba(44, 21, 29, 0.8);
-  font-family: "Nunito Sans";
-  font-size: 16px;
-  line-height: 34px; }
-
-.price-upper {
-  margin-top: 125px !important;
-  margin-bottom: 65px !important; }
-
-.get-started {
-  height: 48px;
-  width: 267px;
-  border: 1px solid #E8562A;
-  color: #E8562A;
-  background-color: #fff;
-  border-radius: 4px;
-  box-shadow: 0 2px 7px 0 rgba(182, 91, 0, 0.37); }
-  @media screen and (max-width: 1100px) {
-    .get-started {
-      width: 237px; } }
-  @media screen and (max-width: 992px) {
-    .get-started {
-      width: 267px; } }
-  @media screen and (max-width: 768px) {
-    .get-started {
-      width: 237px; } }
-
-@media screen and (max-width: 992px) {
-  .price-item-parent {
-    flex-direction: column; } }
-
-.product-dots-purple {
-  background-image: url("./scss/img/dots-purple@1x.png");
-  position: absolute;
-  right: 0;
-  margin-top: 9.5%;
-  height: 368px;
-  width: 368px;
-  background-size: cover;
-  background-repeat: no-repeat; }
-  @media (max-width: 992px) {
-    .product-dots-purple {
-      height: 33%;
-      width: 34%;
-      margin-top: 30%; } }
-  @media (max-width: 768px) {
-    .product-dots-purple {
-      height: 36%;
-      width: 37%;
-      margin-top: 7%; } }
-  @media (max-width: 576px) {
-    .product-dots-purple {
-      height: 39%;
-      width: 40%;
-      margin-top: 16%; } }
-
-.product-dots-teal {
-  background-image: url("./scss/img/dots-teal@1x.png");
-  position: absolute;
-  left: 0;
-  height: 368px;
-  width: 368px;
-  background-size: cover;
-  background-repeat: no-repeat; }
-  @media (max-width: 992px) {
-    .product-dots-teal {
-      height: 33%;
-      width: 34%; } }
-  @media (max-width: 768px) {
-    .product-dots-teal {
-      height: 36%;
-      width: 37%;
-      margin-top: -14.5%; } }
-  @media (max-width: 576px) {
-    .product-dots-teal {
-      height: 39%;
-      width: 40%;
-      margin-top: -16.5%; } }
-
-.products-conversions {
-  margin-top: 70px; }
-  @media screen and (max-width: 576px) {
-    .products-conversions {
-      margin-top: 120px; } }
-  @media screen and (max-width: 786px) {
-    .products-conversions {
-      margin-top: 150px; } }
-
-.conversions-1 {
-  display: none; }
-  @media screen and (max-width: 786px) {
-    .conversions-1 {
-      display: block;
-      width: 100%; } }
-
-@media screen and (max-width: 786px) {
-  .conversions-2 {
-    display: none; } }
-
-.product-conversions {
-  margin: 15px 0; }

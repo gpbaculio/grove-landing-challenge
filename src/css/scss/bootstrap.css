@@ -512,16 +512,16 @@ pre {
   margin-left: auto; }
   @media (min-width: 576px) {
     .container {
-      max-width: 540px; } }
+      max-width: 638px; } }
   @media (min-width: 768px) {
     .container {
-      max-width: 927px; } }
+      max-width: 942px; } }
   @media (min-width: 992px) {
     .container {
-      max-width: 1140px; } }
+      max-width: 1170px; } }
   @media (min-width: 1200px) {
     .container {
-      max-width: 1250px; } }
+      max-width: 1170px; } }
 
 .container-fluid {
   width: 100%;
