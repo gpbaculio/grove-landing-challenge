@@ -126,12 +126,12 @@ export default class Product extends Component {
                 <div className="hl-laptop1-container">
                   <img alt="" className="hl-laptop1" src={require('../../img/laptop-3@1x.png')} srcset={`${require('../../img/laptop-3@1x.png')} 1x, ${require('../../img/laptop-3@2x.png')} 2x`} />
                 </div>
-                <div className="highlight-parent d-flex flex-column">
+                <div className="highlight-parent highlight-parent2 d-flex flex-column">
                   <div className="highlight-left">
                     <img alt="" className="hl-laptop1" src={require('../../img/laptop-3-small@1x.png')} srcset={`${require('../../img/laptop-3-small@1x.png')} 1x, ${require('../../img/laptop-3-small@2x.png')} 2x`} />
                   </div>
                   <div className="highlight-right d-flex flex-column">
-                    <img alt="" className="icon-star" src={require('../../img/icon-star@1x.png')} srcset={`${require('../../img/icon-star@1x.png')} 1x, ${require('../../img/icon-star@2x.png')} 2x`} />
+                    <img alt="" className="icon-star" src={require('../../img/pulse-icon@1x.png')} srcset={`${require('../../img/pulse-icon@1x.png')} 1x, ${require('../../img/pulse-icon@2x.png')} 2x`} />
                     <div className="highlight-header">
                       Live Visitor Counts
                     </div>

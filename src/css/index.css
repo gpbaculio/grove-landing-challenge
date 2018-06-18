@@ -7176,7 +7176,8 @@ img {
       right: 0; } }
   @media screen and (max-width: 768px) {
     .highlight-parent {
-      width: 100%; } }
+      width: 100%;
+      margin-top: 73px; } }
   .highlight-parent .highlight-left {
     display: none; }
     @media screen and (max-width: 768px) {
@@ -7298,7 +7299,8 @@ img {
       left: 0; } }
   @media screen and (max-width: 768px) {
     .sales-parent {
-      width: 100%; } }
+      width: 100%;
+      margin-top: 121px; } }
   .sales-parent .sales-left {
     display: none; }
     @media screen and (max-width: 768px) {
@@ -7390,3 +7392,7 @@ img {
     .highlight2-footer {
       margin-left: auto;
       margin-right: auto; } }
+
+@media screen and (max-width: 768px) {
+  .highlight-parent2 {
+    margin-top: 120px; } }
