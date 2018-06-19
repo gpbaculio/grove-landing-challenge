@@ -6384,28 +6384,35 @@ strong {
   padding: 0;
   border: 0; }
 
-.navbar-nav li:nth-of-type(2) {
-  margin-right: 48px;
-  margin-left: 69px; }
-  @media screen and (max-width: 992px) {
-    .navbar-nav li:nth-of-type(2) {
-      margin-right: auto;
-      margin-left: auto; } }
+.navbar-nav {
+  font-family: "Nunito Sans"; }
+  .navbar-nav li:nth-of-type(2) {
+    margin-right: 48px;
+    margin-left: 69px; }
+    @media screen and (max-width: 992px) {
+      .navbar-nav li:nth-of-type(2) {
+        margin-right: auto;
+        margin-left: auto; } }
 
 @media screen and (max-width: 576px) {
   .nav-logo-img {
     width: 160px; } }
 
 .signup-nav {
+  font-family: "Nunito Sans" !important;
   padding: 17px 26.5px;
   border-radius: 4px;
+  border-color: #E8562A;
   background-color: #E8562A;
-  box-shadow: 0 2px 7px 0 rgba(182, 91, 0, 0.37);
   color: #FFFFFF;
   font-family: "Nunito Sans";
   font-size: 16px;
   font-weight: bold;
   line-height: 14px; }
+  .signup-nav:hover {
+    color: #E8562A;
+    background-color: #fff;
+    border-color: #E8562A; }
 
 .boost-left {
   margin-top: 150px; }
@@ -6479,7 +6486,7 @@ strong {
 .bl-btn-signup {
   border-radius: 4px;
   background-color: #E8562A;
-  box-shadow: 0 2px 7px 0 rgba(182, 91, 0, 0.37);
+  border-color: #E8562A;
   color: #FFFFFF;
   font-family: "Nunito Sans";
   font-size: 16px;
@@ -6487,6 +6494,10 @@ strong {
   line-height: 14px;
   padding: 25px 36px;
   margin-right: 24px; }
+  .bl-btn-signup:hover {
+    color: #E8562A;
+    background-color: #fff;
+    border-color: #E8562A; }
   @media screen and (max-width: 769px) {
     .bl-btn-signup {
       margin-right: 0;
@@ -6499,7 +6510,6 @@ strong {
 .bl-btn-demo {
   border: 1px solid #E8562A;
   border-radius: 4px;
-  box-shadow: 0 2px 7px 0 rgba(182, 91, 0, 0.37);
   color: #E8562A;
   font-family: "Nunito Sans";
   font-size: 16px;
@@ -6507,6 +6517,10 @@ strong {
   line-height: 14px;
   background-color: #fff;
   padding: 25px 48px 25px 37px; }
+  .bl-btn-demo:hover {
+    color: #fff;
+    background-color: #E8562A;
+    border-color: #E8562A; }
 
 .br-img {
   margin-top: 52px;
@@ -7003,6 +7017,7 @@ strong {
     height: auto;
     border-radius: 4px;
     background-color: #E8562A;
+    border-color: #E8562A;
     box-shadow: 0 2px 7px 0 rgba(182, 91, 0, 0.37);
     color: #FFFFFF;
     font-family: "Nunito Sans";
