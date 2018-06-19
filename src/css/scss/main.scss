@@ -55,6 +55,9 @@ img {
   color: var(--cyan);
 }
 /* media query */
+strong {
+  font-weight: 600;
+}
 @mixin mediaQuery($arg) {
   @media screen and (max-width: $arg) {
     @content;
@@ -73,7 +76,7 @@ img {
       margin-right: auto;
       margin-left: auto;
     }
-    @include mediaQuery(768px) {
+    @include mediaQuery(769px) {
     }
     @include mediaQuery(576px) {
     }
@@ -98,7 +101,7 @@ img {
 // boost
 .boost-left {
   margin-top: 150px;
-  @include mediaQuery(768px) { // ok
+  @include mediaQuery(769px) { // ok
     margin-top: 64px;
   }
   .bl-header {
@@ -113,7 +116,7 @@ img {
     @include mediaQuery(992px) {     
       width: 636px;
     }
-    @include mediaQuery(768px) { // ok
+    @include mediaQuery(769px) { // ok
       margin-top: 64px;
       height: auto;
       width: 100%;
@@ -144,7 +147,7 @@ img {
     font-size: 24px;
     line-height: 36px;
     margin-bottom: 38px;
-    @include mediaQuery(768px) { // ok
+    @include mediaQuery(769px) { // ok
       color: rgba(44,21,29,0.6);
       padding-left: 56px;
       padding-right: 56px;
@@ -164,7 +167,7 @@ img {
   }
 }
 .bl-btn-container {
-  @include mediaQuery(768px) { // ok
+  @include mediaQuery(769px) { // ok
     flex-direction: column;
   }
 }
@@ -179,7 +182,7 @@ img {
   line-height: 14px;
   padding: 25px 36px;
   margin-right: 24px;
-  @include mediaQuery(768px) { // ok
+  @include mediaQuery(769px) { // ok
     margin-right: 0;
     margin-bottom: 26px;
   }
@@ -216,12 +219,13 @@ img {
     display: block;
     margin-left: auto;
   }
-  @include mediaQuery(768px) { // ok
+  @include mediaQuery(769px) { // ok
     height: 428px;
     width: 389px;
     display: block;
     margin-left: auto;
     margin-right: auto;
+    margin-top: 77px;
   }
   @include mediaQuery(576px) { // ok
     height: 268px;
@@ -237,7 +241,7 @@ img {
     height: auto;
     width: 100%;
   }
-  @include mediaQuery(768px) { // ok
+  @include mediaQuery(769px) { // ok
     flex-direction: column;
   }
 }
@@ -254,7 +258,7 @@ img {
     height: 368px;
     width: 268px;
   }
-  @include mediaQuery(768px) { // ok
+  @include mediaQuery(769px) { // ok
     background-size: contain;
   }
   @include mediaQuery(576px) { // ok
@@ -276,7 +280,7 @@ img {
     height: 368px;
     width: 268px;
   }
-  @include mediaQuery(768px) { // ok
+  @include mediaQuery(769px) { // ok
     background-size: contain;
   }
   @include mediaQuery(576px) { // ok
@@ -286,6 +290,9 @@ img {
 }
 .hannah-row {
   margin-top: 150px;
+  @include mediaQuery(769px) { // ok
+    margin-top: 63px;
+  }
 }
 .hannah-header {
   color: rgba(44,21,29,0.9);
@@ -307,7 +314,7 @@ img {
   @include mediaQuery(992px) { // ok
     display: none;
   }
-  @include mediaQuery(768px) {
+  @include mediaQuery(769px) {
     margin-top: 32px;
     display: block;
     position: relative;
@@ -332,7 +339,7 @@ img {
     margin-left: auto;
     margin-right: auto;
   }
-  @include mediaQuery(768px) { // ok
+  @include mediaQuery(769px) { // ok
     margin-top: 23px;
     padding: 33px;
     width: 100%;
@@ -343,7 +350,7 @@ img {
     font-family: "Nunito Sans";
     font-size: 32px;
     line-height: 41px;
-    @include mediaQuery(768px) {
+    @include mediaQuery(769px) {
       height: auto;
       width: 100%;
       color: rgba(44,21,29,0.9);
@@ -376,7 +383,7 @@ img {
 .macbook-notifs-container {
   z-index: 2;
   margin-top: 90px;
-  @include mediaQuery(768px) {
+  @include mediaQuery(769px) {
     margin-top: 36px;
   }
 }
@@ -384,7 +391,7 @@ img {
   @include mediaQuery(992px) {
     display: none;
   }
-  @include mediaQuery(768px) {
+  @include mediaQuery(769px) {
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -405,7 +412,7 @@ img {
     width: 125px;
     background-position-x: -200px;
   }
-  @include mediaQuery(768px) { // ok
+  @include mediaQuery(769px) { // ok
     display: none;
   }
 }
@@ -423,7 +430,7 @@ img {
     height: 382px;
     width: 143px;
   }
-  @include mediaQuery(768px) { // ok
+  @include mediaQuery(769px) { // ok
     display: none;
   }
 }
@@ -448,7 +455,7 @@ img {
     margin-bottom: 32px;
     margin-left: auto;
     margin-right: auto;
-    @include mediaQuery(768px) { // ok
+    @include mediaQuery(769px) { // ok
       width: 100%;
       height: auto;
     }
@@ -464,7 +471,7 @@ img {
     margin-bottom: 24px;
     margin-left: auto;
     margin-right: auto;
-    @include mediaQuery(768px) { // ok
+    @include mediaQuery(769px) { // ok
       padding-left: 16px;
       padding-right: 16px;
       width: 100%;
@@ -482,7 +489,7 @@ img {
     line-height: 27px;
     text-align: center;
     margin-bottom: 42px;
-    @include mediaQuery(768px) { // ok
+    @include mediaQuery(769px) { // ok
       padding-left: 16px;
       padding-right: 16px;
       width: 100%;
@@ -498,14 +505,14 @@ img {
     line-height: 27px;
     margin-left: auto;
     margin-right: auto;
-    @include mediaQuery(768px) {
+    @include mediaQuery(769px) {
       text-align: center;
     }
   }
 }
 // how
 .how-parent {
-  @include mediaQuery(768px) {
+  @include mediaQuery(769px) {
     flex-direction: column;
     margin-bottom: 96px;
   }
@@ -516,7 +523,7 @@ img {
     align-self: center;
     margin-top: 119px;
   }
-  @include mediaQuery(768px) {
+  @include mediaQuery(769px) {
     display: none;
   }
 }
@@ -525,7 +532,7 @@ img {
     width: 431px;
     height: auto;
   }
-  @include mediaQuery(768px) {
+  @include mediaQuery(769px) {
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -534,7 +541,7 @@ img {
 
 .how-left {
   margin-top: 223px;
-  @include mediaQuery(768px) {
+  @include mediaQuery(769px) {
     order: 1;
     margin-top: 50px;
   }
@@ -550,7 +557,7 @@ img {
       height: 54px;
       width: 594px;
     }
-    @include mediaQuery(768px) {
+    @include mediaQuery(769px) {
       width: 100%;
       height: auto;
       text-align: center;
@@ -564,7 +571,7 @@ img {
     font-size: 18px;
     line-height: 27px;
     margin-bottom: 6px;
-    @include mediaQuery(768px) {
+    @include mediaQuery(769px) {
       padding-left: 42px;
       padding-right: 42px;
       width: 100%;
@@ -579,7 +586,7 @@ img {
     font-size: 20px;
     font-weight: bold;
     line-height: 27px;
-    @include mediaQuery(768px) {
+    @include mediaQuery(769px) {
       padding-left: 53px;
       padding-right: 53px;
       width: 100%;
@@ -590,15 +597,15 @@ img {
 }
 .how-right {
   margin-top: 48px;
-  @include mediaQuery(768px) {
-    order: 0;
-    margin-top: 99px;
-  }
   @include mediaQuery(992px) {
     margin-top: 143px;
   }
+  @include mediaQuery(769px) {
+    order: 0;
+    margin-top: 99px;
+  }
   .how-img {
-    @include mediaQuery(768px) {
+    @include mediaQuery(769px) {
       display: block;
       margin-right: auto;
       margin-left: auto;
@@ -642,7 +649,7 @@ img {
   box-shadow: 0 2px 6px 0 rgba(0,0,0,0.11);
   margin-top: 80px;
   margin-bottom: 99px;
-  @include mediaQuery(768px) { // ok
+  @include mediaQuery(769px) { // ok
     flex-direction: column;
     padding: 0;
   }
@@ -659,7 +666,7 @@ img {
       height: auto;
       width: 100%;
     }
-    @include mediaQuery(768px) { // ok
+    @include mediaQuery(769px) { // ok
       width: 100%;
       height: auto;
       text-align: center;
@@ -681,7 +688,7 @@ img {
       height: auto;
       width: 100%;
     }
-    @include mediaQuery(768px) { // ok
+    @include mediaQuery(769px) { // ok
       width: 431.37px;
       height: auto;
       text-align: center;
@@ -701,7 +708,7 @@ img {
     }
   }
   .conversions-right {
-    @include mediaQuery(768px) { // ok
+    @include mediaQuery(769px) { // ok
       width: 100%;
       padding-left: 17px;
       padding-right: 17px;
@@ -719,7 +726,7 @@ img {
     font-weight: bold;
     line-height: 14px;
     margin-left: auto;
-    @include mediaQuery(768px) { // ok
+    @include mediaQuery(769px) { // ok
       width: 100%;
       height: auto;
       text-align: center;
@@ -735,12 +742,6 @@ img {
 //footer 
 .footer-container {
   margin-bottom: 124px;
-  margin-left: 30px;
-  margin-right: 30px;
-  @include mediaQuery(576px) {
-    margin-left: 15px;
-    margin-right: 15px;
-  }
   .footer-upper {
     margin-bottom: 18.8px;
     .fu-left {
@@ -783,7 +784,7 @@ img {
 // promotions
 .promotions-parent {
   margin-top: 120px;
-  @include mediaQuery(768px) {
+  @include mediaQuery(769px) {
     margin-top: 68px;
   }
   .promotions-header {
@@ -795,7 +796,7 @@ img {
     font-weight: bold;
     line-height: 62px;
     margin-bottom: 25px;
-    @include mediaQuery(768px) {
+    @include mediaQuery(769px) {
       font-size: 40px;
       margin-bottom: 32px;
       width: 100%;
@@ -810,7 +811,7 @@ img {
     font-family: "Nunito Sans";
     font-size: 24px;
     line-height: 36px;
-    @include mediaQuery(768px) {
+    @include mediaQuery(769px) {
       margin-left: auto;
       margin-right: auto;
       text-align: center;
@@ -820,7 +821,7 @@ img {
     margin-bottom: 48px;
   }
   .promotions-btn {
-    @include mediaQuery(768px) {
+    @include mediaQuery(769px) {
       width:100%;
     }
   }
@@ -839,7 +840,7 @@ img {
     height: 308px;
     width: 277px;
   }
-  @include mediaQuery(768px) {
+  @include mediaQuery(769px) {
     margin-top: 115px;
     height: 308px;
     width: 277px;
@@ -847,7 +848,7 @@ img {
     margin-left: auto;
     margin-right: auto;
   }
-  @include mediaQuery(768px) {
+  @include mediaQuery(769px) {
     max-width: 100%;
   }
 }
@@ -857,7 +858,7 @@ img {
   width: 489px;
   margin-left: auto;
   margin-right: auto;
-  @include mediaQuery(768px) {
+  @include mediaQuery(769px) {
     margin-top: 111px;
   }
   @include mediaQuery(576px) {
@@ -885,7 +886,7 @@ img {
 .highlight-container {
   margin-left: 0;
   padding-left: 0;
-  @include mediaQuery(768px) {
+  @include mediaQuery(769px) {
     margin-left: auto;
     padding-left: 15px;
   }
@@ -904,7 +905,7 @@ img {
   @include mediaQuery(992px) {
     width: 431px;
   }
-  @include mediaQuery(768px) {
+  @include mediaQuery(769px) {
     display: none;
   }
 }
@@ -914,20 +915,20 @@ img {
   @include mediaQuery(1274px) {
     right: 0;
   }
-  @include mediaQuery(768px) {
+  @include mediaQuery(769px) {
     width: 100%;
     margin-top: 73px;
   }
   .highlight-left {
     display: none;
-    @include mediaQuery(768px) {
+    @include mediaQuery(769px) {
       display: block;
     }
   }
   .highlight-right {
     margin-top: 134px;
     margin-left: auto;
-    @include mediaQuery(768px) {
+    @include mediaQuery(769px) {
       margin-top: 91px;
       margin-left: auto;
       margin-right: auto;
@@ -935,7 +936,7 @@ img {
     .icon-star {
       width: 48px;
       height: 48px;
-      @include mediaQuery(768px) {
+      @include mediaQuery(769px) {
         display: block;
         margin-left: auto;
         margin-right: auto;
@@ -950,7 +951,7 @@ img {
       font-weight: bold;
       line-height: 54px;
       margin-top: 19px;      
-      @include mediaQuery(768px) {
+      @include mediaQuery(769px) {
         text-align: center;
         margin-left: auto;
         margin-right: auto;
@@ -971,7 +972,7 @@ img {
       @include mediaQuery(992px) {
         width: 474px;
       }    
-      @include mediaQuery(768px) {
+      @include mediaQuery(769px) {
         text-align: center;
         margin-left: auto;
         margin-right: auto;
@@ -988,7 +989,7 @@ img {
       font-size: 20px;
       font-weight: bold;
       line-height: 27px;
-      @include mediaQuery(768px) {
+      @include mediaQuery(769px) {
         text-align: center;
         margin-left: auto;
         margin-right: auto;
@@ -1000,14 +1001,14 @@ img {
 .sales-container {
   margin-right: 0;
   padding-right: 0;
-  @include mediaQuery(768px) {
+  @include mediaQuery(769px) {
     margin-right: auto;
     padding-right: 15px;
   }
 }
 .sales-row {
   margin: 0;
-  @include mediaQuery(768px) {
+  @include mediaQuery(769px) {
     margin-right: -15px;
     margin-left: -15px;
   }
@@ -1015,7 +1016,7 @@ img {
 .sales-col {
   margin-right: 0;
   padding-right: 0;
-  @include mediaQuery(768px) {
+  @include mediaQuery(769px) {
     margin-right: auto;
     padding-right: 15px;
   }
@@ -1028,14 +1029,14 @@ img {
     align-self: center;
     margin-top: 119px;
   }
-  @include mediaQuery(768px) {
+  @include mediaQuery(769px) {
     display: none;
   }
   .laptop-2 {
     @include mediaQuery(992px) {
       width: 431px;
     }
-    @include mediaQuery(768px) {
+    @include mediaQuery(769px) {
       display: none;
     }
   }
@@ -1047,20 +1048,20 @@ img {
   @include mediaQuery(1274px) {
     left: 0;
   }
-  @include mediaQuery(768px) {
+  @include mediaQuery(769px) {
     width: 100%;
     margin-top: 121px;
   }
   .sales-left {
     display: none;
-    @include mediaQuery(768px) {
+    @include mediaQuery(769px) {
       display: block;
     }
   }
   .sales-right {
     margin-top: 134px;
     margin-left: auto;
-    @include mediaQuery(768px) {
+    @include mediaQuery(769px) {
       margin-top: 91px;
       margin-left: auto;
       margin-right: auto;
@@ -1068,7 +1069,7 @@ img {
     .icon-star {
       width: 48px;
       height: 48px;
-      @include mediaQuery(768px) {
+      @include mediaQuery(769px) {
         display: block;
         margin-left: auto;
         margin-right: auto;
@@ -1083,7 +1084,7 @@ img {
       font-weight: bold;
       line-height: 54px;
       margin-top: 19px;      
-      @include mediaQuery(768px) {
+      @include mediaQuery(769px) {
         text-align: center;
         margin-left: auto;
         margin-right: auto;
@@ -1104,7 +1105,7 @@ img {
       @include mediaQuery(992px) {
         width: 474px;
       }  
-      @include mediaQuery(768px) {
+      @include mediaQuery(769px) {
         text-align: center;
         margin-left: auto;
         margin-right: auto;
@@ -1115,7 +1116,7 @@ img {
       }
     }
     .sales-footer-parent {
-      @include mediaQuery(768px) {
+      @include mediaQuery(769px) {
         margin-left: auto;
         margin-right: auto;
       }
@@ -1127,7 +1128,7 @@ img {
       font-size: 20px;
       font-weight: bold;
       line-height: 27px;
-      @include mediaQuery(768px) {
+      @include mediaQuery(769px) {
         margin-left: auto;
         margin-right: auto;
       }
@@ -1135,7 +1136,7 @@ img {
   }
 }
 .highlight2-footer-parent {
-  @include mediaQuery(768px) {
+  @include mediaQuery(769px) {
     margin-left: auto;
     margin-right: auto;
   }
@@ -1147,13 +1148,164 @@ img {
   font-size: 20px;
   font-weight: bold;
   line-height: 27px;
-  @include mediaQuery(768px) {
+  @include mediaQuery(769px) {
     margin-left: auto;
     margin-right: auto;
   }
 }
 .highlight-parent2 {
-  @include mediaQuery(768px) {
+  @include mediaQuery(769px) {
     margin-top: 120px;
+  }
+}
+// prices
+.prices-bg {
+  background-color: #7B79C9;
+  padding-top: 79px;
+  padding-bottom: 68px;
+  margin-bottom: 68px;
+  &:before {
+    margin-top: -79px;
+    position: absolute;
+    background-image: url('./scss/img/dots-teal@1x.png');
+    background-size: auto;
+    display: inline-block;
+    max-width: 100%;
+    height: 323px;
+    width: 368px;
+    content:"";
+  }
+  background-image: url('./scss/img/dots-teal@1x.png');
+  background-size: auto;
+  background-position: 100% 100%;
+  background-repeat: no-repeat;
+}
+.pricing-3, .pricing-2 {
+  @include mediaQuery(992px) {
+    margin-top: 32px;
+  }
+  @include mediaQuery(768px) {
+    margin-top: 79px;
+  }
+}
+.pricing-2 {
+  @include mediaQuery(992px) {
+    margin-left: auto!important;
+    margin-right: 1px!important;
+  }
+  @include mediaQuery(768px) {
+    margin-right: auto!important;
+    margin-left: auto!important;
+  }
+}
+.pricing-3 {
+  @include mediaQuery(992px) {
+    margin-right: auto!important;
+    margin-left: 1px!important;
+  }
+  @include mediaQuery(768px) {
+    margin-right: auto!important;
+    margin-left: auto!important;
+  }
+}
+.pricing-parent {
+  height: auto;
+  width: 348px;
+  padding: 32px 42px 32px 42px;
+  border-radius: 4px;
+  background-color: #FFFFFF;
+  box-shadow: 0 2px 6px 0 rgba(0,0,0,0.11);
+  @include mediaQuery(1105px) {
+    width: 99%; 
+    margin-left: .5%;
+    margin-right: .5%;
+  }
+  @include mediaQuery(992px) {
+    margin-left: auto;
+    margin-right: auto;
+    width: 348px;
+  }
+  @include mediaQuery(397px) {
+    width: 100%;
+  }
+  .starter {
+    color: #58ACB0!important;
+  }
+  .pro-seller {
+    color: #7B79C9!important;
+  }
+  .pricing-header {
+    height: 27px;
+    width: 130px;
+    margin-left: auto;
+    margin-right: auto;
+    color: rgba(44,21,29,0.8);
+    font-family: "Nunito Sans";
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 27px;
+    text-align: center;
+    margin-bottom: 16px;
+  }
+  .price-container {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 24px;
+    .pricing-dollar {
+      color: rgba(44,21,29,0.9);
+      font-family: "Nunito Sans";
+      font-size: 48px;
+      font-weight: bold;
+      line-height: 48px;
+    }
+    .mo {
+      color: rgba(44,21,29,0.8);
+      font-family: "Nunito Sans";
+      font-size: 16px;
+      line-height: 16px;
+      text-align: center;
+    }
+  }
+  .pricing-btn {
+    color: #E8562A;
+    background-color: #fff;
+    margin-bottom: 65px;
+    border: 1px solid #E8562A;
+    border-radius: 4px;
+    box-shadow: 0 2px 7px 0 rgba(182,91,0,0.37);
+    padding-top: 17px;
+    padding-bottom: 17px;
+  }
+  .price-content-texts {
+    color: rgba(44,21,29,0.8);
+    font-family: "Nunito Sans";
+    font-size: 16px;
+    line-height: 34px;
+  }
+}
+.pricing-upper {
+  margin-top: 110px;
+  @include mediaQuery(992px) {
+    margin-top: 145px;
+  }
+  .pu-header {
+    color: rgba(44,21,29,0.95);
+    font-family: "Nunito Sans";
+    font-size: 48px;
+    font-weight: bold;
+    line-height: 62px;
+    margin-bottom: 24px;
+    text-align: center;
+  }
+  .pu-body {
+    color: rgba(44,21,29,0.6);
+    font-family: "Nunito Sans";
+    font-size: 24px;
+    line-height: 36px;
+    text-align: center;
+    margin-bottom: 67px;
+    @include mediaQuery(992px) {
+      margin-bottom: 44px;
+    }
   }
 }

@@ -8,7 +8,7 @@ class Footer extends Component {
     return (
       <Container>
         <Row>
-          <Col className="px-0">
+          <Col>
             <div className="footer-container d-flex flex-column">
               <div className="footer-upper d-flex align-items-end">
                 <div className="fu-left">

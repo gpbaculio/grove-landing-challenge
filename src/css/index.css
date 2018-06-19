@@ -6376,6 +6376,9 @@ img {
   color: var(--cyan); }
 
 /* media query */
+strong {
+  font-weight: 600; }
+
 /* Navbar */
 .navbar-toggler {
   padding: 0;
@@ -6406,7 +6409,7 @@ img {
 
 .boost-left {
   margin-top: 150px; }
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 769px) {
     .boost-left {
       margin-top: 64px; } }
   .boost-left .bl-header {
@@ -6421,7 +6424,7 @@ img {
     @media screen and (max-width: 992px) {
       .boost-left .bl-header {
         width: 636px; } }
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: 769px) {
       .boost-left .bl-header {
         margin-top: 64px;
         height: auto;
@@ -6451,7 +6454,7 @@ img {
     font-size: 24px;
     line-height: 36px;
     margin-bottom: 38px; }
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: 769px) {
       .boost-left .bl-body {
         color: rgba(44, 21, 29, 0.6);
         padding-left: 56px;
@@ -6469,7 +6472,7 @@ img {
         font-size: 20px;
         line-height: 32px; } }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 769px) {
   .bl-btn-container {
     flex-direction: column; } }
 
@@ -6484,7 +6487,7 @@ img {
   line-height: 14px;
   padding: 25px 36px;
   margin-right: 24px; }
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 769px) {
     .bl-btn-signup {
       margin-right: 0;
       margin-bottom: 26px; } }
@@ -6521,13 +6524,14 @@ img {
       margin-top: 100px;
       display: block;
       margin-left: auto; } }
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 769px) {
     .br-img {
       height: 428px;
       width: 389px;
       display: block;
       margin-left: auto;
-      margin-right: auto; } }
+      margin-right: auto;
+      margin-top: 77px; } }
   @media screen and (max-width: 576px) {
     .br-img {
       height: 268px;
@@ -6541,7 +6545,7 @@ img {
     height: auto;
     width: 100%; } }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 769px) {
   .review-parent {
     flex-direction: column; } }
 
@@ -6558,7 +6562,7 @@ img {
     .hannah-review-dots-purple {
       height: 368px;
       width: 268px; } }
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 769px) {
     .hannah-review-dots-purple {
       background-size: contain; } }
   @media screen and (max-width: 576px) {
@@ -6580,7 +6584,7 @@ img {
     .hannah-review-dots-teal {
       height: 368px;
       width: 268px; } }
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 769px) {
     .hannah-review-dots-teal {
       background-size: contain; } }
   @media screen and (max-width: 576px) {
@@ -6590,6 +6594,9 @@ img {
 
 .hannah-row {
   margin-top: 150px; }
+  @media screen and (max-width: 769px) {
+    .hannah-row {
+      margin-top: 63px; } }
 
 .hannah-header {
   color: rgba(44, 21, 29, 0.9);
@@ -6611,7 +6618,7 @@ img {
   @media screen and (max-width: 992px) {
     .hannah-macbook {
       display: none; } }
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 769px) {
     .hannah-macbook {
       margin-top: 32px;
       display: block;
@@ -6636,7 +6643,7 @@ img {
       margin-top: 48px;
       margin-left: auto;
       margin-right: auto; } }
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 769px) {
     .hannah-container {
       margin-top: 23px;
       padding: 33px;
@@ -6647,7 +6654,7 @@ img {
     font-family: "Nunito Sans";
     font-size: 32px;
     line-height: 41px; }
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: 769px) {
       .hannah-container .hannah-statement {
         height: auto;
         width: 100%;
@@ -6679,7 +6686,7 @@ img {
 .macbook-notifs-container {
   z-index: 2;
   margin-top: 90px; }
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 769px) {
     .macbook-notifs-container {
       margin-top: 36px; } }
 
@@ -6687,7 +6694,7 @@ img {
   .macbook-notifs {
     display: none; } }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 769px) {
   .macbook-notifs {
     display: block;
     margin-left: auto;
@@ -6707,7 +6714,7 @@ img {
       height: 372px;
       width: 125px;
       background-position-x: -200px; } }
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 769px) {
     .shopify-bg-left {
       display: none; } }
 
@@ -6725,7 +6732,7 @@ img {
     .shopify-bg-right {
       height: 382px;
       width: 143px; } }
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 769px) {
     .shopify-bg-right {
       display: none; } }
 
@@ -6749,7 +6756,7 @@ img {
     margin-bottom: 32px;
     margin-left: auto;
     margin-right: auto; }
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: 769px) {
       .shopify-parent .shopify-header {
         width: 100%;
         height: auto; } }
@@ -6764,7 +6771,7 @@ img {
     margin-bottom: 24px;
     margin-left: auto;
     margin-right: auto; }
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: 769px) {
       .shopify-parent .shopify-body-1 {
         padding-left: 16px;
         padding-right: 16px;
@@ -6781,7 +6788,7 @@ img {
     line-height: 27px;
     text-align: center;
     margin-bottom: 42px; }
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: 769px) {
       .shopify-parent .shopify-body-2 {
         padding-left: 16px;
         padding-right: 16px;
@@ -6796,11 +6803,11 @@ img {
     line-height: 27px;
     margin-left: auto;
     margin-right: auto; }
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: 769px) {
       .shopify-parent .shopify-footer {
         text-align: center; } }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 769px) {
   .how-parent {
     flex-direction: column;
     margin-bottom: 96px; } }
@@ -6811,7 +6818,7 @@ img {
     .hl-laptop1-container {
       align-self: center;
       margin-top: 119px; } }
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 769px) {
     .hl-laptop1-container {
       display: none; } }
 
@@ -6820,7 +6827,7 @@ img {
     width: 431px;
     height: auto; } }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 769px) {
   .hl-laptop1 {
     display: block;
     margin-left: auto;
@@ -6828,7 +6835,7 @@ img {
 
 .how-left {
   margin-top: 223px; }
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 769px) {
     .how-left {
       order: 1;
       margin-top: 50px; } }
@@ -6844,7 +6851,7 @@ img {
       .how-left .hl-header {
         height: 54px;
         width: 594px; } }
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: 769px) {
       .how-left .hl-header {
         width: 100%;
         height: auto;
@@ -6857,7 +6864,7 @@ img {
     font-size: 18px;
     line-height: 27px;
     margin-bottom: 6px; }
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: 769px) {
       .how-left .hl-body {
         padding-left: 42px;
         padding-right: 42px;
@@ -6871,7 +6878,7 @@ img {
     font-size: 20px;
     font-weight: bold;
     line-height: 27px; }
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: 769px) {
       .how-left .hl-footer {
         padding-left: 53px;
         padding-right: 53px;
@@ -6881,14 +6888,14 @@ img {
 
 .how-right {
   margin-top: 48px; }
-  @media screen and (max-width: 768px) {
-    .how-right {
-      order: 0;
-      margin-top: 99px; } }
   @media screen and (max-width: 992px) {
     .how-right {
       margin-top: 143px; } }
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 769px) {
+    .how-right {
+      order: 0;
+      margin-top: 99px; } }
+  @media screen and (max-width: 769px) {
     .how-right .how-img {
       display: block;
       margin-right: auto;
@@ -6930,7 +6937,7 @@ img {
   box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.11);
   margin-top: 80px;
   margin-bottom: 99px; }
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 769px) {
     .conversions-parent {
       flex-direction: column;
       padding: 0; } }
@@ -6947,7 +6954,7 @@ img {
       .conversions-parent .conversions-header {
         height: auto;
         width: 100%; } }
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: 769px) {
       .conversions-parent .conversions-header {
         width: 100%;
         height: auto;
@@ -6968,7 +6975,7 @@ img {
       .conversions-parent .conversions-body {
         height: auto;
         width: 100%; } }
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: 769px) {
       .conversions-parent .conversions-body {
         width: 431.37px;
         height: auto;
@@ -6986,7 +6993,7 @@ img {
         margin-bottom: 32px;
         padding-left: 38px;
         padding-right: 38px; } }
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 769px) {
     .conversions-parent .conversions-right {
       width: 100%;
       padding-left: 17px;
@@ -7003,7 +7010,7 @@ img {
     font-weight: bold;
     line-height: 14px;
     margin-left: auto; }
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: 769px) {
       .conversions-parent .cvns-btn-signup {
         width: 100%;
         height: auto;
@@ -7016,13 +7023,7 @@ img {
         font-size: 14px; } }
 
 .footer-container {
-  margin-bottom: 124px;
-  margin-left: 30px;
-  margin-right: 30px; }
-  @media screen and (max-width: 576px) {
-    .footer-container {
-      margin-left: 15px;
-      margin-right: 15px; } }
+  margin-bottom: 124px; }
   .footer-container .footer-upper {
     margin-bottom: 18.8px; }
     .footer-container .footer-upper .fu-left .footer-logo {
@@ -7053,7 +7054,7 @@ img {
 
 .promotions-parent {
   margin-top: 120px; }
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 769px) {
     .promotions-parent {
       margin-top: 68px; } }
   .promotions-parent .promotions-header {
@@ -7065,7 +7066,7 @@ img {
     font-weight: bold;
     line-height: 62px;
     margin-bottom: 25px; }
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: 769px) {
       .promotions-parent .promotions-header {
         font-size: 40px;
         margin-bottom: 32px;
@@ -7079,14 +7080,14 @@ img {
     font-family: "Nunito Sans";
     font-size: 24px;
     line-height: 36px; }
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: 769px) {
       .promotions-parent .promotions-body-1, .promotions-parent .promotions-body-2 {
         margin-left: auto;
         margin-right: auto;
         text-align: center; } }
   .promotions-parent .promotions-body-2 {
     margin-bottom: 48px; }
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 769px) {
     .promotions-parent .promotions-btn {
       width: 100%; } }
 
@@ -7103,7 +7104,7 @@ img {
     .promotions-img {
       height: 308px;
       width: 277px; } }
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 769px) {
     .promotions-img {
       margin-top: 115px;
       height: 308px;
@@ -7111,7 +7112,7 @@ img {
       display: block;
       margin-left: auto;
       margin-right: auto; } }
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 769px) {
     .promotions-img {
       max-width: 100%; } }
 
@@ -7120,7 +7121,7 @@ img {
   width: 489px;
   margin-left: auto;
   margin-right: auto; }
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 769px) {
     .why-container {
       margin-top: 111px; } }
   @media screen and (max-width: 576px) {
@@ -7145,7 +7146,7 @@ img {
 .highlight-container {
   margin-left: 0;
   padding-left: 0; }
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 769px) {
     .highlight-container {
       margin-left: auto;
       padding-left: 15px; } }
@@ -7164,7 +7165,7 @@ img {
   @media screen and (max-width: 992px) {
     .laptop-1-bg {
       width: 431px; } }
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 769px) {
     .laptop-1-bg {
       display: none; } }
 
@@ -7174,19 +7175,19 @@ img {
   @media screen and (max-width: 1274px) {
     .highlight-parent {
       right: 0; } }
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 769px) {
     .highlight-parent {
       width: 100%;
       margin-top: 73px; } }
   .highlight-parent .highlight-left {
     display: none; }
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: 769px) {
       .highlight-parent .highlight-left {
         display: block; } }
   .highlight-parent .highlight-right {
     margin-top: 134px;
     margin-left: auto; }
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: 769px) {
       .highlight-parent .highlight-right {
         margin-top: 91px;
         margin-left: auto;
@@ -7194,7 +7195,7 @@ img {
     .highlight-parent .highlight-right .icon-star {
       width: 48px;
       height: 48px; }
-      @media screen and (max-width: 768px) {
+      @media screen and (max-width: 769px) {
         .highlight-parent .highlight-right .icon-star {
           display: block;
           margin-left: auto;
@@ -7208,7 +7209,7 @@ img {
       font-weight: bold;
       line-height: 54px;
       margin-top: 19px; }
-      @media screen and (max-width: 768px) {
+      @media screen and (max-width: 769px) {
         .highlight-parent .highlight-right .highlight-header {
           text-align: center;
           margin-left: auto;
@@ -7228,7 +7229,7 @@ img {
       @media screen and (max-width: 992px) {
         .highlight-parent .highlight-right .highlight-body {
           width: 474px; } }
-      @media screen and (max-width: 768px) {
+      @media screen and (max-width: 769px) {
         .highlight-parent .highlight-right .highlight-body {
           text-align: center;
           margin-left: auto;
@@ -7244,7 +7245,7 @@ img {
       font-size: 20px;
       font-weight: bold;
       line-height: 27px; }
-      @media screen and (max-width: 768px) {
+      @media screen and (max-width: 769px) {
         .highlight-parent .highlight-right .highlight-footer {
           text-align: center;
           margin-left: auto;
@@ -7253,14 +7254,14 @@ img {
 .sales-container {
   margin-right: 0;
   padding-right: 0; }
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 769px) {
     .sales-container {
       margin-right: auto;
       padding-right: 15px; } }
 
 .sales-row {
   margin: 0; }
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 769px) {
     .sales-row {
       margin-right: -15px;
       margin-left: -15px; } }
@@ -7268,7 +7269,7 @@ img {
 .sales-col {
   margin-right: 0;
   padding-right: 0; }
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 769px) {
     .sales-col {
       margin-right: auto;
       padding-right: 15px; } }
@@ -7281,13 +7282,13 @@ img {
       height: auto;
       align-self: center;
       margin-top: 119px; } }
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 769px) {
     .sls-laptop2-container {
       display: none; } }
   @media screen and (max-width: 992px) {
     .sls-laptop2-container .laptop-2 {
       width: 431px; } }
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 769px) {
     .sls-laptop2-container .laptop-2 {
       display: none; } }
 
@@ -7297,19 +7298,19 @@ img {
   @media screen and (max-width: 1274px) {
     .sales-parent {
       left: 0; } }
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 769px) {
     .sales-parent {
       width: 100%;
       margin-top: 121px; } }
   .sales-parent .sales-left {
     display: none; }
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: 769px) {
       .sales-parent .sales-left {
         display: block; } }
   .sales-parent .sales-right {
     margin-top: 134px;
     margin-left: auto; }
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: 769px) {
       .sales-parent .sales-right {
         margin-top: 91px;
         margin-left: auto;
@@ -7317,7 +7318,7 @@ img {
     .sales-parent .sales-right .icon-star {
       width: 48px;
       height: 48px; }
-      @media screen and (max-width: 768px) {
+      @media screen and (max-width: 769px) {
         .sales-parent .sales-right .icon-star {
           display: block;
           margin-left: auto;
@@ -7331,7 +7332,7 @@ img {
       font-weight: bold;
       line-height: 54px;
       margin-top: 19px; }
-      @media screen and (max-width: 768px) {
+      @media screen and (max-width: 769px) {
         .sales-parent .sales-right .sales-header {
           text-align: center;
           margin-left: auto;
@@ -7351,7 +7352,7 @@ img {
       @media screen and (max-width: 992px) {
         .sales-parent .sales-right .sales-body {
           width: 474px; } }
-      @media screen and (max-width: 768px) {
+      @media screen and (max-width: 769px) {
         .sales-parent .sales-right .sales-body {
           text-align: center;
           margin-left: auto;
@@ -7360,7 +7361,7 @@ img {
         .sales-parent .sales-right .sales-body {
           width: 100%;
           height: auto; } }
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: 769px) {
       .sales-parent .sales-right .sales-footer-parent {
         margin-left: auto;
         margin-right: auto; } }
@@ -7371,12 +7372,12 @@ img {
       font-size: 20px;
       font-weight: bold;
       line-height: 27px; }
-      @media screen and (max-width: 768px) {
+      @media screen and (max-width: 769px) {
         .sales-parent .sales-right .sales-footer {
           margin-left: auto;
           margin-right: auto; } }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 769px) {
   .highlight2-footer-parent {
     margin-left: auto;
     margin-right: auto; } }
@@ -7388,11 +7389,169 @@ img {
   font-size: 20px;
   font-weight: bold;
   line-height: 27px; }
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 769px) {
     .highlight2-footer {
       margin-left: auto;
       margin-right: auto; } }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 769px) {
   .highlight-parent2 {
     margin-top: 120px; } }
+
+.prices-bg {
+  background-color: #7B79C9;
+  padding-top: 79px;
+  padding-bottom: 68px;
+  margin-bottom: 68px;
+  background-image: url("./scss/img/dots-teal@1x.png");
+  background-size: auto;
+  background-position: 100% 100%;
+  background-repeat: no-repeat; }
+  .prices-bg:before {
+    margin-top: -79px;
+    position: absolute;
+    background-image: url("./scss/img/dots-teal@1x.png");
+    background-size: auto;
+    display: inline-block;
+    max-width: 100%;
+    height: 323px;
+    width: 368px;
+    content: ""; }
+
+@media screen and (max-width: 992px) {
+  .pricing-3, .pricing-2 {
+    margin-top: 32px; } }
+
+@media screen and (max-width: 768px) {
+  .pricing-3, .pricing-2 {
+    margin-top: 79px; } }
+
+@media screen and (max-width: 992px) {
+  .pricing-2 {
+    margin-left: auto !important;
+    margin-right: 1px !important; } }
+
+@media screen and (max-width: 768px) {
+  .pricing-2 {
+    margin-right: auto !important;
+    margin-left: auto !important; } }
+
+@media screen and (max-width: 992px) {
+  .pricing-3 {
+    margin-right: auto !important;
+    margin-left: 1px !important; } }
+
+@media screen and (max-width: 768px) {
+  .pricing-3 {
+    margin-right: auto !important;
+    margin-left: auto !important; } }
+
+.pricing-parent {
+  height: auto;
+  width: 348px;
+  padding: 32px 42px 32px 42px;
+  border-radius: 4px;
+  background-color: #FFFFFF;
+  box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.11); }
+  @media screen and (max-width: 1105px) {
+    .pricing-parent {
+      width: 99%;
+      margin-left: .5%;
+      margin-right: .5%; } }
+  @media screen and (max-width: 992px) {
+    .pricing-parent {
+      margin-left: auto;
+      margin-right: auto;
+      width: 348px; } }
+  @media screen and (max-width: 397px) {
+    .pricing-parent {
+      width: 100%; } }
+  .pricing-parent .starter {
+    color: #58ACB0 !important; }
+  .pricing-parent .pro-seller {
+    color: #7B79C9 !important; }
+  .pricing-parent .pricing-header {
+    height: 27px;
+    width: 130px;
+    margin-left: auto;
+    margin-right: auto;
+    color: rgba(44, 21, 29, 0.8);
+    font-family: "Nunito Sans";
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 27px;
+    text-align: center;
+    margin-bottom: 16px; }
+  .pricing-parent .price-container {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 24px; }
+    .pricing-parent .price-container .pricing-dollar {
+      color: rgba(44, 21, 29, 0.9);
+      font-family: "Nunito Sans";
+      font-size: 48px;
+      font-weight: bold;
+      line-height: 48px; }
+    .pricing-parent .price-container .mo {
+      color: rgba(44, 21, 29, 0.8);
+      font-family: "Nunito Sans";
+      font-size: 16px;
+      line-height: 16px;
+      text-align: center; }
+  .pricing-parent .pricing-btn {
+    color: #E8562A;
+    background-color: #fff;
+    margin-bottom: 65px;
+    border: 1px solid #E8562A;
+    border-radius: 4px;
+    box-shadow: 0 2px 7px 0 rgba(182, 91, 0, 0.37);
+    padding-top: 17px;
+    padding-bottom: 17px; }
+  .pricing-parent .price-content-texts {
+    color: rgba(44, 21, 29, 0.8);
+    font-family: "Nunito Sans";
+    font-size: 16px;
+    line-height: 34px; }
+
+.pricing-upper {
+  margin-top: 110px; }
+  @media screen and (max-width: 992px) {
+    .pricing-upper {
+      margin-top: 145px; } }
+  .pricing-upper .pu-header {
+    color: rgba(44, 21, 29, 0.95);
+    font-family: "Nunito Sans";
+    font-size: 48px;
+    font-weight: bold;
+    line-height: 62px;
+    margin-bottom: 24px;
+    text-align: center; }
+  .pricing-upper .pu-body {
+    color: rgba(44, 21, 29, 0.6);
+    font-family: "Nunito Sans";
+    font-size: 24px;
+    line-height: 36px;
+    text-align: center;
+    margin-bottom: 67px; }
+    @media screen and (max-width: 992px) {
+      .pricing-upper .pu-body {
+        margin-bottom: 44px; } }
+
+* {
+  box-sizing: border-box; }
+
+.wrapper {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  grid-auto-rows: minmax(100px, auto);
+  grid-gap: 1em; }
+  .wrapper div {
+    padding: 1em;
+    color: #fff;
+    border: solid yellow 1px; }
+  .wrapper div:nth-child(odd) {
+    background-color: red; }
+  .wrapper div:nth-child(even) {
+    background-color: green; }
+  .wrapper .box1 {
+    grid-column: 1/3; }
