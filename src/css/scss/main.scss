@@ -89,6 +89,7 @@ strong {
   }
 }
 .signup-nav {
+  letter-spacing: 1px;
   font-family: "Nunito Sans"!important;
   padding: 17px 26.5px;
   border-radius: 4px;
@@ -174,11 +175,13 @@ strong {
   }
 }
 .bl-btn-container {
+  letter-spacing: 1px;
   @include mediaQuery(769px) { // ok
     flex-direction: column;
   }
 }
 .bl-btn-signup {
+  letter-spacing: 1px;
 	border-radius: 4px;
   background-color: #E8562A;
   border-color: #E8562A;
@@ -204,6 +207,7 @@ strong {
   }
 }
 .bl-btn-demo {
+  letter-spacing: 1px;
   border: 1px solid #E8562A;
   border-radius: 4px;
   color: #E8562A;
@@ -731,6 +735,7 @@ strong {
     }
   }
   .cvns-btn-signup {
+    letter-spacing: 1px;
     padding: 25px 42px;
     height: auto;
     border-radius: 4px;
@@ -838,6 +843,7 @@ strong {
     margin-bottom: 48px;
   }
   .promotions-btn {
+    letter-spacing: 1px;
     @include mediaQuery(769px) {
       width:100%;
     }
@@ -1292,6 +1298,7 @@ strong {
     box-shadow: 0 2px 7px 0 rgba(182,91,0,0.37);
     padding-top: 17px;
     padding-bottom: 17px;
+    letter-spacing: 1px;
   }
   .price-content-texts {
     color: rgba(44,21,29,0.8);
