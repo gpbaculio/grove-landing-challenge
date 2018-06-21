@@ -1,23 +1,32 @@
 * {
     box-sizing: border-box;
 }
+@mixin mediaQuery($arg) {
+    @media screen and (max-width: $arg) {
+        @content;
+    }
+}
 .wrapper {
-    display: grid;
-    grid-template-columns: 1fr 2fr 1fr;
-    grid-auto-rows: minmax(100px, auto);
-    grid-gap: 1em;
-    div {
-        padding: 1em;
-        color: #fff;
-        border: solid yellow 1px;
-    }
-    div:nth-child(odd) {
-        background-color: red;
-    }
-    div:nth-child(even) {
-        background-color: green;
+    width: 100%;
+    display: flex;
+    // flex-wrap: wrap;
+    .box {
+        height: 100px;
+        flex-basis: 300px;
     }
     .box1 {
-        grid-column: 1/3;
+        background-color: green;
+        // @include mediaQuery(992px) {
+        //     flex-basis: 100%;
+        // }
+    }
+    .box2 {
+        background-color: red;
+    }
+    .box3 {
+        background-color: purple;
+    }
+    .box4 {
+        background-color: blue;
     }
 }

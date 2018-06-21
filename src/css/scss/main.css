@@ -2,6 +2,9 @@
 * Orson http://en.orson.io , autreplanete http://www.autreplanete.com/
 *
 **/
+body {
+  font-family: -apple-system, BlinkMacSystemFont, sans-serif !important; }
+
 * {
   box-sizing: border-box; }
 
@@ -13,7 +16,7 @@
 
 body {
   color: inherit;
-  background-color: none; }
+  background-color: #F8F8F8; }
 
 hr {
   border-color: #D7D8DD; }
@@ -57,1184 +60,447 @@ img {
 strong {
   font-weight: 600; }
 
-/* Navbar */
+.hero-bg {
+  width: 100%;
+  position: absolute; }
+
 .navbar-toggler {
-  padding: 0;
-  border: 0; }
+  color: #fff !important; }
 
-.navbar-nav {
-  font-family: "Nunito Sans"; }
-  .navbar-nav li:nth-of-type(2) {
-    margin-right: 48px;
-    margin-left: 69px; }
-    @media screen and (max-width: 992px) {
-      .navbar-nav li:nth-of-type(2) {
-        margin-right: auto;
-        margin-left: auto; } }
-
-@media screen and (max-width: 576px) {
-  .nav-logo-img {
-    width: 160px; } }
-
-.signup-nav {
-  letter-spacing: 1px;
-  font-family: "Nunito Sans" !important;
-  padding: 17px 26.5px;
-  border-radius: 4px;
-  border-color: #E8562A;
-  background-color: #E8562A;
-  color: #FFFFFF;
-  font-family: "Nunito Sans";
-  font-size: 16px;
-  font-weight: bold;
-  line-height: 14px; }
-  .signup-nav:hover {
-    color: #E8562A;
-    background-color: #fff;
-    border-color: #E8562A; }
-
-.boost-left {
-  margin-top: 150px; }
-  @media screen and (max-width: 769px) {
-    .boost-left {
-      margin-top: 64px; } }
-  .boost-left .bl-header {
-    width: 667px;
-    height: auto;
-    color: rgba(44, 21, 29, 0.95);
-    font-family: "Nunito Sans";
-    font-size: 48px;
-    font-weight: bold;
-    line-height: 62px;
-    margin-bottom: 10px; }
-    @media screen and (max-width: 992px) {
-      .boost-left .bl-header {
-        width: 636px; } }
-    @media screen and (max-width: 769px) {
-      .boost-left .bl-header {
-        margin-top: 64px;
-        height: auto;
-        width: 100%;
-        font-family: Poppins;
-        font-size: 36px;
-        font-weight: 600;
-        line-height: 46px;
-        text-align: center;
-        margin-bottom: 56.43px; } }
-    @media screen and (max-width: 576px) {
-      .boost-left .bl-header {
-        margin-top: 24px;
-        height: auto;
-        width: 100%;
-        font-family: Poppins;
-        font-size: 32px;
-        font-weight: 600;
-        line-height: 42px;
-        text-align: center;
-        margin-bottom: 42px; } }
-  .boost-left .bl-body {
-    height: auto;
-    width: 495px;
-    color: rgba(44, 21, 29, 0.6);
-    font-family: "Nunito Sans";
-    font-size: 24px;
-    line-height: 36px;
-    margin-bottom: 38px; }
-    @media screen and (max-width: 769px) {
-      .boost-left .bl-body {
-        color: rgba(44, 21, 29, 0.6);
-        padding-left: 56px;
-        padding-right: 56px;
-        text-align: center;
-        width: 100%;
-        margin-bottom: 42px; } }
-    @media screen and (max-width: 576px) {
-      .boost-left .bl-body {
-        padding-left: 16px;
-        padding-right: 16px;
-        text-align: center;
-        width: 100%;
-        margin-bottom: 32px;
-        font-size: 20px;
-        line-height: 32px; } }
-
-.bl-btn-container {
-  letter-spacing: 1px; }
-  @media screen and (max-width: 769px) {
-    .bl-btn-container {
+.navbar-container {
+  width: 100%;
+  margin-left: 95px;
+  display: flex; }
+  @media screen and (max-width: 993px) {
+    .navbar-container {
+      margin-left: 0; } }
+  .navbar-container .nav-link {
+    margin-right: 24px;
+    color: #fff; }
+  @media screen and (max-width: 993px) {
+    .navbar-container .nav-left, .navbar-container .nav-right {
       flex-direction: column; } }
+  .navbar-container .nav-login {
+    border: 1px solid #FFFFFF;
+    border-radius: 5px;
+    background-color: transparent;
+    padding: 8px 15px; }
 
-.bl-btn-signup {
-  letter-spacing: 1px;
-  border-radius: 4px;
-  background-color: #E8562A;
-  border-color: #E8562A;
-  color: #FFFFFF;
-  font-family: "Nunito Sans";
-  font-size: 16px;
-  font-weight: bold;
-  line-height: 14px;
-  padding: 25px 36px;
-  margin-right: 24px; }
-  .bl-btn-signup:hover {
-    color: #E8562A;
-    background-color: #fff;
-    border-color: #E8562A; }
-  @media screen and (max-width: 769px) {
-    .bl-btn-signup {
-      margin-right: 0;
-      margin-bottom: 26px; } }
-  @media screen and (max-width: 576px) {
-    .bl-btn-signup {
-      margin-right: 0;
-      margin-bottom: 16px; } }
-
-.bl-btn-demo {
-  letter-spacing: 1px;
-  border: 1px solid #E8562A;
-  border-radius: 4px;
-  color: #E8562A;
-  font-family: "Nunito Sans";
-  font-size: 16px;
-  font-weight: bold;
-  line-height: 14px;
-  background-color: #fff;
-  padding: 25px 48px 25px 37px; }
-  .bl-btn-demo:hover {
-    color: #fff;
-    background-color: #E8562A;
-    border-color: #E8562A; }
-
-.br-img {
-  margin-top: 52px;
-  background-image: url("./scss/img/hero-homepage@1x.png");
-  height: 461px;
-  width: 419px;
-  background-size: contain;
-  background-repeat: no-repeat;
-  margin-left: auto;
-  z-index: -99; }
-  @media screen and (max-width: 992px) {
-    .br-img {
-      height: 307px;
-      width: 279px;
-      margin-top: 100px;
-      display: block;
-      margin-left: auto; } }
-  @media screen and (max-width: 769px) {
-    .br-img {
-      height: 428px;
-      width: 389px;
-      display: block;
-      margin-left: auto;
-      margin-right: auto;
-      margin-top: 77px; } }
-  @media screen and (max-width: 576px) {
-    .br-img {
-      height: 268px;
-      width: 239px;
-      display: block;
-      margin-left: auto;
-      margin-right: auto; } }
-
-@media screen and (max-width: 992px) {
-  .review-parent {
-    height: auto;
-    width: 100%; } }
-
-@media screen and (max-width: 769px) {
-  .review-parent {
-    flex-direction: column; } }
-
-.hannah-review-dots-purple {
-  margin-top: 180px;
-  background-image: url("./scss/img/dots-purple@1x.png");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: 0 0;
-  position: absolute;
-  height: 368px;
-  width: 368px; }
-  @media screen and (max-width: 992px) {
-    .hannah-review-dots-purple {
-      height: 368px;
-      width: 268px; } }
-  @media screen and (max-width: 769px) {
-    .hannah-review-dots-purple {
-      background-size: contain; } }
-  @media screen and (max-width: 576px) {
-    .hannah-review-dots-purple {
-      background-size: cover;
-      width: 20%; } }
-
-.hannah-review-dots-teal {
-  margin-top: 160px;
-  background-image: url("./scss/img/dots-teal@1x.png");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: 0 0;
-  right: 0;
-  position: absolute;
-  height: 368px;
-  width: 368px; }
-  @media screen and (max-width: 992px) {
-    .hannah-review-dots-teal {
-      height: 368px;
-      width: 268px; } }
-  @media screen and (max-width: 769px) {
-    .hannah-review-dots-teal {
-      background-size: contain; } }
-  @media screen and (max-width: 576px) {
-    .hannah-review-dots-teal {
-      background-size: cover;
-      width: 20%; } }
-
-.hannah-row {
-  margin-top: 150px; }
-  @media screen and (max-width: 769px) {
-    .hannah-row {
-      margin-top: 63px; } }
-
-.hannah-header {
-  color: rgba(44, 21, 29, 0.9);
-  font-family: "Nunito Sans";
-  font-size: 24px;
-  font-weight: bold;
-  line-height: 32px;
-  text-align: center; }
-
-.hannah-macbook {
-  margin-top: 144px;
-  background-image: url("./scss/img/macbook@1x.png");
-  background-size: contain;
-  background-repeat: no-repeat;
-  position: absolute;
-  height: 302px;
-  width: 472px;
-  z-index: 99; }
-  @media screen and (max-width: 992px) {
-    .hannah-macbook {
-      display: none; } }
-  @media screen and (max-width: 769px) {
-    .hannah-macbook {
-      margin-top: 32px;
-      display: block;
-      position: relative;
-      margin-left: auto;
-      margin-right: auto; } }
-  @media screen and (max-width: 576px) {
-    .hannah-macbook {
-      max-width: 100%; } }
-
-.hannah-container {
-  margin-left: -70px;
-  margin-top: 54px;
-  border-radius: 4px;
-  background-color: #FFFFFF;
-  box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.11);
-  width: 724px;
-  height: auto;
-  padding: 58px 87px 48px 97px; }
-  @media screen and (max-width: 992px) {
-    .hannah-container {
-      margin-top: 48px;
-      margin-left: auto;
-      margin-right: auto; } }
-  @media screen and (max-width: 769px) {
-    .hannah-container {
-      margin-top: 23px;
-      padding: 33px;
-      width: 100%; } }
-  .hannah-container .hannah-statement {
-    height: auto;
-    color: rgba(44, 21, 29, 0.9);
-    font-family: "Nunito Sans";
-    font-size: 32px;
-    line-height: 41px; }
-    @media screen and (max-width: 769px) {
-      .hannah-container .hannah-statement {
-        height: auto;
-        width: 100%;
-        color: rgba(44, 21, 29, 0.9);
-        font-family: "Nunito Sans";
-        font-size: 24px;
-        line-height: 36px; } }
-
-.hannah-avatar {
-  background-image: url("./scss/img/avatar.jpg");
-  background-size: contain;
-  background-repeat: no-repeat;
-  border-radius: 50%;
-  height: 64px;
-  width: 64px;
-  margin-top: 18px;
-  margin-right: 10px; }
-
-.hannah-name {
-  margin-top: 27px;
-  margin-bottom: 4px;
-  color: #E8562A;
-  font-family: "Nunito Sans";
-  font-size: 16px;
-  font-weight: bold;
-  line-height: 22px;
-  text-align: left; }
-
-.macbook-notifs-container {
-  z-index: 2;
-  margin-top: 90px; }
-  @media screen and (max-width: 769px) {
-    .macbook-notifs-container {
-      margin-top: 36px; } }
-
-@media screen and (max-width: 992px) {
-  .macbook-notifs {
-    display: none; } }
-
-@media screen and (max-width: 769px) {
-  .macbook-notifs {
-    display: block;
-    margin-left: auto;
-    margin-right: auto; } }
-
-.shopify-bg-left {
-  margin-top: 281px;
-  background-image: url("./scss/img/NotificationsLeft@1x.png");
-  background-size: cover;
-  background-repeat: no-repeat;
-  left: 0;
-  position: absolute;
-  height: 372px;
-  width: 341px; }
-  @media screen and (max-width: 992px) {
-    .shopify-bg-left {
-      height: 372px;
-      width: 125px;
-      background-position-x: -200px; } }
-  @media screen and (max-width: 769px) {
-    .shopify-bg-left {
-      display: none; } }
-
-.shopify-bg-right {
-  margin-top: 291px;
-  background-image: url("./scss/img/NotificationsRight@1x.png");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: 0 0;
-  right: 0;
-  position: absolute;
-  height: 382px;
-  width: 307px; }
-  @media screen and (max-width: 992px) {
-    .shopify-bg-right {
-      height: 382px;
-      width: 143px; } }
-  @media screen and (max-width: 769px) {
-    .shopify-bg-right {
-      display: none; } }
-
-.shopify-parent {
-  margin-top: 124px; }
-  .shopify-parent .shopify-love-logo {
-    height: 77px;
-    width: 101px;
-    margin-left: auto;
-    margin-right: auto; }
-  .shopify-parent .shopify-header {
-    height: 108px;
-    width: 611px;
-    color: rgba(44, 21, 29, 0.95);
-    font-family: "Nunito Sans";
-    font-size: 40px;
-    font-weight: bold;
-    line-height: 54px;
+.stress-container {
+  margin-top: 130px;
+  color: #fff; }
+  .stress-container .stress-header {
     text-align: center;
-    margin-top: 25px;
-    margin-bottom: 32px;
-    margin-left: auto;
-    margin-right: auto; }
-    @media screen and (max-width: 769px) {
-      .shopify-parent .shopify-header {
-        width: 100%;
-        height: auto; } }
-  .shopify-parent .shopify-body-1 {
-    height: 110px;
-    width: 540px;
-    color: rgba(44, 21, 29, 0.63);
-    font-family: "Nunito Sans";
-    font-size: 18px;
-    line-height: 27px;
+    color: #FFFFFF;
+    font-size: 36px;
+    font-weight: 600;
+    line-height: 43px;
+    margin-bottom: 40px; }
+  .stress-container .stress-body {
     text-align: center;
-    margin-bottom: 24px;
-    margin-left: auto;
-    margin-right: auto; }
-    @media screen and (max-width: 769px) {
-      .shopify-parent .shopify-body-1 {
-        padding-left: 16px;
-        padding-right: 16px;
-        width: 100%;
-        height: auto; } }
-  .shopify-parent .shopify-body-2 {
     margin-left: auto;
     margin-right: auto;
-    height: 136px;
-    width: 540px;
-    color: rgba(44, 21, 29, 0.63);
-    font-family: "Nunito Sans";
+    height: auto;
+    width: 569px;
+    color: #FFFFFF;
     font-size: 18px;
-    line-height: 27px;
+    font-weight: 600;
+    line-height: 25px;
+    text-align: center; }
+    @media screen and (max-width: 576px) {
+      .stress-container .stress-body {
+        max-width: 100%; } }
+  .stress-container .stress-footer {
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+    margin-top: 40px; }
+    @media screen and (max-width: 576px) {
+      .stress-container .stress-footer {
+        flex-direction: column; } }
+    .stress-container .stress-footer .sf-left {
+      height: auto;
+      width: 395px;
+      border: 1px solid rgba(151, 151, 151, 0.28);
+      border-radius: 4px;
+      background-color: #FFFFFF; }
+      @media screen and (max-width: 576px) {
+        .stress-container .stress-footer .sf-left {
+          height: 54px;
+          width: 100%;
+          margin-bottom: 24px; } }
+      .stress-container .stress-footer .sf-left::-moz-placeholder {
+        color: #A1A8B3;
+        font-size: 16px;
+        line-height: 19px; }
+      .stress-container .stress-footer .sf-left::-webkit-input-placeholder {
+        color: #A1A8B3;
+        font-size: 16px;
+        line-height: 19px;
+        text-indent: 10px; }
+    .stress-container .stress-footer .signup-beta {
+      color: #fff;
+      background-color: #25CCE8;
+      padding-top: 15px;
+      padding-bottom: 15px;
+      margin-left: 15px; }
+      @media screen and (max-width: 576px) {
+        .stress-container .stress-footer .signup-beta {
+          margin-left: 0; } }
+
+.feature-parent {
+  margin-top: 300px;
+  background-color: transparent; }
+  .feature-parent .feature-header {
+    color: #2D3940;
+    font-size: 36px;
+    font-weight: 600;
+    line-height: 43px;
     text-align: center;
-    margin-bottom: 42px; }
-    @media screen and (max-width: 769px) {
-      .shopify-parent .shopify-body-2 {
-        padding-left: 16px;
-        padding-right: 16px;
-        width: 100%;
-        height: auto; } }
-  .shopify-parent .shopify-footer {
-    height: 27px;
-    color: #E8562A;
-    font-family: "Nunito Sans";
-    font-size: 20px;
-    font-weight: bold;
-    line-height: 27px;
+    margin-bottom: 40px; }
+  .feature-parent .feature-body {
+    margin-bottom: 96px;
+    color: #434E54;
+    font-size: 18px;
+    line-height: 25px;
+    text-align: center;
+    width: 569px;
     margin-left: auto;
     margin-right: auto; }
-    @media screen and (max-width: 769px) {
-      .shopify-parent .shopify-footer {
-        text-align: center; } }
+    @media screen and (max-width: 576px) {
+      .feature-parent .feature-body {
+        width: 100%; } }
 
-@media screen and (max-width: 769px) {
-  .how-parent {
-    flex-direction: column;
-    margin-bottom: 96px; } }
-
-.hl-laptop1-container {
-  margin-top: 98px; }
+.feature-container {
+  text-align: center;
+  height: auto;
+  width: 532px;
+  border-radius: 5px;
+  background-color: #FFFFFF;
+  margin-right: auto;
+  margin-left: auto;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.05), 0 6px 17px 0 rgba(0, 0, 0, 0.05);
+  padding: 49px 51px 58px 51px; }
+  @media screen and (max-width: 1120px) {
+    .feature-container {
+      height: auto;
+      width: 98%;
+      padding: 2%; } }
   @media screen and (max-width: 992px) {
-    .hl-laptop1-container {
-      align-self: center;
-      margin-top: 119px; } }
-  @media screen and (max-width: 769px) {
-    .hl-laptop1-container {
-      display: none; } }
+    .feature-container {
+      margin-left: auto;
+      margin-right: auto;
+      height: auto;
+      width: 532px; } }
+  @media screen and (max-width: 576px) {
+    .feature-container {
+      width: 98%;
+      padding: 2%; } }
+  .feature-container .feature-img {
+    width: 48px;
+    height: 48px;
+    margin-bottom: 24px; }
+  .feature-container .notifs-img, .feature-container .security-img {
+    height: 48px;
+    margin-bottom: 24px; }
+  .feature-container .notifs-img {
+    width: 42px; }
+  .feature-container .security-img {
+    width: 37px; }
+  .feature-container .feature-header {
+    margin-bottom: 14px;
+    color: #3E3E3E;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 20px;
+    text-align: center; }
 
-@media screen and (max-width: 992px) {
-  .hl-laptop1 {
-    width: 431px;
-    height: auto; } }
+.product-parent {
+  margin-top: 112px !important; }
+  .product-parent .product-header {
+    margin-bottom: 24px !important;
+    color: #3E3E3E;
+    font-size: 36px;
+    font-weight: 600;
+    line-height: 43px;
+    text-align: center; }
+  .product-parent .product-body {
+    height: auto;
+    width: 569px;
+    color: #3E3E3E;
+    font-size: 18px;
+    line-height: 25px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 96px; }
+    @media screen and (max-width: 625px) {
+      .product-parent .product-body {
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto; } }
 
-@media screen and (max-width: 769px) {
-  .hl-laptop1 {
+.manager-left-parent {
+  margin-right: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  width: 500px; }
+  @media screen and (max-width: 625px) {
+    .manager-left-parent {
+      width: 100%; } }
+  @media screen and (max-width: 993px) {
+    .manager-left-parent {
+      justify-content: center;
+      margin-left: auto;
+      margin-right: auto; } }
+  .manager-left-parent .manager-header {
+    color: #2D3940;
+    margin-bottom: 24px;
+    font-size: 36px;
+    font-weight: 600;
+    line-height: 43px; }
+    @media screen and (max-width: 993px) {
+      .manager-left-parent .manager-header {
+        margin-top: 48px;
+        text-align: center; } }
+  .manager-left-parent .manager-body {
+    width: 500px;
+    color: #434E54;
+    font-size: 20px;
+    line-height: 35px;
+    margin-bottom: 64px; }
+    @media screen and (max-width: 993px) {
+      .manager-left-parent .manager-body {
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto; } }
+    @media screen and (max-width: 625px) {
+      .manager-left-parent .manager-body {
+        width: 100%; } }
+  @media screen and (max-width: 993px) {
+    .manager-left-parent .manager-footer {
+      margin-left: auto;
+      margin-right: auto; } }
+  .manager-left-parent .manager-footer .manager-btn {
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 19px;
+    text-align: center;
+    letter-spacing: 2px;
+    background-color: #25CCE8;
+    color: #fff;
+    padding: 15px 25px;
+    border: none; }
+
+.manager-right-parent {
+  margin-left: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  width: 500px; }
+  @media screen and (max-width: 625px) {
+    .manager-right-parent {
+      width: 100%; } }
+  @media screen and (max-width: 993px) {
+    .manager-right-parent {
+      justify-content: center;
+      margin-left: auto;
+      margin-right: auto; } }
+  .manager-right-parent .manager-header {
+    color: #2D3940;
+    margin-bottom: 24px;
+    font-size: 36px;
+    font-weight: 600;
+    line-height: 43px; }
+    @media screen and (max-width: 993px) {
+      .manager-right-parent .manager-header {
+        margin-top: 48px;
+        text-align: center; } }
+  .manager-right-parent .manager-body {
+    width: 500px;
+    color: #434E54;
+    font-size: 20px;
+    line-height: 35px;
+    margin-bottom: 64px; }
+    @media screen and (max-width: 993px) {
+      .manager-right-parent .manager-body {
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto; } }
+    @media screen and (max-width: 625px) {
+      .manager-right-parent .manager-body {
+        width: 100%; } }
+  @media screen and (max-width: 993px) {
+    .manager-right-parent .manager-footer {
+      margin-left: auto;
+      margin-right: auto; } }
+  .manager-right-parent .manager-footer .manager-btn {
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 19px;
+    text-align: center;
+    letter-spacing: 2px;
+    background-color: #25CCE8;
+    color: #fff;
+    padding: 15px 25px;
+    border: none; }
+
+@media screen and (max-width: 993px) {
+  .product-snapshot, .active-portfolio {
+    margin-top: 48px;
     display: block;
     margin-left: auto;
     margin-right: auto; } }
 
-.how-left {
-  margin-top: 223px; }
-  @media screen and (max-width: 769px) {
-    .how-left {
-      order: 1;
-      margin-top: 50px; } }
-  .how-left .hl-header {
-    height: 54px;
-    color: rgba(44, 21, 29, 0.95);
-    font-family: "Nunito Sans";
-    font-size: 40px;
-    font-weight: bold;
-    line-height: 54px;
-    margin-bottom: 32px; }
-    @media screen and (max-width: 992px) {
-      .how-left .hl-header {
-        height: 54px;
-        width: 594px; } }
-    @media screen and (max-width: 769px) {
-      .how-left .hl-header {
-        width: 100%;
-        height: auto;
-        text-align: center; } }
-  .how-left .hl-body {
-    height: 79px;
-    width: 511px;
-    color: rgba(44, 21, 29, 0.63);
-    font-family: "Nunito Sans";
-    font-size: 18px;
-    line-height: 27px;
-    margin-bottom: 6px; }
-    @media screen and (max-width: 769px) {
-      .how-left .hl-body {
-        padding-left: 42px;
-        padding-right: 42px;
-        width: 100%;
-        height: auto;
-        text-align: center;
-        margin-bottom: 33px; } }
-  .how-left .hl-footer {
-    color: #E8562A;
-    font-family: "Nunito Sans";
-    font-size: 20px;
-    font-weight: bold;
-    line-height: 27px; }
-    @media screen and (max-width: 769px) {
-      .how-left .hl-footer {
-        padding-left: 53px;
-        padding-right: 53px;
-        width: 100%;
-        height: auto;
-        text-align: center; } }
-
-.how-right {
-  margin-top: 48px; }
-  @media screen and (max-width: 992px) {
-    .how-right {
-      margin-top: 143px; } }
-  @media screen and (max-width: 769px) {
-    .how-right {
-      order: 0;
-      margin-top: 99px; } }
-  @media screen and (max-width: 769px) {
-    .how-right .how-img {
-      display: block;
-      margin-right: auto;
-      margin-left: auto; } }
-
-.conversions-bg-left {
-  background-image: url("./scss/img/dots-teal@1x.png");
-  background-size: cover;
-  background-repeat: no-repeat;
-  left: 0;
-  position: absolute;
-  height: 368px;
-  width: 368px; }
-  @media screen and (max-width: 992px) {
-    .conversions-bg-left {
-      height: 382px;
-      width: 143px; } }
-
-.conversions-bg-right {
-  background-image: url("./scss/img/dots-purple@1x.png");
-  background-size: cover;
-  background-repeat: no-repeat;
-  right: 0;
-  position: absolute;
-  height: 368px;
-  width: 368px;
-  margin-top: 110px; }
-  @media screen and (max-width: 992px) {
-    .conversions-bg-right {
-      height: 382px;
-      width: 143px; } }
-
-.conversions-parent {
-  padding: 64px 63px 62px 67px;
-  height: auto;
-  width: 100%;
-  border-radius: 4px;
-  background-color: #FFFFFF;
-  box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.11);
-  margin-top: 80px;
-  margin-bottom: 99px; }
-  @media screen and (max-width: 769px) {
-    .conversions-parent {
-      flex-direction: column;
-      padding: 0; } }
-  .conversions-parent .conversions-header {
-    height: 108px;
-    width: 562px;
-    color: rgba(44, 21, 29, 0.95);
-    font-family: "Nunito Sans";
-    font-size: 40px;
-    font-weight: bold;
-    line-height: 54px;
-    margin-bottom: 17px; }
-    @media screen and (max-width: 992px) {
-      .conversions-parent .conversions-header {
-        height: auto;
-        width: 100%; } }
-    @media screen and (max-width: 769px) {
-      .conversions-parent .conversions-header {
-        width: 100%;
-        height: auto;
-        text-align: center;
-        padding: 64px 38px 0 38px; } }
-    @media screen and (max-width: 576px) {
-      .conversions-parent .conversions-header {
-        font-size: 30px;
-        line-height: 44px; } }
-  .conversions-parent .conversions-body {
-    height: 60px;
-    width: 431px;
-    color: rgba(44, 21, 29, 0.6);
-    font-family: "Nunito Sans";
-    font-size: 20px;
-    line-height: 30px; }
-    @media screen and (max-width: 992px) {
-      .conversions-parent .conversions-body {
-        height: auto;
-        width: 100%; } }
-    @media screen and (max-width: 769px) {
-      .conversions-parent .conversions-body {
-        width: 431.37px;
-        height: auto;
-        text-align: center;
-        margin-left: auto;
-        margin-right: auto;
-        margin-bottom: 32px; } }
-    @media screen and (max-width: 576px) {
-      .conversions-parent .conversions-body {
-        width: 100%;
-        height: auto;
-        text-align: center;
-        margin-left: auto;
-        margin-right: auto;
-        margin-bottom: 32px;
-        padding-left: 38px;
-        padding-right: 38px; } }
-  @media screen and (max-width: 769px) {
-    .conversions-parent .conversions-right {
-      width: 100%;
-      padding-left: 17px;
-      padding-right: 17px; } }
-  .conversions-parent .cvns-btn-signup {
-    letter-spacing: 1px;
-    padding: 25px 42px;
+.manage-order-parent {
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 71px;
+  width: 288px; }
+  @media screen and (max-width: 329px) {
+    .manage-order-parent {
+      width: 100%; } }
+  .manage-order-parent .manage-order-img-container {
+    align-self: center;
+    width: 64px;
+    height: 64px;
+    margin-bottom: 40px; }
+  .manage-order-parent .manage-order-body {
+    align-self: center;
     height: auto;
-    border-radius: 4px;
-    background-color: #E8562A;
-    border-color: #E8562A;
-    box-shadow: 0 2px 7px 0 rgba(182, 91, 0, 0.37);
-    color: #FFFFFF;
-    font-family: "Nunito Sans";
+    color: #434E54;
+    font-size: 16px;
+    line-height: 25px;
+    text-align: center; }
+    @media screen and (max-width: 993px) {
+      .manage-order-parent .manage-order-body {
+        width: 100%; } }
+
+.portfolio-row {
+  margin-top: 160px; }
+
+.tracker-row {
+  margin-top: 160px; }
+
+.security-integrations-row {
+  margin-top: 160px; }
+
+.parent-left {
+  margin-right: auto !important; }
+
+.parent-right {
+  margin-left: auto !important; }
+
+.security-integrations-parent {
+  width: 500px; }
+  @media screen and (max-width: 993px) {
+    .security-integrations-parent {
+      width: 100%; } }
+  .security-integrations-parent .security-integrations-header {
+    color: #2D3940;
+    font-size: 36px;
+    font-weight: 600;
+    line-height: 43px;
+    text-align: center;
+    margin-bottom: 24px; }
+  .security-integrations-parent .security-integrations-body {
+    color: #434E54;
     font-size: 20px;
-    font-weight: bold;
-    line-height: 14px;
-    margin-left: auto; }
-    @media screen and (max-width: 769px) {
-      .conversions-parent .cvns-btn-signup {
-        width: 100%;
-        height: auto;
-        text-align: center;
-        margin-left: auto;
-        margin-right: auto;
-        margin-bottom: 39px; } }
-    @media screen and (max-width: 576px) {
-      .conversions-parent .cvns-btn-signup {
-        font-size: 14px; } }
+    line-height: 35px;
+    text-align: center; }
+  .security-integrations-parent .security-integrations-img-container {
+    margin-top: 40px; }
+    .security-integrations-parent .security-integrations-img-container img {
+      display: block;
+      margin-left: auto;
+      margin-right: auto; }
+
+.integration-parent .integration-footer {
+  margin-top: 16px;
+  text-align: center;
+  color: #3E3E3E;
+  font-size: 14px;
+  line-height: 16px; }
 
 .footer-container {
-  margin-bottom: 124px; }
-  .footer-container .footer-upper {
-    margin-bottom: 18.8px; }
-    .footer-container .footer-upper .fu-left .footer-logo {
-      width: 160px;
-      height: 39px; }
-    .footer-container .footer-upper .fu-right .fu-right-twt {
-      margin-left: 24px; }
-  .footer-container .footer-bottom .fb-left {
-    margin-left: 10px;
-    color: rgba(64, 33, 44, 0.8);
-    font-family: "Nunito Sans";
-    font-size: 16px;
-    line-height: 27px; }
-    @media screen and (max-width: 576px) {
-      .footer-container .footer-bottom .fb-left {
-        font-size: 14px;
-        line-height: 25px; } }
-  .footer-container .footer-bottom .fb-right {
-    color: rgba(44, 21, 29, 0.81);
-    font-family: "Nunito Sans";
-    font-size: 16px;
-    line-height: 27px;
-    text-align: right; }
-    @media screen and (max-width: 576px) {
-      .footer-container .footer-bottom .fb-right {
-        font-size: 14px;
-        line-height: 25px; } }
+  margin-top: 24px;
+  background-color: #323A3D;
+  padding-top: 49px;
+  padding-bottom: 23px; }
 
-.promotions-parent {
-  margin-top: 120px; }
-  @media screen and (max-width: 769px) {
-    .promotions-parent {
-      margin-top: 68px; } }
-  .promotions-parent .promotions-header {
-    height: 124.8px;
-    width: 738px;
-    color: rgba(44, 21, 29, 0.95);
-    font-family: "Nunito Sans";
-    font-size: 48px;
-    font-weight: bold;
-    line-height: 62px;
-    margin-bottom: 25px; }
-    @media screen and (max-width: 769px) {
-      .promotions-parent .promotions-header {
-        font-size: 40px;
-        margin-bottom: 32px;
-        width: 100%;
-        height: auto;
-        font-weight: bold;
-        line-height: 52px;
-        text-align: center; } }
-  .promotions-parent .promotions-body-1, .promotions-parent .promotions-body-2 {
-    color: rgba(44, 21, 29, 0.6);
-    font-family: "Nunito Sans";
-    font-size: 24px;
-    line-height: 36px; }
-    @media screen and (max-width: 769px) {
-      .promotions-parent .promotions-body-1, .promotions-parent .promotions-body-2 {
-        margin-left: auto;
-        margin-right: auto;
-        text-align: center; } }
-  .promotions-parent .promotions-body-2 {
-    margin-bottom: 48px; }
-  .promotions-parent .promotions-btn {
-    letter-spacing: 1px; }
-    @media screen and (max-width: 769px) {
-      .promotions-parent .promotions-btn {
-        width: 100%; } }
-
-.promotions-img {
-  margin-top: 129px;
-  background-image: url("./scss/img/Product@1x.png");
-  height: 442px;
-  width: 441px;
-  background-size: contain;
-  background-repeat: no-repeat;
-  margin-left: auto;
-  z-index: -99; }
-  @media screen and (max-width: 992px) {
-    .promotions-img {
-      height: 308px;
-      width: 277px; } }
-  @media screen and (max-width: 769px) {
-    .promotions-img {
-      margin-top: 115px;
-      height: 308px;
-      width: 277px;
-      display: block;
-      margin-left: auto;
-      margin-right: auto; } }
-  @media screen and (max-width: 769px) {
-    .promotions-img {
-      max-width: 100%; } }
-
-.why-container {
-  margin-top: 39px;
-  width: 489px;
-  margin-left: auto;
-  margin-right: auto; }
-  @media screen and (max-width: 769px) {
-    .why-container {
-      margin-top: 111px; } }
-  @media screen and (max-width: 576px) {
-    .why-container {
-      height: auto;
-      width: 100%; } }
-  .why-container .why-header {
-    color: rgba(44, 21, 29, 0.95);
-    font-family: "Nunito Sans";
-    font-size: 40px;
-    font-weight: bold;
-    line-height: 54px;
-    text-align: center; }
-  .why-container .why-body {
-    margin-top: 16px;
-    color: rgba(44, 21, 29, 0.63);
-    font-family: "Nunito Sans";
-    font-size: 18px;
-    line-height: 27px;
-    text-align: center; }
-
-.highlight-container {
-  margin-left: 0;
-  padding-left: 0; }
-  @media screen and (max-width: 769px) {
-    .highlight-container {
-      margin-left: auto;
-      padding-left: 15px; } }
-
-.laptop-1-bg {
-  background-image: url("./scss/img/laptop-1@1x.png");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: 0 0;
-  left: 0;
-  position: absolute;
-  height: 441px;
-  width: 781px;
-  margin-top: 98px;
-  max-width: 100%; }
-  @media screen and (max-width: 992px) {
-    .laptop-1-bg {
-      width: 431px; } }
-  @media screen and (max-width: 769px) {
-    .laptop-1-bg {
-      display: none; } }
-
-.highlight-parent {
-  position: relative;
-  right: -60px; }
-  @media screen and (max-width: 1274px) {
-    .highlight-parent {
-      right: 0; } }
-  @media screen and (max-width: 769px) {
-    .highlight-parent {
-      width: 100%;
-      margin-top: 73px; } }
-  .highlight-parent .highlight-left {
-    display: none; }
-    @media screen and (max-width: 769px) {
-      .highlight-parent .highlight-left {
-        display: block; } }
-  .highlight-parent .highlight-right {
-    margin-top: 134px;
-    margin-left: auto; }
-    @media screen and (max-width: 769px) {
-      .highlight-parent .highlight-right {
-        margin-top: 91px;
-        margin-left: auto;
-        margin-right: auto; } }
-    .highlight-parent .highlight-right .icon-star {
-      width: 48px;
-      height: 48px; }
-      @media screen and (max-width: 769px) {
-        .highlight-parent .highlight-right .icon-star {
-          display: block;
-          margin-left: auto;
-          margin-right: auto; } }
-    .highlight-parent .highlight-right .highlight-header {
-      height: auto;
-      width: 324px;
-      color: rgba(44, 21, 29, 0.95);
-      font-family: "Nunito Sans";
-      font-size: 40px;
-      font-weight: bold;
-      line-height: 54px;
-      margin-top: 19px; }
-      @media screen and (max-width: 769px) {
-        .highlight-parent .highlight-right .highlight-header {
-          text-align: center;
-          margin-left: auto;
-          margin-right: auto; } }
-      @media screen and (max-width: 576px) {
-        .highlight-parent .highlight-right .highlight-header {
-          width: 100%;
-          height: auto; } }
-    .highlight-parent .highlight-right .highlight-body {
-      margin-top: 16px;
-      height: auto;
-      width: 489px;
-      color: rgba(44, 21, 29, 0.63);
-      font-family: "Nunito Sans";
-      font-size: 18px;
-      line-height: 27px; }
-      @media screen and (max-width: 992px) {
-        .highlight-parent .highlight-right .highlight-body {
-          width: 474px; } }
-      @media screen and (max-width: 769px) {
-        .highlight-parent .highlight-right .highlight-body {
-          text-align: center;
-          margin-left: auto;
-          margin-right: auto; } }
-      @media screen and (max-width: 576px) {
-        .highlight-parent .highlight-right .highlight-body {
-          width: 100%;
-          height: auto; } }
-    .highlight-parent .highlight-right .highlight-footer {
-      margin-top: 40px;
-      color: #E8562A;
-      font-family: "Nunito Sans";
-      font-size: 20px;
-      font-weight: bold;
-      line-height: 27px; }
-      @media screen and (max-width: 769px) {
-        .highlight-parent .highlight-right .highlight-footer {
-          text-align: center;
-          margin-left: auto;
-          margin-right: auto; } }
-
-.sales-container {
-  margin-right: 0;
-  padding-right: 0; }
-  @media screen and (max-width: 769px) {
-    .sales-container {
-      margin-right: auto;
-      padding-right: 15px; } }
-
-.sales-row {
-  margin: 0; }
-  @media screen and (max-width: 769px) {
-    .sales-row {
-      margin-right: -15px;
-      margin-left: -15px; } }
-
-.sales-col {
-  margin-right: 0;
-  padding-right: 0; }
-  @media screen and (max-width: 769px) {
-    .sales-col {
-      margin-right: auto;
-      padding-right: 15px; } }
-
-.sls-laptop2-container {
-  margin-top: 98px; }
-  @media screen and (max-width: 992px) {
-    .sls-laptop2-container {
-      width: 400px;
-      height: auto;
-      align-self: center;
-      margin-top: 119px; } }
-  @media screen and (max-width: 769px) {
-    .sls-laptop2-container {
-      display: none; } }
-  @media screen and (max-width: 992px) {
-    .sls-laptop2-container .laptop-2 {
-      width: 431px; } }
-  @media screen and (max-width: 769px) {
-    .sls-laptop2-container .laptop-2 {
-      display: none; } }
-
-.sales-parent {
-  position: relative;
-  left: -60px; }
-  @media screen and (max-width: 1274px) {
-    .sales-parent {
-      left: 0; } }
-  @media screen and (max-width: 769px) {
-    .sales-parent {
-      width: 100%;
-      margin-top: 121px; } }
-  .sales-parent .sales-left {
-    display: none; }
-    @media screen and (max-width: 769px) {
-      .sales-parent .sales-left {
-        display: block; } }
-  .sales-parent .sales-right {
-    margin-top: 134px;
-    margin-left: auto; }
-    @media screen and (max-width: 769px) {
-      .sales-parent .sales-right {
-        margin-top: 91px;
-        margin-left: auto;
-        margin-right: auto; } }
-    .sales-parent .sales-right .icon-star {
-      width: 48px;
-      height: 48px; }
-      @media screen and (max-width: 769px) {
-        .sales-parent .sales-right .icon-star {
-          display: block;
-          margin-left: auto;
-          margin-right: auto; } }
-    .sales-parent .sales-right .sales-header {
-      height: auto;
-      width: 324px;
-      color: rgba(44, 21, 29, 0.95);
-      font-family: "Nunito Sans";
-      font-size: 40px;
-      font-weight: bold;
-      line-height: 54px;
-      margin-top: 19px; }
-      @media screen and (max-width: 769px) {
-        .sales-parent .sales-right .sales-header {
-          text-align: center;
-          margin-left: auto;
-          margin-right: auto; } }
-      @media screen and (max-width: 576px) {
-        .sales-parent .sales-right .sales-header {
-          width: 100%;
-          height: auto; } }
-    .sales-parent .sales-right .sales-body {
-      margin-top: 16px;
-      height: auto;
-      width: 489px;
-      color: rgba(44, 21, 29, 0.63);
-      font-family: "Nunito Sans";
-      font-size: 18px;
-      line-height: 27px; }
-      @media screen and (max-width: 992px) {
-        .sales-parent .sales-right .sales-body {
-          width: 474px; } }
-      @media screen and (max-width: 769px) {
-        .sales-parent .sales-right .sales-body {
-          text-align: center;
-          margin-left: auto;
-          margin-right: auto; } }
-      @media screen and (max-width: 576px) {
-        .sales-parent .sales-right .sales-body {
-          width: 100%;
-          height: auto; } }
-    @media screen and (max-width: 769px) {
-      .sales-parent .sales-right .sales-footer-parent {
-        margin-left: auto;
-        margin-right: auto; } }
-    .sales-parent .sales-right .sales-footer {
-      margin-top: 40px;
-      color: #E8562A;
-      font-family: "Nunito Sans";
-      font-size: 20px;
-      font-weight: bold;
-      line-height: 27px; }
-      @media screen and (max-width: 769px) {
-        .sales-parent .sales-right .sales-footer {
-          margin-left: auto;
-          margin-right: auto; } }
-
-@media screen and (max-width: 769px) {
-  .highlight2-footer-parent {
-    margin-left: auto;
-    margin-right: auto; } }
-
-.highlight2-footer {
-  margin-top: 40px;
-  color: #E8562A;
-  font-family: "Nunito Sans";
+.get-started {
+  color: #FFFFFF;
   font-size: 20px;
-  font-weight: bold;
-  line-height: 27px; }
+  font-weight: 600;
+  line-height: 24px;
+  margin-top: 60px; }
   @media screen and (max-width: 769px) {
-    .highlight2-footer {
-      margin-left: auto;
-      margin-right: auto; } }
+    .get-started {
+      text-align: center; } }
 
-@media screen and (max-width: 769px) {
-  .highlight-parent2 {
-    margin-top: 120px; } }
+.footer-signup {
+  margin-right: auto;
+  margin-top: 16px; }
+  @media screen and (max-width: 576px) {
+    .footer-signup {
+      flex-direction: column; } }
+  .footer-signup .footer-left {
+    height: auto;
+    width: 395px;
+    border: 1px solid rgba(151, 151, 151, 0.28);
+    border-radius: 4px;
+    background-color: #FFFFFF; }
+    @media screen and (max-width: 576px) {
+      .footer-signup .footer-left {
+        height: 54px;
+        width: 100%;
+        margin-bottom: 24px; } }
+    .footer-signup .footer-left::-moz-placeholder {
+      color: #A1A8B3;
+      font-size: 16px;
+      line-height: 19px; }
+    .footer-signup .footer-left::-webkit-input-placeholder {
+      color: #A1A8B3;
+      font-size: 16px;
+      line-height: 19px;
+      text-indent: 10px; }
+  .footer-signup .signup-beta {
+    color: #fff;
+    background-color: #25CCE8;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    margin-left: 15px; }
+    @media screen and (max-width: 576px) {
+      .footer-signup .signup-beta {
+        margin-left: 0; } }
 
-.prices-bg {
-  background-color: #7B79C9;
-  padding-top: 79px;
-  padding-bottom: 68px;
-  margin-bottom: 68px;
-  background-image: url("./scss/img/dots-teal@1x.png");
-  background-size: auto;
-  background-position: 100% 100%;
-  background-repeat: no-repeat; }
-  .prices-bg:before {
-    margin-top: -79px;
-    position: absolute;
-    background-image: url("./scss/img/dots-teal@1x.png");
-    background-size: auto;
-    display: inline-block;
-    max-width: 100%;
-    height: 323px;
-    width: 368px;
-    content: ""; }
+.footer-address {
+  color: #FFFFFF;
+  margin-top: 93px;
+  font-size: 14px;
+  line-height: 16px; }
+  @media screen and (max-width: 769px) {
+    .footer-address {
+      text-align: center; } }
 
-@media screen and (max-width: 992px) {
-  .pricing-3, .pricing-2 {
-    margin-top: 32px; } }
+.footer-right {
+  color: #fff; }
+  .footer-right .fm-header {
+    margin-bottom: 26px; }
 
-@media screen and (max-width: 768px) {
-  .pricing-3, .pricing-2 {
-    margin-top: 79px; } }
+.fl-logo-img {
+  display: block; }
+  @media screen and (max-width: 769px) {
+    .fl-logo-img {
+      display: none; } }
 
-@media screen and (max-width: 992px) {
-  .pricing-2 {
-    margin-left: auto !important;
-    margin-right: 1px !important; } }
-
-@media screen and (max-width: 768px) {
-  .pricing-2 {
-    margin-right: auto !important;
-    margin-left: auto !important; } }
-
-@media screen and (max-width: 992px) {
-  .pricing-3 {
-    margin-right: auto !important;
-    margin-left: 1px !important; } }
-
-@media screen and (max-width: 768px) {
-  .pricing-3 {
-    margin-right: auto !important;
-    margin-left: auto !important; } }
-
-.pricing-parent {
-  height: auto;
-  width: 348px;
-  padding: 32px 42px 32px 42px;
-  border-radius: 4px;
-  background-color: #FFFFFF;
-  box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.11); }
-  @media screen and (max-width: 1105px) {
-    .pricing-parent {
-      width: 99%;
-      margin-left: .5%;
-      margin-right: .5%; } }
-  @media screen and (max-width: 992px) {
-    .pricing-parent {
+.fr-logo-img {
+  display: none; }
+  @media screen and (max-width: 769px) {
+    .fr-logo-img {
       margin-left: auto;
       margin-right: auto;
-      width: 348px; } }
-  @media screen and (max-width: 397px) {
-    .pricing-parent {
-      width: 100%; } }
-  .pricing-parent .starter {
-    color: #58ACB0 !important; }
-  .pricing-parent .pro-seller {
-    color: #7B79C9 !important; }
-  .pricing-parent .pricing-header {
-    height: 27px;
-    width: 130px;
-    margin-left: auto;
-    margin-right: auto;
-    color: rgba(44, 21, 29, 0.8);
-    font-family: "Nunito Sans";
-    font-size: 20px;
-    font-weight: bold;
-    line-height: 27px;
-    text-align: center;
-    margin-bottom: 16px; }
-  .pricing-parent .price-container {
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 24px; }
-    .pricing-parent .price-container .pricing-dollar {
-      color: rgba(44, 21, 29, 0.9);
-      font-family: "Nunito Sans";
-      font-size: 48px;
-      font-weight: bold;
-      line-height: 48px; }
-    .pricing-parent .price-container .mo {
-      color: rgba(44, 21, 29, 0.8);
-      font-family: "Nunito Sans";
-      font-size: 16px;
-      line-height: 16px;
-      text-align: center; }
-  .pricing-parent .pricing-btn {
-    color: #E8562A;
-    background-color: #fff;
-    margin-bottom: 65px;
-    border: 1px solid #E8562A;
-    border-radius: 4px;
-    box-shadow: 0 2px 7px 0 rgba(182, 91, 0, 0.37);
-    padding-top: 17px;
-    padding-bottom: 17px;
-    letter-spacing: 1px; }
-  .pricing-parent .price-content-texts {
-    color: rgba(44, 21, 29, 0.8);
-    font-family: "Nunito Sans";
-    font-size: 16px;
-    line-height: 34px; }
-
-.pricing-upper {
-  margin-top: 110px; }
-  @media screen and (max-width: 992px) {
-    .pricing-upper {
-      margin-top: 145px; } }
-  .pricing-upper .pu-header {
-    color: rgba(44, 21, 29, 0.95);
-    font-family: "Nunito Sans";
-    font-size: 48px;
-    font-weight: bold;
-    line-height: 62px;
-    margin-bottom: 24px;
-    text-align: center; }
-  .pricing-upper .pu-body {
-    color: rgba(44, 21, 29, 0.6);
-    font-family: "Nunito Sans";
-    font-size: 24px;
-    line-height: 36px;
-    text-align: center;
-    margin-bottom: 67px; }
-    @media screen and (max-width: 992px) {
-      .pricing-upper .pu-body {
-        margin-bottom: 44px; } }
+      display: block;
+      margin-bottom: 24px; } }

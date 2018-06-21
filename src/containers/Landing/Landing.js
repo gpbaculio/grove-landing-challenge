@@ -3,155 +3,364 @@ import { Row, Col, Button, Container } from 'reactstrap';
 import Navbar from '../../components/Navbar';
 import Footer from '../../components/Footer';
 
-import PaintBrush from 'react-icons/lib/io/paintbrush';
-import AndroidStar from 'react-icons/lib/io/android-star';
-import IoTelephone from 'react-icons/lib/io/ios-telephone';
-import ArrowForward from 'react-icons/lib/io/android-arrow-forward';
-
-const macbook1 = require('../../img/macbook-and-notification@1x.png');
-const macbook2 = require('../../img/macbook-and-notification@2x.png');
-const how1 = require('../../img/How@1x.png');
-const how2 = require('../../img/How@2x.png');
-const shopify1 = require('../../img/shopify-love@1x.png');
-const shopify2 = require('../../img/shopify-love@2x.png');
 
 class Landing extends Component {
   render() {
     return (
       <React.Fragment>
+        <img alt="" className="hero-bg" src={require('../../img/hero@1x.png')} srcset={`${require('../../img/hero@1x.png')} 1x, ${require('../../img/hero@2x.png')} 2x`} />
+        <div className="hero-bg" />
         <Navbar />
         <Container>
           <Row>
-            <Col 
-              xs={{ size: 12, order: 1 }} 
-              sm={{ size: 12, order: 1 }} 
-              md={{ size: 6, order: 0 }} 
-              lg={{ size: 6, order: 0 }}
-              style={{ zIndex: 2 }}
-            >
-              <div className="boost-container d-flex">
-                <div className="boost-left">
-                  <div className="bl-header">
-                    Boost your Store Conversions with Social Proof
-                  </div>
-                  <div className="bl-body">
-                    Shopify sellers: instantly boost conversions with a single-click install
-                  </div>
-                  <div className="bl-btn-container d-flex">
-                    <Button className="bl-btn-signup">
-                      SIGN UP FOR FREE
-                    </Button>
-                    <Button className="bl-btn-demo">
-                      GET A LIVE DEMO
-                    </Button>
-                  </div>
+            <Col>
+              <div className="stress-container">
+                <div className="stress-header">Stress-Free Portfolio Management</div>
+                <div className="stress-body">Managing a portfolio of altcoins across mulitiple exchanges is difficult. Policy changes can cause serious disruption to our strategy. We created altmanager to make your portfolio immune to all of these changes.</div>
+                <div className="stress-footer d-flex">
+                  <input className="sf-left" type="text" placeholder="Enter you email" />
+                  <Button className="signup-beta"> Sign up for Beta </Button>
                 </div>
               </div>
-            </Col>
-            <Col 
-              xs={{ size: 12, order: 0 }} 
-              sm={{ size: 12, order: 0 }} 
-              md={{ size: 6, order: 0 }} 
-              lg={{ size: 6, order: 0 }}
-            >
-              <div className="br-img" />
             </Col>
           </Row>
         </Container>
-        <div className="hannah-review-dots-purple"/>
-        <div className="hannah-review-dots-teal"/>
-        <Container>
-          <Row className="hannah-row">
-            <Col xs="12">
-              <div className="hannah-header">
-                What our Customer Say
+        <Container style={{ backgroundColor: 'transparent' }}>
+          <Row>
+            <Col>
+              <div className="feature-parent">
+                <div className="feature-header">Feature Overview</div>
+                <div className="feature-body">Our initial product release will provide traders with the ability to manage their portfolio with far greater ease. We have built the key features that will make the transition to altmanager seamless.</div>
               </div>
             </Col>
-            <Col className="hannah-row-2">
-              <div className="d-inline-flex review-parent">
-                <div className="macbook-notifs-container">
-                  <img alt="" className="macbook-notifs" src={require('../../img/macbook-and-notification@1x.png')} srcset={`${macbook1} 1x, ${macbook2} 2x`} />
+          </Row>
+          <Row>
+            <Col xs="12" lg="6">
+              <div className="feature-container">
+                <img className="feature-img" src={require('../../img/combinedShape@1x.png')} srcset={`${require('../../img/combinedShape@1x.png')} 1x, ${require('../../img/combinedShape@2x.png')} 2x`} />
+                <div className="feature-header">
+                  MANAGE OPEN ORDERS
                 </div>
-                <div className="hannah-container d-flex flex-column">
-                  <div className="hannah-statement">
-                    "This app work's like magic. After a one-click install, my revenue started to grow regularly. Getting their daily performance email is now my favorite part of the day!"
+                <div className="feature-body">
+                  Our system connects with exchanges and places buy and sell orders based on your requirements. When these orders expire they will be resubmited for you.
+                </div>
+              </div>
+            </Col>
+            <Col xs="12" lg="6">
+              <div className="feature-container">
+                <img className="feature-img" src={require('../../img/combinedShape2@1x.png')} srcset={`${require('../../img/combinedShape2@1x.png')} 1x, ${require('../../img/combinedShape2@2x.png')} 2x`} />
+                <div className="feature-header">
+                  COIN-BASED NEWSFEED
+                </div>
+                <div className="feature-body">
+                  Our system is conected with hundreds of news sources from the biggest sites to obscure sub reddits. Get the latest news about your coins as it breaks.
+                </div>
+              </div>
+            </Col>
+          </Row>
+          <Row>
+            <Col xs="12" lg="6">
+              <div className="feature-container">
+                <img className="notifs-img" src={require('../../img/alerts@1x.png')} srcset={`${require('../../img/alerts@1x.png')} 1x, ${require('../../img/alerts@2x.png')} 2x`} />
+                <div className="feature-header">
+                  ALERTS & NOTIFICATIONS
+                </div>
+                <div className="feature-body">
+                  Get notified when your levels are hit on your mobile detavice or through email. Never miss a trade and make sure you are ontop of your portfolios performance.
+                </div>
+              </div>
+            </Col>
+            <Col xs="12" lg="6">
+              <div className="feature-container">
+                <img className="security-img" src={require('../../img/security@1x.png')} srcset={`${require('../../img/security@1x.png')} 1x, ${require('../../img/security@2x.png')} 2x`} />
+                <div className="feature-header">
+                  SECURITY MEASURES
+                </div>
+                <div className="feature-body">
+                  Protect your account with 2fa and everytime you make changes to your orders it needs to be verified by your 2fa key to avoid exploitation.
+                </div>
+              </div>
+            </Col>
+          </Row>
+          <Row>
+            <Col>
+              <div className="product-parent">
+                <div className="product-header">Product</div>
+                <div className="product-body">
+                  Being traders ourselves we have built a product that we would want to use everyday. Easy to use interfaces which do what they are supposed to. Laser focused to make portfolio management a breeze.
+                </div>
+              </div>
+            </Col>
+          </Row>
+          <Row>
+            <Col xs="12" lg="6">
+              <div className="manager-left-parent push-left">
+                <div className="manager-header">
+                  Open Order Manager
+                </div>
+                <div className="manager-body">
+                  Open order management is a critical function for every active trader. Automatical set levels and open new orders when certain conditions are met.
+                </div>
+                <div className="manager-footer">
+                  <Button className="manager-btn">
+                    Manage Orders
+                  </Button>
+                </div>
+              </div>
+            </Col>
+            <Col xs="12" lg="6">
+              <img alt=""
+                className="product-snapshot"
+                src={require('../../img/product-snapshot@1x.png')}
+                srcset={
+                  `${require('../../img/product-snapshot@1x.png')} 1x,
+                  ${require('../../img/product-snapshot@2x.png')} 2x`
+                }
+              />
+            </Col>
+          </Row>
+          <Row>
+            <Col xs="12" md="12" lg="4">
+                <div className="manage-order-parent d-flex flex-column">
+                  <div className="manage-order-img-container">
+                    <img
+                      alt=""
+                      className="manager-order-img"
+                      src={require('../../img/Script@1x.png')}
+                      srcset={
+                        `${require('../../img/Script@1x.png')} 1x,
+                        ${require('../../img/Script@2x.png')} 2x`
+                      }
+                    />
                   </div>
-                  <div className="d-flex">
-                    <div className="hannah-avatar" />
-                    <div className="d-flex flex-column">
-                      <div className="hannah-name"> Hannah </div>
-                      <div className="hannah-site"> www.juangear.ph </div>
+                  <div className="manage-order-body">
+                    Skip all the tedious data entry that most portfolio managers make you do when addig them. Portfolios wil update based on your excahnge account balances.
+                  </div>
+                </div>
+            </Col>
+            <Col xs="12" md="6" lg="4">
+                <div className="manage-order-parent d-flex flex-column">
+                  <div className="manage-order-img-container">
+                    <img
+                      alt=""
+                      className="manager-order-img"
+                      src={require('../../img/Orders@1x.png')}
+                      srcset={
+                        `${require('../../img/Orders@1x.png')} 1x,
+                        ${require('../../img/Orders@2x.png')} 2x`
+                      }
+                    />
+                  </div>
+                  <div className="manage-order-body">
+                    Keep track of how much profit or loss you are making on each of your coins in your portfolio.
+                  </div>
+                </div>
+            </Col>
+            <Col xs="12" md="6" lg="4">
+                <div className="manage-order-parent d-flex flex-column">
+                  <div className="manage-order-img-container">
+                    <img
+                      alt=""
+                      className="manager-order-img"
+                      src={require('../../img/key@1x.png')}
+                      srcset={
+                        `${require('../../img/key@1x.png')} 1x,
+                        ${require('../../img/key@2x.png')} 2x`
+                      }
+                    />
+                  </div>
+                  <div className="manage-order-body">
+                    Add custom coins to track your ICO purchases or other coins that you are not storing on exchanges.
+                  </div>
+                </div>
+            </Col>
+          </Row>
+          <Row  className="portfolio-row">
+            <Col xs="12" lg="6">
+              <img alt=""
+                className="active-portfolio"
+                src={require('../../img/active-portfolio@1x.png')}
+                srcset={
+                  `${require('../../img/active-portfolio@1x.png')} 1x,
+                  ${require('../../img/active-portfolio@2x.png')} 2x`
+                }
+              />
+            </Col>
+            <Col xs="12" lg="6">
+                <div className="manager-grandparent">
+                  <div className="manager-right-parent">
+                    <div className="manager-header">
+                      Portfolio Manager
+                    </div>
+                    <div className="manager-body">
+                      Keep track of all your coins. Set alerts to notify when certain levels are hit to ensure that you can modify your open orders if needs be.
+                    </div>
+                    <div className="manager-footer">
+                      <Button className="manager-btn">
+                        Manage Portfolio
+                      </Button>
                     </div>
                   </div>
                 </div>
-              </div>
             </Col>
           </Row>
-        </Container>
-        <div className="shopify-bg-left"/>
-        <div className="shopify-bg-right"/>
-        <Container>
-          <Row className="how-row">
-            <Col xs="12">
-              <div className="d-flex flex-column justify-content-center shopify-parent">
-                <img alt="" className="shopify-love-logo" src={shopify1} srcset={`${shopify1} 1x, ${shopify2} 2x`} />
-                <div className="shopify-header">
-                  Built specifically to help Shopify Store owners
+          <Row className="tracker-row">
+            <Col xs="12" lg="6">
+              <div className="manager-left-parent push-left">
+                <div className="manager-header">
+                  Coin News Tracker
                 </div>
-                <div className="shopify-body-1">
-                  Launching a store is hard work. We need to get our suppliers, all our product images and pricing just right. After all of that work we persuade our friends and family to visit the store. You make your first sale. That is a feeling one never forgets.
+                <div className="manager-body">
+                Keep track of all the news about each individual coin in your portfolio. We find the latest key fundamental events and alert you for you to adjust strategy.
                 </div>
-                <div className="shopify-body-2">
-                  However soon that first sale is a memory. New website visitors don't know about all the people who buy from you. With GrowTiger that all changes. All website visitors are told about your stores success, the products that are selling and that gives them the confidence to buy.
-                </div>
-                <div className="shopify-footer">
-                  Launch your social proof widget in under 1 minute <ArrowForward size={20} />
-                </div>
-              </div>
-            </Col>
-          </Row>
-        </Container>
-        <Container>
-          <Row className="how-row">
-            <Col xs="12">
-              <div className="d-flex justify-content-between how-parent">
-                <div className="how-left d-flex flex-column">
-                  <div className="hl-header">
-                    Do I need to know how to code?
-                  </div>
-                  <div className="hl-body">
-                    Nope! Launch and manage your next social proof campaign in under a minute, no coding required. See for yourself! <span aria-label="point-down" role="img">👇</span>
-                  </div>
-                  <div className="hl-footer">
-                    Launch your social proof widget in under 1 minute <ArrowForward size={20} />
-                  </div>
-                </div>
-                <div className="how-right">
-                  <img alt="" className="how-img" src={how1} srcset={`${how1} 1x, ${how2} 2x`} />
-                </div>
-              </div>
-            </Col>
-          </Row>
-        </Container>
-        <div className="conversions-bg-left"/>
-        <div className="conversions-bg-right"/>
-        <Container>
-          <Row className="how-row">
-            <Col xs="12">
-              <div className="d-flex justify-content-between conversions-parent">
-                <div className="conversions-left d-flex flex-column">
-                  <div className="conversions-header">
-                    Boost your Store Conversions with Social Proof
-                  </div>
-                  <div className="conversions-body">
-                    Get an edge over a majority of Shopify sellers. Get started in under 1 minute.
-                  </div>
-                </div>
-                <div className="conversions-right align-self-center">
-                  <Button className="cvns-btn-signup">
-                    SIGN UP FOR FREE <ArrowForward size={20} />
+                <div className="manager-footer">
+                  <Button className="manager-btn">
+                    Track Coin News
                   </Button>
                 </div>
+              </div>
+            </Col>
+            <Col xs="12" lg="6">
+              <img alt=""
+                className="product-snapshot"
+                src={require('../../img/product-snapshot@1x.png')}
+                srcset={
+                  `${require('../../img/product-snapshot@1x.png')} 1x,
+                  ${require('../../img/product-snapshot@2x.png')} 2x`
+                }
+              />
+            </Col>
+          </Row>
+          <Row>
+            <Col xs="12" md="12" lg="4">
+                <div className="manage-order-parent d-flex flex-column">
+                  <div className="manage-order-img-container">
+                    <img
+                      alt=""
+                      className="manager-order-img"
+                      src={require('../../img/Script@1x.png')}
+                      srcset={
+                        `${require('../../img/Script@1x.png')} 1x,
+                        ${require('../../img/Script@2x.png')} 2x`
+                      }
+                    />
+                  </div>
+                  <div className="manage-order-body">
+                    Get coin specific news update. We scour the web and thousands of unique resources to find you relevant news about the coins in your portfolio.
+                  </div>
+                </div>
+            </Col>
+            <Col xs="12" md="6" lg="4">
+                <div className="manage-order-parent d-flex flex-column">
+                  <div className="manage-order-img-container">
+                    <img
+                      alt=""
+                      className="manager-order-img"
+                      src={require('../../img/Orders@1x.png')}
+                      srcset={
+                        `${require('../../img/Orders@1x.png')} 1x,
+                        ${require('../../img/Orders@2x.png')} 2x`
+                      }
+                    />
+                  </div>
+                  <div className="manage-order-body">
+                    Fundamental news even tracker will ensure that you stay on top of situation and adjust your strategy.
+                  </div>
+                </div>
+            </Col>
+            <Col xs="12" md="6" lg="4">
+                <div className="manage-order-parent d-flex flex-column">
+                  <div className="manage-order-img-container">
+                    <img
+                      alt=""
+                      className="manager-order-img"
+                      src={require('../../img/key@1x.png')}
+                      srcset={
+                        `${require('../../img/key@1x.png')} 1x,
+                        ${require('../../img/key@2x.png')} 2x`
+                      }
+                    />
+                  </div>
+                  <div className="manage-order-body">
+                    See how certain pieces of news impact the price of your coins.
+                  </div>
+                </div>
+            </Col>
+          </Row>
+          <Row className="security-integrations-row">
+            <Col xs="12" md="6">
+              <div className="security-integrations-parent parent-left d-flex flex-column">
+                <div className="security-integrations-header">
+                  Security
+                </div>
+                <div className="security-integrations-body">
+                  We take security of your accounts very seriously. Other than the basic measures of securing all data over SSL connections, all critical actions require 2FA to ensure that your account stays secure.
+                </div>
+                <div className="security-integrations-img-container">
+                  <img
+                    alt=""
+                    className="security-integrations-img"
+                    src={require('../../img/spot-security@1x.png')}
+                    srcset={
+                      `${require('../../img/spot-security@1x.png')} 1x,
+                      ${require('../../img/spot-security@2x.png')} 2x`
+                    }
+                  />
+                </div>        
+              </div>
+            </Col>
+            <Col xs="12" md="6">
+              <div className="security-integrations-parent parent-right d-flex flex-column">
+                <div className="security-integrations-header">
+                  Integrations
+                </div>
+                <div className="security-integrations-body">
+                  Our goal is to eventually cover all major exchanges that provide the ability to manage portfolios through an API. We are going to be slowly rolling out each exchange. Listed below is the roadmap of our priorities.
+                </div>
+                <div className="security-integrations-img-container d-flex">
+                  <div className="integration-parent flex-grow-1">
+                    <img
+                      alt=""
+                      className="integration-1-img"
+                      src={require('../../img/integration-1@1x.png')}
+                      srcset={
+                        `${require('../../img/integration-1@1x.png')} 1x,
+                        ${require('../../img/integration-1@2x.png')} 2x`
+                      }
+                    />
+                    <div className="integration-footer">
+                      Launched in beta
+                    </div>
+                  </div>
+                  <div className="integration-parent flex-grow-1">
+                    <img
+                      alt=""
+                      className="integration-2-img"
+                      src={require('../../img/integration-2@1x.png')}
+                      srcset={
+                        `${require('../../img/integration-2@1x.png')} 1x,
+                        ${require('../../img/integration-2@2x.png')} 2x`
+                      }
+                    />
+                    <div className="integration-footer">
+                      Coming soon
+                    </div>
+                  </div>
+                  <div className="integration-parent flex-grow-1">
+                    <img
+                      alt=""
+                      className="integration-3-img"
+                      src={require('../../img/integration-3@1x.png')}
+                      srcset={
+                        `${require('../../img/integration-3@1x.png')} 1x,
+                        ${require('../../img/integration-3@2x.png')} 2x`
+                      }
+                    />
+                    <div className="integration-footer">
+                      Coming soon
+                    </div>
+                  </div>
+                </div>        
               </div>
             </Col>
           </Row>

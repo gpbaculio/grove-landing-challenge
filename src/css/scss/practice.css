@@ -2,17 +2,16 @@
   box-sizing: border-box; }
 
 .wrapper {
-  display: grid;
-  grid-template-columns: 1fr 2fr 1fr;
-  grid-auto-rows: minmax(100px, auto);
-  grid-gap: 1em; }
-  .wrapper div {
-    padding: 1em;
-    color: #fff;
-    border: solid yellow 1px; }
-  .wrapper div:nth-child(odd) {
-    background-color: red; }
-  .wrapper div:nth-child(even) {
-    background-color: green; }
+  width: 100%;
+  display: flex; }
+  .wrapper .box {
+    height: 100px;
+    flex-basis: 300px; }
   .wrapper .box1 {
-    grid-column: 1/3; }
+    background-color: green; }
+  .wrapper .box2 {
+    background-color: red; }
+  .wrapper .box3 {
+    background-color: purple; }
+  .wrapper .box4 {
+    background-color: blue; }

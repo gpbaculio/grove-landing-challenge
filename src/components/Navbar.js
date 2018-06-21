@@ -10,6 +10,7 @@ import {
   Navbar,
   Container,
 } from 'reactstrap';
+import FaBars from 'react-icons/lib/fa/bars';
 import { Link } from 'react-router-dom';
 
 class NavbarHeader extends Component {
@@ -35,30 +36,52 @@ class NavbarHeader extends Component {
   render() {
     return (
       <Container>
-        <Navbar color="light" light expand="lg" className="px-0 mt-4 d-flex align-items-center">
-          <NavbarBrand href="/"><img width="180" className="nav-logo-img" height="39" src={require(`../img/logo-growtiger@1x.png`)} alt="logo" /></NavbarBrand>
+        <Navbar dark expand="lg" className="navbar-parent d-flex align-items-center">
+          <NavbarBrand href="/"><img width="180" className="nav-logo-img" height="39" src={require(`../img/logo@1x.png`)} alt="logo" /></NavbarBrand>
           <NavbarToggler onClick={this.toggle} />
           <Collapse isOpen={this.state.isOpen} navbar>
-            <Nav className="ml-auto d-flex align-items-center" navbar>
-              <NavItem>
-                <NavLink className="nav-link pricing text-center">
-                  <Link className="nav-link pricing text-center" to="/pricing">
-                    Pricing
-                  </Link>
-                </NavLink>
-              </NavItem>
-              <NavItem>
-                <NavLink className="nav-link text-center">
-                  <Link className="nav-link text-center" to="/product">
-                    Product
-                  </Link>
-                </NavLink>
-              </NavItem>
-              <NavItem className="text-center">
-                <Button className="signup-nav">
-                  Sign Up For Free
-                </Button>
-              </NavItem>
+            <Nav className="navbar-container justify-content-between d-flex align-items-center" navbar>
+              <div className="d-flex nav-left">
+                <NavItem>
+                  <NavLink className="nav-link text-center">
+                    <Link className="nav-link text-center" to="/pricing">
+                      Home
+                    </Link>
+                  </NavLink>
+                </NavItem>
+                <NavItem>
+                  <NavLink className="nav-link text-center">
+                    <Link className="nav-link text-center" to="/product">
+                      Dashboard
+                    </Link>
+                  </NavLink>
+                </NavItem>
+                <NavItem className="text-center">
+                  <NavLink className="nav-link text-center">
+                    <Link className="nav-link text-center" to="/product">
+                      Blog
+                    </Link>
+                  </NavLink>
+                </NavItem>
+              </div>
+              <div className="d-flex align-items-center nav-right">
+                <NavItem>
+                  <NavLink className="nav-link text-center">
+                    <Link className="nav-link text-center" to="/product">
+                      Get Priority Access
+                    </Link>
+                  </NavLink>
+                </NavItem>
+                <NavItem className="text-center">
+                  <NavLink className="nav-link text-center">
+                    <Link className="nav-link text-center" to="/product">
+                      <Button className="nav-login">
+                        Login
+                      </Button>
+                    </Link>
+                  </NavLink>
+                </NavItem>
+              </div>
             </Nav>
           </Collapse>
         </Navbar>
