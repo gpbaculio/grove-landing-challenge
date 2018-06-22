@@ -10,7 +10,6 @@ import {
   Navbar,
   Container,
 } from 'reactstrap';
-import FaBars from 'react-icons/lib/fa/bars';
 import { Link } from 'react-router-dom';
 
 class NavbarHeader extends Component {
@@ -73,8 +72,8 @@ class NavbarHeader extends Component {
                   </NavLink>
                 </NavItem>
                 <NavItem className="text-center">
-                  <NavLink className="nav-link text-center">
-                    <Link className="nav-link text-center" to="/product">
+                  <NavLink className="nav-link text-center" style={{ marginRight: 0 }} >
+                    <Link className="nav-link text-center nav-login-container" style={{ marginRight: 0, paddingRight: 0 }} to="/login">
                       <Button className="nav-login">
                         Login
                       </Button>

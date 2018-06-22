@@ -8,8 +8,7 @@ class Landing extends Component {
   render() {
     return (
       <React.Fragment>
-        <img alt="" className="hero-bg" src={require('../../img/hero@1x.png')} srcset={`${require('../../img/hero@1x.png')} 1x, ${require('../../img/hero@2x.png')} 2x`} />
-        <div className="hero-bg" />
+        <img alt="" style={{ height: '114%' }} className="hero-bg" src={require('../../img/hero@1x.png')} srcset={`${require('../../img/hero@1x.png')} 1x, ${require('../../img/hero@2x.png')} 2x`} />
         <Navbar />
         <Container>
           <Row>
@@ -37,7 +36,7 @@ class Landing extends Component {
           <Row>
             <Col xs="12" lg="6">
               <div className="feature-container">
-                <img className="feature-img" src={require('../../img/combinedShape@1x.png')} srcset={`${require('../../img/combinedShape@1x.png')} 1x, ${require('../../img/combinedShape@2x.png')} 2x`} />
+                <img className="feature-img" alt="" src={require('../../img/combinedShape@1x.png')} srcset={`${require('../../img/combinedShape@1x.png')} 1x, ${require('../../img/combinedShape@2x.png')} 2x`} />
                 <div className="feature-header">
                   MANAGE OPEN ORDERS
                 </div>
