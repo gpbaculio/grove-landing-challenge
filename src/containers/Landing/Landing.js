@@ -8,362 +8,307 @@ class Landing extends Component {
   render() {
     return (
       <React.Fragment>
-        <img alt="" style={{ height: '114%' }} className="hero-bg" src={require('../../img/hero@1x.png')} srcset={`${require('../../img/hero@1x.png')} 1x, ${require('../../img/hero@2x.png')} 2x`} />
         <Navbar />
-        <Container>
-          <Row>
-            <Col>
-              <div className="stress-container">
-                <div className="stress-header">Stress-Free Portfolio Management</div>
-                <div className="stress-body">Managing a portfolio of altcoins across mulitiple exchanges is difficult. Policy changes can cause serious disruption to our strategy. We created altmanager to make your portfolio immune to all of these changes.</div>
-                <div className="stress-footer d-flex">
-                  <input className="sf-left" type="text" placeholder="Enter you email" />
-                  <Button className="signup-beta"> Sign up for Beta </Button>
-                </div>
-              </div>
-            </Col>
-          </Row>
-        </Container>
-        <Container style={{ backgroundColor: 'transparent' }}>
-          <Row>
-            <Col>
-              <div className="feature-parent">
-                <div className="feature-header">Feature Overview</div>
-                <div className="feature-body">Our initial product release will provide traders with the ability to manage their portfolio with far greater ease. We have built the key features that will make the transition to altmanager seamless.</div>
-              </div>
-            </Col>
-          </Row>
-          <Row>
-            <Col xs="12" lg="6">
-              <div className="feature-container">
-                <img className="feature-img" alt="" src={require('../../img/combinedShape@1x.png')} srcset={`${require('../../img/combinedShape@1x.png')} 1x, ${require('../../img/combinedShape@2x.png')} 2x`} />
-                <div className="feature-header">
-                  MANAGE OPEN ORDERS
-                </div>
-                <div className="feature-body">
-                  Our system connects with exchanges and places buy and sell orders based on your requirements. When these orders expire they will be resubmited for you.
-                </div>
-              </div>
-            </Col>
-            <Col xs="12" lg="6">
-              <div className="feature-container">
-                <img className="feature-img" src={require('../../img/combinedShape2@1x.png')} srcset={`${require('../../img/combinedShape2@1x.png')} 1x, ${require('../../img/combinedShape2@2x.png')} 2x`} />
-                <div className="feature-header">
-                  COIN-BASED NEWSFEED
-                </div>
-                <div className="feature-body">
-                  Our system is conected with hundreds of news sources from the biggest sites to obscure sub reddits. Get the latest news about your coins as it breaks.
-                </div>
-              </div>
-            </Col>
-          </Row>
-          <Row>
-            <Col xs="12" lg="6">
-              <div className="feature-container">
-                <img className="notifs-img" src={require('../../img/alerts@1x.png')} srcset={`${require('../../img/alerts@1x.png')} 1x, ${require('../../img/alerts@2x.png')} 2x`} />
-                <div className="feature-header">
-                  ALERTS & NOTIFICATIONS
-                </div>
-                <div className="feature-body">
-                  Get notified when your levels are hit on your mobile detavice or through email. Never miss a trade and make sure you are ontop of your portfolios performance.
-                </div>
-              </div>
-            </Col>
-            <Col xs="12" lg="6">
-              <div className="feature-container">
-                <img className="security-img" src={require('../../img/security@1x.png')} srcset={`${require('../../img/security@1x.png')} 1x, ${require('../../img/security@2x.png')} 2x`} />
-                <div className="feature-header">
-                  SECURITY MEASURES
-                </div>
-                <div className="feature-body">
-                  Protect your account with 2fa and everytime you make changes to your orders it needs to be verified by your 2fa key to avoid exploitation.
-                </div>
-              </div>
-            </Col>
-          </Row>
-          <Row>
-            <Col>
-              <div className="product-parent">
-                <div className="product-header">Product</div>
-                <div className="product-body">
-                  Being traders ourselves we have built a product that we would want to use everyday. Easy to use interfaces which do what they are supposed to. Laser focused to make portfolio management a breeze.
-                </div>
-              </div>
-            </Col>
-          </Row>
-          <Row>
-            <Col xs="12" lg="6">
-              <div className="manager-left-parent push-left">
-                <div className="manager-header">
-                  Open Order Manager
-                </div>
-                <div className="manager-body">
-                  Open order management is a critical function for every active trader. Automatical set levels and open new orders when certain conditions are met.
-                </div>
-                <div className="manager-footer">
-                  <Button className="manager-btn">
-                    Manage Orders
-                  </Button>
-                </div>
-              </div>
-            </Col>
-            <Col xs="12" lg="6">
-              <img alt=""
-                className="product-snapshot"
-                src={require('../../img/product-snapshot@1x.png')}
-                srcset={
-                  `${require('../../img/product-snapshot@1x.png')} 1x,
-                  ${require('../../img/product-snapshot@2x.png')} 2x`
-                }
-              />
-            </Col>
-          </Row>
-          <Row>
-            <Col xs="12" md="12" lg="4">
-                <div className="manage-order-parent d-flex flex-column">
-                  <div className="manage-order-img-container">
-                    <img
-                      alt=""
-                      className="manager-order-img"
-                      src={require('../../img/Script@1x.png')}
-                      srcset={
-                        `${require('../../img/Script@1x.png')} 1x,
-                        ${require('../../img/Script@2x.png')} 2x`
-                      }
-                    />
-                  </div>
-                  <div className="manage-order-body">
-                    Skip all the tedious data entry that most portfolio managers make you do when addig them. Portfolios wil update based on your excahnge account balances.
-                  </div>
-                </div>
-            </Col>
-            <Col xs="12" md="6" lg="4">
-                <div className="manage-order-parent d-flex flex-column">
-                  <div className="manage-order-img-container">
-                    <img
-                      alt=""
-                      className="manager-order-img"
-                      src={require('../../img/Orders@1x.png')}
-                      srcset={
-                        `${require('../../img/Orders@1x.png')} 1x,
-                        ${require('../../img/Orders@2x.png')} 2x`
-                      }
-                    />
-                  </div>
-                  <div className="manage-order-body">
-                    Keep track of how much profit or loss you are making on each of your coins in your portfolio.
-                  </div>
-                </div>
-            </Col>
-            <Col xs="12" md="6" lg="4">
-                <div className="manage-order-parent d-flex flex-column">
-                  <div className="manage-order-img-container">
-                    <img
-                      alt=""
-                      className="manager-order-img"
-                      src={require('../../img/key@1x.png')}
-                      srcset={
-                        `${require('../../img/key@1x.png')} 1x,
-                        ${require('../../img/key@2x.png')} 2x`
-                      }
-                    />
-                  </div>
-                  <div className="manage-order-body">
-                    Add custom coins to track your ICO purchases or other coins that you are not storing on exchanges.
-                  </div>
-                </div>
-            </Col>
-          </Row>
-          <Row  className="portfolio-row">
-            <Col xs="12" lg="6">
-              <img alt=""
-                className="active-portfolio"
-                src={require('../../img/active-portfolio@1x.png')}
-                srcset={
-                  `${require('../../img/active-portfolio@1x.png')} 1x,
-                  ${require('../../img/active-portfolio@2x.png')} 2x`
-                }
-              />
-            </Col>
-            <Col xs="12" lg="6">
-                <div className="manager-grandparent">
-                  <div className="manager-right-parent">
-                    <div className="manager-header">
-                      Portfolio Manager
+          <Container className="financial-container">
+            <Row className="financial-row">
+              <Col className="financial-col">
+                <div className="financial-parent d-flex">
+                  <div className="overflow-hidden parent-left">
+                    <div className="fp-header">
+                      Financial Planning.
+                        <br/>
+                      Reinvented.
                     </div>
-                    <div className="manager-body">
-                      Keep track of all your coins. Set alerts to notify when certain levels are hit to ensure that you can modify your open orders if needs be.
+                    <div className="fp-body">Reach your goals with personal financial guidance.</div>
+                    <Button className="get-free"> Get a FREE financial checkup </Button>
+                  </div>
+                  <div className="financial-img-container d-flex align-items-center overflow-hidden parent-right">
+                    <img
+                      alt=""
+                      className="financial-img"
+                      src={require('../../img/home-hero.jpg')}
+                    />
+                  </div>
+                </div>
+              </Col>
+            </Row>
+          </Container>
+          <Container>
+            <Row>
+              <Col className="financial-col-2">
+                <div className="overflow-hidden text-center parent-left">
+                  <div className="fp-header text-center mb-2">
+                    Financial Planning.
+                      <br/>
+                    Reinvented.
+                  </div>
+                  <div className="fp-body m-auto text-center mb-3 p-3">Reach your goals with personal financial guidance.</div>
+                  <Button className="get-free d-block m-auto mb-2 p-2"> Get a FREE financial checkup </Button>
+                </div>
+              </Col>
+            </Row>
+            <Row>
+              <Col>
+                <div className="featured-parent d-flex flex-column">
+                  <div className="text-center"><h3>Featured on</h3></div>
+                    <div className="d-flex justify-content-between flex-wrap">
+                      <img
+                        alt=""
+                        className="company"
+                        src={require('../../img/press-fortune.svg')}
+                      />
+                      <img
+                        alt=""
+                        className="company"
+                        src={require('../../img/press-bi.svg')}
+                      />
+                      <img
+                        alt=""
+                        className="company"
+                        src={require('../../img/press-ab.svg')}
+                      />
+                      <img
+                        alt=""
+                        className="company"
+                        src={require('../../img/press-cnn.svg')}
+                      />
+                      <img
+                        alt=""
+                        className="company"
+                        src={require('../../img/press-chase.svg')}
+                      />
+                      <img
+                        alt=""
+                        className="company"
+                        src={require('../../img/press-tc.svg')}
+                      />
                     </div>
-                    <div className="manager-footer">
-                      <Button className="manager-btn">
-                        Manage Portfolio
-                      </Button>
+                </div>
+              </Col>
+            </Row>
+            <Row>
+              <Col md="4" className="d-flex align-items-center">
+                <img
+                  alt=""
+                  className="bleed-img"
+                  src={require('../../img/home-bleed.jpg')}
+                />
+              </Col>
+              <Col md="8">
+                <div className="personal-title">Like a personal trainer for your money</div>
+                <Row>
+                  <Col xs="12" md="6" className="mt-3">
+                    <div className="personal-content-parent">
+                      <div className="personal-content-title">The knowledge of a CFP®</div>
+                      <div className="personal-content-body">
+                        We’re Certified Financial Planners™, experts at looking at your whole financial life. And we’re
+                        actual people who will get to know you —because you’re more than your name and account balance.
+                      </div>
+                    </div>
+                  </Col>
+                  <Col xs="12" md="6" className="mt-3">
+                    <div className="personal-content-parent">
+                      <div className="personal-content-title">A plan for life’s big events</div>
+                      <div className="personal-content-body">
+                        Thinking about buying a house? Getting ready to start a family? Looking to make your money go further? We’ll help you understand the impact on your finances and guide you on next steps.
+                      </div>
+                    </div>
+                  </Col>
+                </Row>
+                <Row>
+                  <Col xs="12" md="6" className="mt-5">
+                    <div className="personal-content-parent">
+                      <div className="personal-content-title">Modern tools. Smarter price.</div>
+                      <div className="personal-content-body">
+                        We’ve compiled decades of research to create a robust financial planning engine that enables our advisors to give you personalized advice at a fraction of the cost of a traditional advisor.
+                      </div>
+                    </div>
+                  </Col> 
+                  <Col xs="12" md="6" className="mt-5">
+                    <div className="personal-content-parent">
+                      <div className="personal-content-title">Not just 9 to 5</div>
+                      <div className="personal-content-body">
+                      It’s true: money never sleeps, and your money doesn’t take weekends off. Neither do we. Email, chat, or text us anytime (seriously!) with questions.
+                      </div>
+                    </div>
+                  </Col>
+                </Row>
+              </Col>
+            </Row>
+            <Row>
+              <Col md="4">
+                <img
+                  alt=""
+                  className="award-img"
+                  src={require('../../img/award.svg')}
+                />
+              </Col>
+              <Col md="8">
+                <div className="award-right-parent d-flex">
+                  <div className="award-right-img-container justify-content-center">
+                    <img
+                      alt=""
+                      className="award-logo-img"
+                      width="90"
+                      height="90"
+                      src={require('../../img/award-logo.svg')}
+                    />
+                  </div>
+                  <div className="fiduciary-parent d-flex flex-column">
+                    <div className="fiduciary-header">
+                      Fiduciary
+                    </div>
+                    <div className="fiduciary-body">
+                      Grove is a Registered Investment Advisor and we hold ourselves to the fiduciary standard of care
+                      — to act solely in your best interest when offering personalized financial advice.In addition,
+                      the creation of your financial plan will be overseen by a Certified Financial Planner™.
                     </div>
                   </div>
                 </div>
-            </Col>
-          </Row>
-          <Row className="tracker-row">
-            <Col xs="12" lg="6">
-              <div className="manager-left-parent push-left">
-                <div className="manager-header">
-                  Coin News Tracker
-                </div>
-                <div className="manager-body">
-                Keep track of all the news about each individual coin in your portfolio. We find the latest key fundamental events and alert you for you to adjust strategy.
-                </div>
-                <div className="manager-footer">
-                  <Button className="manager-btn">
-                    Track Coin News
-                  </Button>
-                </div>
-              </div>
-            </Col>
-            <Col xs="12" lg="6">
-              <img alt=""
-                className="product-snapshot"
-                src={require('../../img/product-snapshot@1x.png')}
-                srcset={
-                  `${require('../../img/product-snapshot@1x.png')} 1x,
-                  ${require('../../img/product-snapshot@2x.png')} 2x`
-                }
-              />
-            </Col>
-          </Row>
-          <Row>
-            <Col xs="12" md="12" lg="4">
-                <div className="manage-order-parent d-flex flex-column">
-                  <div className="manage-order-img-container">
-                    <img
-                      alt=""
-                      className="manager-order-img"
-                      src={require('../../img/Script@1x.png')}
-                      srcset={
-                        `${require('../../img/Script@1x.png')} 1x,
-                        ${require('../../img/Script@2x.png')} 2x`
-                      }
-                    />
+              </Col>
+            </Row>
+            <Row>
+              <Col>
+                <div className="how-title">How it works</div>
+                <Row>
+                  <Col md="4">
+                    <div className="how-item-parent d-flex flex-column">
+                      <div className="hi-number">
+                        1
+                      </div>
+                      <div className="hi-header">
+                        Meet your advisor
+                      </div>
+                      <div className="hi-body">
+                        After filling out your online profile and syncing your accounts, you'll speak with a CFP® who will get to know you, discuss your current situation, and create your personalized financial plan.
+                      </div>
+                    </div>
+                  </Col>
+                  <Col md="4">
+                    <div className="how-item-parent d-flex flex-column">
+                      <div className="hi-number">
+                        2
+                      </div>
+                      <div className="hi-header">
+                        Get your plan
+                      </div>
+                      <div className="hi-body">
+                        Your plan (and future plan updates) include actionable steps, like how to allocate your money between savings and investment accounts and how to best take advantage of your employer's retirement benefits.
+                      </div>
+                    </div>
+                  </Col>
+                  <Col md="4">
+                    <div className="how-item-parent d-flex flex-column">
+                      <div className="hi-number">
+                        3
+                      </div>
+                      <div className="hi-header">
+                        Stay on track
+                      </div>
+                      <div className="hi-body">
+                        Grove will monitor your progress, let you know when there are important actions to take, and schedule an annual checkup to make sure your plan stays up to date. Of course, we are always here for help along the way!
+                      </div>
+                    </div>
+                  </Col>
+                </Row>
+              </Col>
+            </Row>
+          </Container>
+          <div className="learn-parent">
+            <div className="learn-bg">
+              <Container>
+                <Row>
+                  <Col>
+                    <div className="learn-container">
+                      <div className="lc-parent d-flex flex-column justify-content-center">
+                        <div className="lc-header">
+                          Learn more
+                        </div>
+                        <div className="lc-subheader">
+                          Join a webinar with one of our advisors
+                        </div>
+                        <div className="lc-reg-container">
+                          <Button className="lc-reg-btn">
+                            Register
+                          </Button>
+                        </div>
+                        <div className="lc-footer">
+                          See a sample plan. Ask questions. No commitment.
+                        </div>
+                      </div>
+                    </div>
+                  </Col>
+                </Row>
+              </Container>
+            </div>
+          </div>
+          <Container>
+            <Row>
+              <Col>
+                <div className="citations-parent d-flex flex-column">
+                  <div className="citations-header">
+                    CITATIONS
                   </div>
-                  <div className="manage-order-body">
-                    Get coin specific news update. We scour the web and thousands of unique resources to find you relevant news about the coins in your portfolio.
-                  </div>
-                </div>
-            </Col>
-            <Col xs="12" md="6" lg="4">
-                <div className="manage-order-parent d-flex flex-column">
-                  <div className="manage-order-img-container">
-                    <img
-                      alt=""
-                      className="manager-order-img"
-                      src={require('../../img/Orders@1x.png')}
-                      srcset={
-                        `${require('../../img/Orders@1x.png')} 1x,
-                        ${require('../../img/Orders@2x.png')} 2x`
-                      }
-                    />
-                  </div>
-                  <div className="manage-order-body">
-                    Fundamental news even tracker will ensure that you stay on top of situation and adjust your strategy.
-                  </div>
-                </div>
-            </Col>
-            <Col xs="12" md="6" lg="4">
-                <div className="manage-order-parent d-flex flex-column">
-                  <div className="manage-order-img-container">
-                    <img
-                      alt=""
-                      className="manager-order-img"
-                      src={require('../../img/key@1x.png')}
-                      srcset={
-                        `${require('../../img/key@1x.png')} 1x,
-                        ${require('../../img/key@2x.png')} 2x`
-                      }
-                    />
-                  </div>
-                  <div className="manage-order-body">
-                    See how certain pieces of news impact the price of your coins.
-                  </div>
-                </div>
-            </Col>
-          </Row>
-          <Row className="security-integrations-row">
-            <Col xs="12" md="6">
-              <div className="security-integrations-parent parent-left d-flex flex-column">
-                <div className="security-integrations-header">
-                  Security
-                </div>
-                <div className="security-integrations-body">
-                  We take security of your accounts very seriously. Other than the basic measures of securing all data over SSL connections, all critical actions require 2FA to ensure that your account stays secure.
-                </div>
-                <div className="security-integrations-img-container">
-                  <img
-                    alt=""
-                    className="security-integrations-img"
-                    src={require('../../img/spot-security@1x.png')}
-                    srcset={
-                      `${require('../../img/spot-security@1x.png')} 1x,
-                      ${require('../../img/spot-security@2x.png')} 2x`
-                    }
-                  />
-                </div>        
-              </div>
-            </Col>
-            <Col xs="12" md="6">
-              <div className="security-integrations-parent parent-right d-flex flex-column">
-                <div className="security-integrations-header">
-                  Integrations
-                </div>
-                <div className="security-integrations-body">
-                  Our goal is to eventually cover all major exchanges that provide the ability to manage portfolios through an API. We are going to be slowly rolling out each exchange. Listed below is the roadmap of our priorities.
-                </div>
-                <div className="security-integrations-img-container d-flex">
-                  <div className="integration-parent flex-grow-1">
-                    <img
-                      alt=""
-                      className="integration-1-img"
-                      src={require('../../img/integration-1@1x.png')}
-                      srcset={
-                        `${require('../../img/integration-1@1x.png')} 1x,
-                        ${require('../../img/integration-1@2x.png')} 2x`
-                      }
-                    />
-                    <div className="integration-footer">
-                      Launched in beta
+                  <div className="citations-item d-flex ">
+                    <div className="ci-number-container align-self-start">  
+                      <div className="ci-number">
+                        1
+                      </div>
+                    </div>
+                    <div className="ci-content">
+                      Financial Planning Institute Research and Practice Institute Financial Planning in 2015: Today’s Demands, Tomorrow’s Challenges.
                     </div>
                   </div>
-                  <div className="integration-parent flex-grow-1">
-                    <img
-                      alt=""
-                      className="integration-2-img"
-                      src={require('../../img/integration-2@1x.png')}
-                      srcset={
-                        `${require('../../img/integration-2@1x.png')} 1x,
-                        ${require('../../img/integration-2@2x.png')} 2x`
-                      }
-                    />
-                    <div className="integration-footer">
-                      Coming soon
+                </div>
+              </Col>
+            </Row>
+          </Container>
+          <Container>
+            <Row>
+              <Col>
+                <div className="about-parent d-flex">
+                  <div className="about-1">
+                    <div className="about-title">COMPANY</div>
+                    <div className="about-items d-flex flex-column">
+                      <div className="about-item">
+                        About us
+                      </div>
+                      <div className="about-item">
+                        Our Advisors
+                      </div>
+                      <div className="about-item">
+                        FAQ
+                      </div>
+                      <div className="about-item">
+                        Careers
+                      </div>
                     </div>
                   </div>
-                  <div className="integration-parent flex-grow-1">
-                    <img
-                      alt=""
-                      className="integration-3-img"
-                      src={require('../../img/integration-3@1x.png')}
-                      srcset={
-                        `${require('../../img/integration-3@1x.png')} 1x,
-                        ${require('../../img/integration-3@2x.png')} 2x`
-                      }
-                    />
-                    <div className="integration-footer">
-                      Coming soon
+                  <div className="about-2">
+                    <div className="about-title">LEGAL</div>
+                    <div className="about-items d-flex flex-column">
+                      <div className="about-item">
+                        Privacy Policy
+                      </div>
+                      <div className="about-item">
+                        Terms of Service
+                      </div>
                     </div>
                   </div>
-                </div>        
-              </div>
-            </Col>
-          </Row>
-        </Container>
+                  <div className="about-3 d-flex flex-column">
+                    <div className="address1">
+                      <strong style={{ color: 'black' }}>Grove Advisors LLC</strong>
+                    </div>
+                    <div className="address2">
+                      487 Bryant Street, 3rd Floor
+                        <br />
+                      San Francisco, CA 94107
+                    </div>
+                  </div>
+                </div>
+              </Col>
+            </Row>
+          </Container>
         <Footer />
       </React.Fragment>
     );

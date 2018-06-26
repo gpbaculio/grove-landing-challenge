@@ -35,52 +35,68 @@ class NavbarHeader extends Component {
   render() {
     return (
       <Container>
-        <Navbar dark expand="lg" className="navbar-parent d-flex align-items-center">
-          <NavbarBrand href="/"><img width="180" className="nav-logo-img" height="39" src={require(`../img/logo@1x.png`)} alt="logo" /></NavbarBrand>
+        <Navbar color="light" light expand="lg" className="px-0 mt-4 d-flex align-items-center">
+          <NavbarBrand href="/">
+            <img
+              width="90"
+              className="nav-logo-img"
+              height="30"
+              src={require(`../img/logo.svg`)}
+              alt="logo"
+            />
+          </NavbarBrand>
           <NavbarToggler onClick={this.toggle} />
           <Collapse isOpen={this.state.isOpen} navbar>
-            <Nav className="navbar-container justify-content-between d-flex align-items-center" navbar>
-              <div className="d-flex nav-left">
-                <NavItem>
-                  <NavLink className="nav-link text-center">
-                    <Link className="nav-link text-center" to="/pricing">
-                      Home
-                    </Link>
-                  </NavLink>
-                </NavItem>
-                <NavItem>
-                  <NavLink className="nav-link text-center">
-                    <Link className="nav-link text-center" to="/product">
-                      Dashboard
-                    </Link>
-                  </NavLink>
-                </NavItem>
-                <NavItem className="text-center">
-                  <NavLink className="nav-link text-center">
-                    <Link className="nav-link text-center" to="/product">
-                      Blog
-                    </Link>
-                  </NavLink>
-                </NavItem>
-              </div>
-              <div className="d-flex align-items-center nav-right">
-                <NavItem>
-                  <NavLink className="nav-link text-center">
-                    <Link className="nav-link text-center" to="/product">
-                      Get Priority Access
-                    </Link>
-                  </NavLink>
-                </NavItem>
-                <NavItem className="text-center">
-                  <NavLink className="nav-link text-center" style={{ marginRight: 0 }} >
-                    <Link className="nav-link text-center nav-login-container" style={{ marginRight: 0, paddingRight: 0 }} to="/login">
-                      <Button className="nav-login">
-                        Login
-                      </Button>
-                    </Link>
-                  </NavLink>
-                </NavItem>
-              </div>
+            <Nav className="ml-auto navbar-container d-flex align-items-center" navbar>
+              <NavItem>
+                <NavLink className="nav-link ml-3 text-center">
+                  <Link className="nav-link text-center" to="/about-us">
+                    About us
+                  </Link>
+                </NavLink>
+              </NavItem>
+              <NavItem>
+                <NavLink className="nav-link ml-3 text-center">
+                  <Link className="nav-link text-center" to="/about-us">
+                    Pricing
+                  </Link>
+                </NavLink>
+              </NavItem>
+              <NavItem>
+                <NavLink className="nav-link ml-3 text-center">
+                  <Link className="nav-link text-center" to="/about-us">
+                    Our Advisors
+                  </Link>
+                </NavLink>
+              </NavItem>
+              <NavItem>
+                <NavLink className="nav-link ml-3 text-center">
+                  <Link className="nav-link text-center" to="/about-us">
+                    FAQ
+                  </Link>
+                </NavLink>
+              </NavItem>
+              <NavItem>
+                <NavLink className="nav-link ml-3 text-center">
+                  <Link className="nav-link text-center" to="/about-us">
+                    Free Checkup
+                  </Link>
+                </NavLink>
+              </NavItem>
+              <NavItem>
+                <NavLink className="nav-link text-center">
+                  <Link className="nav-link text-center" to="/about-us">
+                    <span className="sign-in pl-4">Sign in</span>
+                  </Link>
+                </NavLink>
+              </NavItem>
+              <NavItem>
+                <NavLink className="nav-link text-center">
+                  <Link className="nav-link text-center" to="/about-us">
+                    <Button className="get-started"> Get Started </Button>
+                  </Link>
+                </NavLink>
+              </NavItem>
             </Nav>
           </Collapse>
         </Navbar>

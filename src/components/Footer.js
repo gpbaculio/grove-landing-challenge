@@ -1,8 +1,5 @@
 import React, { Component } from 'react';
-import { Col, Row, Container, Button } from 'reactstrap';
-import FaFacebookSquare from 'react-icons/lib/fa/facebook-square';
-import FaTwitter from 'react-icons/lib/fa/twitter-square';
-import FaLinkedIn from 'react-icons/lib/fa/linkedin-square';
+import { Col, Row, Container } from 'reactstrap';
 
 class Footer extends Component {
   render() {
@@ -10,63 +7,9 @@ class Footer extends Component {
       <div className="footer-container">
         <Container>
           <Row>
-            <Col xs={{size: 12, order: 1 }} md={{size: 6, order: 0 }}>
-              <div className="footer-left">
-                <img width="193" className="fl-logo-img" height="41" src={require(`../img/logo@1x.png`)} alt="logo" />
-                <div className="get-started">
-                  Get started right away!
-                </div>
-                <div className="footer-signup d-flex">
-                  <input className="footer-left" type="text" placeholder="Enter you email" />
-                  <Button className="signup-beta"> Sign up for Beta </Button>
-                </div>
-                <div className="footer-address d-flex flex-column">
-                  <div>8 Claymore Hill, #03-01, Singapore 229572</div>
-                  <div>altmanager is a product by High Output Ventures</div>
-                </div>
-              </div>
-            </Col>
-            <Col xs={{size: 12, order: 0 }} md={{size: 6, order: 1 }}>
-              <img width="193" className="fr-logo-img" height="41" src={require(`../img/logo@1x.png`)} alt="logo" />
-              <div className="footer-right d-flex justify-content-around">
-                <div className="footer-menu d-flex flex-column">
-                  <div className="fm-header">
-                    MENU
-                  </div>
-                  <div className="fm-children">
-                    Home
-                  </div>
-                  <div className="fm-children">
-                    Dashboard
-                  </div>
-                  <div className="fm-children">
-                    Blog
-                  </div>
-                </div>
-                <div className="footer-menu d-flex flex-column">
-                  <div className="fm-header">
-                    ABOUT US
-                  </div>
-                  <div className="fm-children">
-                    Company
-                  </div>
-                  <div className="fm-children">
-                    Values
-                  </div>
-                  <div className="fm-children">
-                    Careers
-                  </div>
-                </div>
-                <div className="footer-menu d-flex flex-column">
-                  <div className="fm-header">
-                    SOCIAL NETWORK
-                  </div>
-                  <div className="fm-children d-flex justify-content-between">
-                    <FaTwitter size={21} />
-                    <FaLinkedIn size={21} />
-                    <FaFacebookSquare size={21} />
-                  </div>
-                </div>
+            <Col>
+              <div className="footer-message">
+                This material presented in this advertisement is for informational purposes only and should not be construed as investment advice. It is not a recommendation of, or an offer to sell or solicitation of an offer to buy, any particular security, strategy or investment product. Any analysis or discussion of investments, sectors or the market generally are based on current information, including from public sources, that we consider reliable, but we do not represent that any research or the information provided is accurate or complete, and it should not be relied on as such. Our views and opinions expressed in any online content are current at the time of publication and are subject to change.
               </div>
             </Col>
           </Row>
