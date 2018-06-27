@@ -117,6 +117,10 @@ strong {
 }
 .sign-in {
   border-left: 1px solid #777;
+  @include mediaQuery(769px) {
+    padding-left: 0!important;
+    border-left: 0;
+  }
 }
 .get-started {
   background-color: #818FEE;
@@ -145,7 +149,6 @@ strong {
   .financial-col {
     margin-right: 0;
     padding-right: 0;
-    margin-top: 60px;
     padding-left: 0;
     @include mediaQuery(769px) {
       margin: 0;
@@ -201,6 +204,10 @@ strong {
   border-radius: 8px;
   font-size: 1rem;
   font-weight: 600;
+  @include mediaQuery(769px) {
+    width: 100%;
+    font-size: 0.9rem;
+  }
 }
 .financial-img-container {
   z-index: -1;
@@ -211,11 +218,15 @@ strong {
     max-width: inherit;
     width: inherit;
     position: relative;
-    right: -26%;
+    right: -20%;
     @include mediaQuery(769px) {
       right: -6%;
     }
   }
+}
+.featured-on {
+  margin-top: 30px;
+  margin-bottom: 30px;
 }
 .company {
   margin-left: auto;
@@ -225,6 +236,9 @@ strong {
 .personal-title {
   font-size: 2rem;
   margin-bottom: 2rem;
+  @include mediaQuery(769px) {
+    margin-top: 30px;
+  }
 }
 .personal-content-title {
   font-size: 1.3rem;
@@ -244,6 +258,9 @@ strong {
   margin-left: auto;
   margin-right: auto;
   margin-top: 30px;
+  @include mediaQuery(769px) {
+    margin-bottom: 30px;
+  }
 }
 .award-right-parent {
   padding: 30px;
@@ -333,12 +350,19 @@ strong {
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 10px;
+    @include mediaQuery(769px) {
+      margin-left: 0;
+      margin-right: 0;
+    }
     .lc-reg-btn {
       background-color: #818FEE;
       padding: 10px 25px;
       border-radius: 8px;
       font-size: 1rem;
       font-weight: 600;
+      @include mediaQuery(769px) {
+        width: 100%;
+      }
     }
   }
   .lc-footer {
@@ -424,4 +448,10 @@ strong {
   padding-bottom: 25px;
   color: #aaa;
   font-size: 0.9rem;
+}
+.bleed-row {
+  margin-top: 60px!important;
+}
+.how-row {
+  margin-top: 60px;
 }

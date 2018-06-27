@@ -35,7 +35,7 @@ class NavbarHeader extends Component {
   render() {
     return (
       <Container>
-        <Navbar color="light" light expand="lg" className="px-0 mt-4 d-flex align-items-center">
+        <Navbar color="light" light expand="lg" className="px-0 mt-3 d-flex align-items-center">
           <NavbarBrand href="/">
             <img
               width="90"
@@ -51,42 +51,42 @@ class NavbarHeader extends Component {
               <NavItem>
                 <NavLink className="nav-link ml-3 text-center">
                   <Link className="nav-link text-center" to="/about-us">
-                    About us
+                    <strong>About us</strong>
                   </Link>
                 </NavLink>
               </NavItem>
               <NavItem>
                 <NavLink className="nav-link ml-3 text-center">
                   <Link className="nav-link text-center" to="/about-us">
-                    Pricing
+                    <strong>Pricing</strong>
                   </Link>
                 </NavLink>
               </NavItem>
               <NavItem>
                 <NavLink className="nav-link ml-3 text-center">
                   <Link className="nav-link text-center" to="/about-us">
-                    Our Advisors
+                    <strong>Our Advisors</strong>
                   </Link>
                 </NavLink>
               </NavItem>
               <NavItem>
                 <NavLink className="nav-link ml-3 text-center">
                   <Link className="nav-link text-center" to="/about-us">
-                    FAQ
+                    <strong>FAQ</strong>
                   </Link>
                 </NavLink>
               </NavItem>
               <NavItem>
                 <NavLink className="nav-link ml-3 text-center">
                   <Link className="nav-link text-center" to="/about-us">
-                    Free Checkup
+                    <strong>Free Checkup</strong>
                   </Link>
                 </NavLink>
               </NavItem>
               <NavItem>
                 <NavLink className="nav-link text-center">
                   <Link className="nav-link text-center" to="/about-us">
-                    <span className="sign-in pl-4">Sign in</span>
+                    <span className="sign-in pl-4"><strong>Sign in</strong></span>
                   </Link>
                 </NavLink>
               </NavItem>

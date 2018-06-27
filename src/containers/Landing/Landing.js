@@ -50,7 +50,7 @@ class Landing extends Component {
             <Row>
               <Col>
                 <div className="featured-parent d-flex flex-column">
-                  <div className="text-center"><h3>Featured on</h3></div>
+                  <div className="text-center"><h3 className="featured-on">Featured on</h3></div>
                     <div className="d-flex justify-content-between flex-wrap">
                       <img
                         alt=""
@@ -86,7 +86,7 @@ class Landing extends Component {
                 </div>
               </Col>
             </Row>
-            <Row>
+            <Row className="bleed-row">
               <Col md="4" className="d-flex align-items-center">
                 <img
                   alt=""
@@ -167,7 +167,7 @@ class Landing extends Component {
                 </div>
               </Col>
             </Row>
-            <Row>
+            <Row className="how-row">
               <Col>
                 <div className="how-title">How it works</div>
                 <Row>
